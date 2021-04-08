@@ -1,0 +1,1110 @@
+2021-04-06 20:19:49,739 INFO  Logger.cs: 70 - 
+--------------------------------------------------------------------------------
+2021-04-06 20:19:49,776 INFO  Logger.cs: 71 - Logging commencing for SW2URDF exporter
+2021-04-06 20:19:49,778 INFO  Logger.cs: 73 - Commit version 1.6.0-1-g15f4949
+2021-04-06 20:19:49,780 INFO  Logger.cs: 74 - Build version 1.6.7594.29634
+2021-04-06 20:19:49,783 INFO  SwAddin.cs: 192 - Attempting to connect to SW
+2021-04-06 20:19:49,784 INFO  SwAddin.cs: 197 - Setting up callbacks
+2021-04-06 20:19:49,785 INFO  SwAddin.cs: 201 - Setting up command manager
+2021-04-06 20:19:49,786 INFO  SwAddin.cs: 204 - Adding command manager
+2021-04-06 20:19:49,789 INFO  SwAddin.cs: 263 - Adding Assembly export to file menu
+2021-04-06 20:19:49,792 INFO  SwAddin.cs: 272 - Adding Part export to file menu
+2021-04-06 20:19:49,792 INFO  SwAddin.cs: 210 - Adding event handlers
+2021-04-06 20:19:49,797 INFO  SwAddin.cs: 217 - Connecting plugin to SolidWorks
+2021-04-06 20:38:38,821 INFO  SwAddin.cs: 294 - Assembly export called for file Arm_Final_Planet
+2021-04-06 20:38:38,827 INFO  SwAddin.cs: 299 - Save is required
+2021-04-06 20:38:38,829 INFO  SwAddin.cs: 313 - Saving assembly
+2021-04-06 20:38:41,292 INFO  SwAddin.cs: 316 - Opening property manager
+2021-04-06 20:38:41,374 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Arm_Final_Planet
+2021-04-06 20:38:41,445 INFO  ExportHelperExtension.cs: 1136 - Found 234 in Arm_Final_Planet
+2021-04-06 20:38:41,450 INFO  ExportHelperExtension.cs: 1145 - Found 5 features of type [CoordSys] in Arm_Final_Planet
+2021-04-06 20:38:41,451 INFO  ExportHelperExtension.cs: 1148 - Proceeding through assembly components
+2021-04-06 20:38:41,456 INFO  ExportHelperExtension.cs: 1160 - 54 components to check
+2021-04-06 20:38:41,460 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Base_Plate-1
+2021-04-06 20:38:41,462 INFO  ExportHelperExtension.cs: 1136 - Found 33 in Base_Plate-1
+2021-04-06 20:38:41,464 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Base_Plate-1
+2021-04-06 20:38:41,491 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_BM-1
+2021-04-06 20:38:41,492 INFO  ExportHelperExtension.cs: 1136 - Found 39 in Support_Shaft_BM-1
+2021-04-06 20:38:41,493 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_BM-1
+2021-04-06 20:38:41,495 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_BM-2
+2021-04-06 20:38:41,496 INFO  ExportHelperExtension.cs: 1136 - Found 39 in Support_Shaft_BM-2
+2021-04-06 20:38:41,498 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_BM-2
+2021-04-06 20:38:41,499 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_BM-3
+2021-04-06 20:38:41,502 INFO  ExportHelperExtension.cs: 1136 - Found 39 in Support_Shaft_BM-3
+2021-04-06 20:38:41,504 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_BM-3
+2021-04-06 20:38:41,507 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_MT-3
+2021-04-06 20:38:41,534 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-3
+2021-04-06 20:38:41,536 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_MT-3
+2021-04-06 20:38:41,538 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_MT-4
+2021-04-06 20:38:41,539 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-4
+2021-04-06 20:38:41,541 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_MT-4
+2021-04-06 20:38:41,546 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Link_Basic-1
+2021-04-06 20:38:41,551 INFO  ExportHelperExtension.cs: 1136 - Found 43 in Link_Basic-1
+2021-04-06 20:38:41,554 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Link_Basic-1
+2021-04-06 20:38:41,555 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Shaft_Key_BM-2
+2021-04-06 20:38:41,587 INFO  ExportHelperExtension.cs: 1136 - Found 25 in Shaft_Key_BM-2
+2021-04-06 20:38:41,602 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Shaft_Key_BM-2
+2021-04-06 20:38:41,603 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Mid_Plate-1
+2021-04-06 20:38:41,796 INFO  ExportHelperExtension.cs: 1136 - Found 33 in Mid_Plate-1
+2021-04-06 20:38:41,800 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Mid_Plate-1
+2021-04-06 20:38:41,801 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Top_Plate_In-2
+2021-04-06 20:38:41,802 INFO  ExportHelperExtension.cs: 1136 - Found 31 in Top_Plate_In-2
+2021-04-06 20:38:41,804 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Top_Plate_In-2
+2021-04-06 20:38:41,805 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_MT-1
+2021-04-06 20:38:41,843 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-1
+2021-04-06 20:38:41,844 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_MT-1
+2021-04-06 20:38:41,846 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_MT-5
+2021-04-06 20:38:41,847 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-5
+2021-04-06 20:38:41,848 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_MT-5
+2021-04-06 20:38:41,849 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_MT-8
+2021-04-06 20:38:41,851 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-8
+2021-04-06 20:38:41,853 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_MT-8
+2021-04-06 20:38:41,856 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 5972K361_BALL BEARING-1
+2021-04-06 20:38:41,859 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 5972K361_BALL BEARING-1
+2021-04-06 20:38:41,861 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 5972K361_BALL BEARING-1
+2021-04-06 20:38:41,866 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-2
+2021-04-06 20:38:41,868 INFO  ExportHelperExtension.cs: 1136 - Found 49 in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-2
+2021-04-06 20:38:41,869 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-2
+2021-04-06 20:38:41,870 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_BM-4
+2021-04-06 20:38:41,890 INFO  ExportHelperExtension.cs: 1136 - Found 39 in Support_Shaft_BM-4
+2021-04-06 20:38:41,892 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_BM-4
+2021-04-06 20:38:41,893 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-1
+2021-04-06 20:38:41,894 INFO  ExportHelperExtension.cs: 1136 - Found 49 in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-1
+2021-04-06 20:38:41,895 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-1
+2021-04-06 20:38:41,929 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Shaft_Key_BM-3
+2021-04-06 20:38:41,930 INFO  ExportHelperExtension.cs: 1136 - Found 25 in Shaft_Key_BM-3
+2021-04-06 20:38:41,931 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Shaft_Key_BM-3
+2021-04-06 20:38:41,932 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Keyed_Shaft_Bottom-1
+2021-04-06 20:38:41,960 INFO  ExportHelperExtension.cs: 1136 - Found 32 in Keyed_Shaft_Bottom-1
+2021-04-06 20:38:41,962 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Keyed_Shaft_Bottom-1
+2021-04-06 20:38:41,963 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_MT-2
+2021-04-06 20:38:41,965 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-2
+2021-04-06 20:38:41,967 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_MT-2
+2021-04-06 20:38:41,968 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Link_Basic-2
+2021-04-06 20:38:41,970 INFO  ExportHelperExtension.cs: 1136 - Found 43 in Link_Basic-2
+2021-04-06 20:38:41,971 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Link_Basic-2
+2021-04-06 20:38:41,972 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Top_Plate-1
+2021-04-06 20:38:41,975 INFO  ExportHelperExtension.cs: 1136 - Found 33 in Top_Plate-1
+2021-04-06 20:38:41,977 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Top_Plate-1
+2021-04-06 20:38:41,978 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-1
+2021-04-06 20:38:41,979 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-1
+2021-04-06 20:38:41,981 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-1
+2021-04-06 20:38:42,021 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Link_Bottom-1
+2021-04-06 20:38:42,022 INFO  ExportHelperExtension.cs: 1136 - Found 31 in Link_Bottom-1
+2021-04-06 20:38:42,026 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Link_Bottom-1
+2021-04-06 20:38:42,027 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_MT-7
+2021-04-06 20:38:42,028 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-7
+2021-04-06 20:38:42,030 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_MT-7
+2021-04-06 20:38:42,032 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-2
+2021-04-06 20:38:42,043 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-2
+2021-04-06 20:38:42,044 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-2
+2021-04-06 20:38:42,046 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_MT-6
+2021-04-06 20:38:42,048 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-6
+2021-04-06 20:38:42,049 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_MT-6
+2021-04-06 20:38:42,051 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Mid_Plate_In-1
+2021-04-06 20:38:42,070 INFO  ExportHelperExtension.cs: 1136 - Found 31 in Mid_Plate_In-1
+2021-04-06 20:38:42,071 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Mid_Plate_In-1
+2021-04-06 20:38:42,072 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from BlackBox_SPG30_Bracket-3
+2021-04-06 20:38:42,074 INFO  ExportHelperExtension.cs: 1136 - Found 34 in BlackBox_SPG30_Bracket-3
+2021-04-06 20:38:42,091 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in BlackBox_SPG30_Bracket-3
+2021-04-06 20:38:42,093 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from BlackBox_SPG30_Motor-1
+2021-04-06 20:38:42,098 INFO  ExportHelperExtension.cs: 1136 - Found 39 in BlackBox_SPG30_Motor-1
+2021-04-06 20:38:42,100 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in BlackBox_SPG30_Motor-1
+2021-04-06 20:38:42,101 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-3
+2021-04-06 20:38:42,102 INFO  ExportHelperExtension.cs: 1136 - Found 49 in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-3
+2021-04-06 20:38:42,105 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-3
+2021-04-06 20:38:42,109 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-5
+2021-04-06 20:38:42,111 INFO  ExportHelperExtension.cs: 1136 - Found 49 in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-5
+2021-04-06 20:38:42,112 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-5
+2021-04-06 20:38:42,114 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Link_End_1-1
+2021-04-06 20:38:42,115 INFO  ExportHelperExtension.cs: 1136 - Found 34 in Link_End_1-1
+2021-04-06 20:38:42,149 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Link_End_1-1
+2021-04-06 20:38:42,151 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from BlackBox_SPG30_Bracket-1
+2021-04-06 20:38:42,152 INFO  ExportHelperExtension.cs: 1136 - Found 34 in BlackBox_SPG30_Bracket-1
+2021-04-06 20:38:42,166 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in BlackBox_SPG30_Bracket-1
+2021-04-06 20:38:42,173 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Keyed_Shaft_Bottom-3
+2021-04-06 20:38:42,177 INFO  ExportHelperExtension.cs: 1136 - Found 32 in Keyed_Shaft_Bottom-3
+2021-04-06 20:38:42,178 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Keyed_Shaft_Bottom-3
+2021-04-06 20:38:42,180 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-4
+2021-04-06 20:38:42,181 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-4
+2021-04-06 20:38:42,183 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-4
+2021-04-06 20:38:42,185 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 2600N120_METAL MITER GEAR-1
+2021-04-06 20:38:42,186 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 2600N120_METAL MITER GEAR-1
+2021-04-06 20:38:42,188 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 2600N120_METAL MITER GEAR-1
+2021-04-06 20:38:42,200 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Link_Hook-1
+2021-04-06 20:38:42,201 INFO  ExportHelperExtension.cs: 1136 - Found 33 in Link_Hook-1
+2021-04-06 20:38:42,203 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Link_Hook-1
+2021-04-06 20:38:42,204 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 2600N120_METAL MITER GEAR-3
+2021-04-06 20:38:42,205 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 2600N120_METAL MITER GEAR-3
+2021-04-06 20:38:42,207 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 2600N120_METAL MITER GEAR-3
+2021-04-06 20:38:42,208 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Shaft_Key_Link-2
+2021-04-06 20:38:42,209 INFO  ExportHelperExtension.cs: 1136 - Found 25 in Shaft_Key_Link-2
+2021-04-06 20:38:42,211 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Shaft_Key_Link-2
+2021-04-06 20:38:42,213 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from BlackBox_SPG30_Bracket-2
+2021-04-06 20:38:42,216 INFO  ExportHelperExtension.cs: 1136 - Found 34 in BlackBox_SPG30_Bracket-2
+2021-04-06 20:38:42,218 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in BlackBox_SPG30_Bracket-2
+2021-04-06 20:38:42,219 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Shaft_Key_BM-5
+2021-04-06 20:38:42,232 INFO  ExportHelperExtension.cs: 1136 - Found 25 in Shaft_Key_BM-5
+2021-04-06 20:38:42,234 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Shaft_Key_BM-5
+2021-04-06 20:38:42,235 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-4
+2021-04-06 20:38:42,244 INFO  ExportHelperExtension.cs: 1136 - Found 49 in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-4
+2021-04-06 20:38:42,246 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-4
+2021-04-06 20:38:42,247 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Link_End-1
+2021-04-06 20:38:42,249 INFO  ExportHelperExtension.cs: 1136 - Found 34 in Link_End-1
+2021-04-06 20:38:42,251 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Link_End-1
+2021-04-06 20:38:42,252 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Shaft_Key_BM-4
+2021-04-06 20:38:42,253 INFO  ExportHelperExtension.cs: 1136 - Found 25 in Shaft_Key_BM-4
+2021-04-06 20:38:42,254 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Shaft_Key_BM-4
+2021-04-06 20:38:42,256 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Keyed_Shaft_BM-1
+2021-04-06 20:38:42,257 INFO  ExportHelperExtension.cs: 1136 - Found 32 in Keyed_Shaft_BM-1
+2021-04-06 20:38:42,259 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Keyed_Shaft_BM-1
+2021-04-06 20:38:42,279 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-3
+2021-04-06 20:38:42,280 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-3
+2021-04-06 20:38:42,284 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-3
+2021-04-06 20:38:42,285 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from BlackBox_SPG30_Motor-2
+2021-04-06 20:38:42,286 INFO  ExportHelperExtension.cs: 1136 - Found 39 in BlackBox_SPG30_Motor-2
+2021-04-06 20:38:42,288 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in BlackBox_SPG30_Motor-2
+2021-04-06 20:38:42,289 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from BlackBox_SPG30_Motor-3
+2021-04-06 20:38:42,292 INFO  ExportHelperExtension.cs: 1136 - Found 39 in BlackBox_SPG30_Motor-3
+2021-04-06 20:38:42,294 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in BlackBox_SPG30_Motor-3
+2021-04-06 20:38:42,311 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 3560N130_ METAL MITER GEAR-1
+2021-04-06 20:38:42,323 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 3560N130_ METAL MITER GEAR-1
+2021-04-06 20:38:42,328 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 3560N130_ METAL MITER GEAR-1
+2021-04-06 20:38:42,329 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 2600N120_METAL MITER GEAR-2
+2021-04-06 20:38:42,331 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 2600N120_METAL MITER GEAR-2
+2021-04-06 20:38:42,333 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 2600N120_METAL MITER GEAR-2
+2021-04-06 20:38:42,335 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 3560N130_ METAL MITER GEAR-2
+2021-04-06 20:38:42,336 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 3560N130_ METAL MITER GEAR-2
+2021-04-06 20:38:42,338 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 3560N130_ METAL MITER GEAR-2
+2021-04-06 20:38:42,339 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 3560N130_ METAL MITER GEAR-3
+2021-04-06 20:38:42,340 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 3560N130_ METAL MITER GEAR-3
+2021-04-06 20:38:42,341 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 3560N130_ METAL MITER GEAR-3
+2021-04-06 20:38:42,343 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Hook-1
+2021-04-06 20:38:42,344 INFO  ExportHelperExtension.cs: 1136 - Found 26 in Hook-1
+2021-04-06 20:38:42,355 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Hook-1
+2021-04-06 20:38:42,358 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Arm_Final_Planet
+2021-04-06 20:38:42,361 INFO  ExportHelperExtension.cs: 1136 - Found 234 in Arm_Final_Planet
+2021-04-06 20:38:42,370 INFO  ExportHelperExtension.cs: 1145 - Found 3 features of type [RefAxis] in Arm_Final_Planet
+2021-04-06 20:38:42,371 INFO  ExportHelperExtension.cs: 1148 - Proceeding through assembly components
+2021-04-06 20:38:42,373 INFO  ExportHelperExtension.cs: 1160 - 54 components to check
+2021-04-06 20:38:42,374 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Base_Plate-1
+2021-04-06 20:38:42,375 INFO  ExportHelperExtension.cs: 1136 - Found 33 in Base_Plate-1
+2021-04-06 20:38:42,377 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Base_Plate-1
+2021-04-06 20:38:42,378 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_BM-1
+2021-04-06 20:38:42,379 INFO  ExportHelperExtension.cs: 1136 - Found 39 in Support_Shaft_BM-1
+2021-04-06 20:38:42,381 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_BM-1
+2021-04-06 20:38:42,382 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_BM-2
+2021-04-06 20:38:42,384 INFO  ExportHelperExtension.cs: 1136 - Found 39 in Support_Shaft_BM-2
+2021-04-06 20:38:42,386 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_BM-2
+2021-04-06 20:38:42,387 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_BM-3
+2021-04-06 20:38:42,389 INFO  ExportHelperExtension.cs: 1136 - Found 39 in Support_Shaft_BM-3
+2021-04-06 20:38:42,391 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_BM-3
+2021-04-06 20:38:42,393 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_MT-3
+2021-04-06 20:38:42,402 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-3
+2021-04-06 20:38:42,404 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_MT-3
+2021-04-06 20:38:42,405 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_MT-4
+2021-04-06 20:38:42,408 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-4
+2021-04-06 20:38:42,410 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_MT-4
+2021-04-06 20:38:42,411 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Link_Basic-1
+2021-04-06 20:38:42,413 INFO  ExportHelperExtension.cs: 1136 - Found 43 in Link_Basic-1
+2021-04-06 20:38:42,415 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Link_Basic-1
+2021-04-06 20:38:42,417 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Shaft_Key_BM-2
+2021-04-06 20:38:42,419 INFO  ExportHelperExtension.cs: 1136 - Found 25 in Shaft_Key_BM-2
+2021-04-06 20:38:42,420 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Shaft_Key_BM-2
+2021-04-06 20:38:42,429 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Mid_Plate-1
+2021-04-06 20:38:42,432 INFO  ExportHelperExtension.cs: 1136 - Found 33 in Mid_Plate-1
+2021-04-06 20:38:42,434 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Mid_Plate-1
+2021-04-06 20:38:42,436 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Top_Plate_In-2
+2021-04-06 20:38:42,438 INFO  ExportHelperExtension.cs: 1136 - Found 31 in Top_Plate_In-2
+2021-04-06 20:38:42,440 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Top_Plate_In-2
+2021-04-06 20:38:42,441 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_MT-1
+2021-04-06 20:38:42,443 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-1
+2021-04-06 20:38:42,446 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_MT-1
+2021-04-06 20:38:42,449 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_MT-5
+2021-04-06 20:38:42,456 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-5
+2021-04-06 20:38:42,458 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_MT-5
+2021-04-06 20:38:42,459 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_MT-8
+2021-04-06 20:38:42,462 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-8
+2021-04-06 20:38:42,470 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_MT-8
+2021-04-06 20:38:42,472 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 5972K361_BALL BEARING-1
+2021-04-06 20:38:42,473 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 5972K361_BALL BEARING-1
+2021-04-06 20:38:42,475 INFO  ExportHelperExtension.cs: 1145 - Found 1 features of type [RefAxis] in 5972K361_BALL BEARING-1
+2021-04-06 20:38:42,476 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-2
+2021-04-06 20:38:42,479 INFO  ExportHelperExtension.cs: 1136 - Found 49 in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-2
+2021-04-06 20:38:42,481 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-2
+2021-04-06 20:38:42,482 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_BM-4
+2021-04-06 20:38:42,483 INFO  ExportHelperExtension.cs: 1136 - Found 39 in Support_Shaft_BM-4
+2021-04-06 20:38:42,487 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_BM-4
+2021-04-06 20:38:42,488 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-1
+2021-04-06 20:38:42,489 INFO  ExportHelperExtension.cs: 1136 - Found 49 in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-1
+2021-04-06 20:38:42,492 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-1
+2021-04-06 20:38:42,494 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Shaft_Key_BM-3
+2021-04-06 20:38:42,500 INFO  ExportHelperExtension.cs: 1136 - Found 25 in Shaft_Key_BM-3
+2021-04-06 20:38:42,502 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Shaft_Key_BM-3
+2021-04-06 20:38:42,505 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Keyed_Shaft_Bottom-1
+2021-04-06 20:38:42,510 INFO  ExportHelperExtension.cs: 1136 - Found 32 in Keyed_Shaft_Bottom-1
+2021-04-06 20:38:42,513 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Keyed_Shaft_Bottom-1
+2021-04-06 20:38:42,515 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_MT-2
+2021-04-06 20:38:42,517 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-2
+2021-04-06 20:38:42,519 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_MT-2
+2021-04-06 20:38:42,520 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Link_Basic-2
+2021-04-06 20:38:42,523 INFO  ExportHelperExtension.cs: 1136 - Found 43 in Link_Basic-2
+2021-04-06 20:38:42,526 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Link_Basic-2
+2021-04-06 20:38:42,533 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Top_Plate-1
+2021-04-06 20:38:42,535 INFO  ExportHelperExtension.cs: 1136 - Found 33 in Top_Plate-1
+2021-04-06 20:38:42,540 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Top_Plate-1
+2021-04-06 20:38:42,541 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-1
+2021-04-06 20:38:42,550 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-1
+2021-04-06 20:38:42,551 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-1
+2021-04-06 20:38:42,553 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Link_Bottom-1
+2021-04-06 20:38:42,555 INFO  ExportHelperExtension.cs: 1136 - Found 31 in Link_Bottom-1
+2021-04-06 20:38:42,559 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Link_Bottom-1
+2021-04-06 20:38:42,560 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_MT-7
+2021-04-06 20:38:42,562 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-7
+2021-04-06 20:38:42,564 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_MT-7
+2021-04-06 20:38:42,565 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-2
+2021-04-06 20:38:42,566 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-2
+2021-04-06 20:38:42,588 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-2
+2021-04-06 20:38:42,590 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_MT-6
+2021-04-06 20:38:42,591 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-6
+2021-04-06 20:38:42,593 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_MT-6
+2021-04-06 20:38:42,594 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Mid_Plate_In-1
+2021-04-06 20:38:42,596 INFO  ExportHelperExtension.cs: 1136 - Found 31 in Mid_Plate_In-1
+2021-04-06 20:38:42,598 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Mid_Plate_In-1
+2021-04-06 20:38:42,599 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from BlackBox_SPG30_Bracket-3
+2021-04-06 20:38:42,616 INFO  ExportHelperExtension.cs: 1136 - Found 34 in BlackBox_SPG30_Bracket-3
+2021-04-06 20:38:42,618 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in BlackBox_SPG30_Bracket-3
+2021-04-06 20:38:42,620 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from BlackBox_SPG30_Motor-1
+2021-04-06 20:38:42,621 INFO  ExportHelperExtension.cs: 1136 - Found 39 in BlackBox_SPG30_Motor-1
+2021-04-06 20:38:42,623 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in BlackBox_SPG30_Motor-1
+2021-04-06 20:38:42,646 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-3
+2021-04-06 20:38:42,650 INFO  ExportHelperExtension.cs: 1136 - Found 49 in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-3
+2021-04-06 20:38:42,652 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-3
+2021-04-06 20:38:42,655 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-5
+2021-04-06 20:38:42,659 INFO  ExportHelperExtension.cs: 1136 - Found 49 in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-5
+2021-04-06 20:38:42,663 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-5
+2021-04-06 20:38:42,667 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Link_End_1-1
+2021-04-06 20:38:42,669 INFO  ExportHelperExtension.cs: 1136 - Found 34 in Link_End_1-1
+2021-04-06 20:38:42,671 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Link_End_1-1
+2021-04-06 20:38:42,675 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from BlackBox_SPG30_Bracket-1
+2021-04-06 20:38:42,679 INFO  ExportHelperExtension.cs: 1136 - Found 34 in BlackBox_SPG30_Bracket-1
+2021-04-06 20:38:42,682 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in BlackBox_SPG30_Bracket-1
+2021-04-06 20:38:42,683 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Keyed_Shaft_Bottom-3
+2021-04-06 20:38:42,686 INFO  ExportHelperExtension.cs: 1136 - Found 32 in Keyed_Shaft_Bottom-3
+2021-04-06 20:38:42,687 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Keyed_Shaft_Bottom-3
+2021-04-06 20:38:42,689 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-4
+2021-04-06 20:38:42,690 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-4
+2021-04-06 20:38:42,692 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-4
+2021-04-06 20:38:42,695 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 2600N120_METAL MITER GEAR-1
+2021-04-06 20:38:42,700 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 2600N120_METAL MITER GEAR-1
+2021-04-06 20:38:42,701 INFO  ExportHelperExtension.cs: 1145 - Found 1 features of type [RefAxis] in 2600N120_METAL MITER GEAR-1
+2021-04-06 20:38:42,703 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Link_Hook-1
+2021-04-06 20:38:42,704 INFO  ExportHelperExtension.cs: 1136 - Found 33 in Link_Hook-1
+2021-04-06 20:38:42,707 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Link_Hook-1
+2021-04-06 20:38:42,709 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 2600N120_METAL MITER GEAR-3
+2021-04-06 20:38:42,710 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 2600N120_METAL MITER GEAR-3
+2021-04-06 20:38:42,712 INFO  ExportHelperExtension.cs: 1145 - Found 1 features of type [RefAxis] in 2600N120_METAL MITER GEAR-3
+2021-04-06 20:38:42,717 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Shaft_Key_Link-2
+2021-04-06 20:38:42,719 INFO  ExportHelperExtension.cs: 1136 - Found 25 in Shaft_Key_Link-2
+2021-04-06 20:38:42,721 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Shaft_Key_Link-2
+2021-04-06 20:38:42,726 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from BlackBox_SPG30_Bracket-2
+2021-04-06 20:38:42,728 INFO  ExportHelperExtension.cs: 1136 - Found 34 in BlackBox_SPG30_Bracket-2
+2021-04-06 20:38:42,730 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in BlackBox_SPG30_Bracket-2
+2021-04-06 20:38:42,732 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Shaft_Key_BM-5
+2021-04-06 20:38:42,737 INFO  ExportHelperExtension.cs: 1136 - Found 25 in Shaft_Key_BM-5
+2021-04-06 20:38:42,742 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Shaft_Key_BM-5
+2021-04-06 20:38:42,744 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-4
+2021-04-06 20:38:42,745 INFO  ExportHelperExtension.cs: 1136 - Found 49 in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-4
+2021-04-06 20:38:42,751 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-4
+2021-04-06 20:38:42,762 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Link_End-1
+2021-04-06 20:38:42,764 INFO  ExportHelperExtension.cs: 1136 - Found 34 in Link_End-1
+2021-04-06 20:38:42,768 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Link_End-1
+2021-04-06 20:38:42,769 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Shaft_Key_BM-4
+2021-04-06 20:38:42,803 INFO  ExportHelperExtension.cs: 1136 - Found 25 in Shaft_Key_BM-4
+2021-04-06 20:38:42,811 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Shaft_Key_BM-4
+2021-04-06 20:38:42,813 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Keyed_Shaft_BM-1
+2021-04-06 20:38:42,818 INFO  ExportHelperExtension.cs: 1136 - Found 32 in Keyed_Shaft_BM-1
+2021-04-06 20:38:42,820 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Keyed_Shaft_BM-1
+2021-04-06 20:38:42,821 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-3
+2021-04-06 20:38:42,877 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-3
+2021-04-06 20:38:42,879 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-3
+2021-04-06 20:38:42,881 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from BlackBox_SPG30_Motor-2
+2021-04-06 20:38:42,902 INFO  ExportHelperExtension.cs: 1136 - Found 39 in BlackBox_SPG30_Motor-2
+2021-04-06 20:38:42,904 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in BlackBox_SPG30_Motor-2
+2021-04-06 20:38:42,906 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from BlackBox_SPG30_Motor-3
+2021-04-06 20:38:42,908 INFO  ExportHelperExtension.cs: 1136 - Found 39 in BlackBox_SPG30_Motor-3
+2021-04-06 20:38:42,910 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in BlackBox_SPG30_Motor-3
+2021-04-06 20:38:42,911 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 3560N130_ METAL MITER GEAR-1
+2021-04-06 20:38:42,913 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 3560N130_ METAL MITER GEAR-1
+2021-04-06 20:38:42,914 INFO  ExportHelperExtension.cs: 1145 - Found 1 features of type [RefAxis] in 3560N130_ METAL MITER GEAR-1
+2021-04-06 20:38:42,923 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 2600N120_METAL MITER GEAR-2
+2021-04-06 20:38:42,925 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 2600N120_METAL MITER GEAR-2
+2021-04-06 20:38:42,927 INFO  ExportHelperExtension.cs: 1145 - Found 1 features of type [RefAxis] in 2600N120_METAL MITER GEAR-2
+2021-04-06 20:38:42,928 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 3560N130_ METAL MITER GEAR-2
+2021-04-06 20:38:42,930 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 3560N130_ METAL MITER GEAR-2
+2021-04-06 20:38:42,932 INFO  ExportHelperExtension.cs: 1145 - Found 1 features of type [RefAxis] in 3560N130_ METAL MITER GEAR-2
+2021-04-06 20:38:42,934 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 3560N130_ METAL MITER GEAR-3
+2021-04-06 20:38:42,936 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 3560N130_ METAL MITER GEAR-3
+2021-04-06 20:38:42,938 INFO  ExportHelperExtension.cs: 1145 - Found 1 features of type [RefAxis] in 3560N130_ METAL MITER GEAR-3
+2021-04-06 20:38:42,940 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Hook-1
+2021-04-06 20:38:42,943 INFO  ExportHelperExtension.cs: 1136 - Found 26 in Hook-1
+2021-04-06 20:38:42,949 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Hook-1
+2021-04-06 20:38:44,601 INFO  SwAddin.cs: 339 - Loading config tree
+2021-04-06 20:38:44,642 INFO  ExportPropertyManagerExtension.cs: 520 - Starting new configuration
+2021-04-06 20:38:44,758 INFO  SwAddin.cs: 344 - Showing property manager
+2021-04-06 20:38:58,693 INFO  ExportPropertyManager.cs: 1136 - OnNumberBoxTrackingCompleted called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2021-04-06 20:39:34,736 INFO  ExportPropertyManager.cs: 1136 - OnNumberBoxTrackingCompleted called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2021-04-06 20:40:09,610 INFO  ExportPropertyManager.cs: 416 - Configuration canceled
+2021-04-06 20:40:09,869 INFO  ExportPropertyManager.cs: 1142 - AfterClose called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2021-04-06 20:41:04,089 INFO  SwAddin.cs: 294 - Assembly export called for file Arm_Final_Planet
+2021-04-06 20:41:05,834 INFO  SwAddin.cs: 313 - Saving assembly
+2021-04-06 20:41:07,428 INFO  SwAddin.cs: 316 - Opening property manager
+2021-04-06 20:41:07,430 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Arm_Final_Planet
+2021-04-06 20:41:07,432 INFO  ExportHelperExtension.cs: 1136 - Found 234 in Arm_Final_Planet
+2021-04-06 20:41:07,435 INFO  ExportHelperExtension.cs: 1145 - Found 5 features of type [CoordSys] in Arm_Final_Planet
+2021-04-06 20:41:07,494 INFO  ExportHelperExtension.cs: 1148 - Proceeding through assembly components
+2021-04-06 20:41:07,495 INFO  ExportHelperExtension.cs: 1160 - 54 components to check
+2021-04-06 20:41:07,498 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Base_Plate-1
+2021-04-06 20:41:07,502 INFO  ExportHelperExtension.cs: 1136 - Found 33 in Base_Plate-1
+2021-04-06 20:41:07,505 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Base_Plate-1
+2021-04-06 20:41:07,511 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_BM-1
+2021-04-06 20:41:07,516 INFO  ExportHelperExtension.cs: 1136 - Found 39 in Support_Shaft_BM-1
+2021-04-06 20:41:07,526 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_BM-1
+2021-04-06 20:41:07,527 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_BM-2
+2021-04-06 20:41:07,528 INFO  ExportHelperExtension.cs: 1136 - Found 39 in Support_Shaft_BM-2
+2021-04-06 20:41:07,530 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_BM-2
+2021-04-06 20:41:07,531 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_BM-3
+2021-04-06 20:41:07,562 INFO  ExportHelperExtension.cs: 1136 - Found 39 in Support_Shaft_BM-3
+2021-04-06 20:41:07,563 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_BM-3
+2021-04-06 20:41:07,566 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_MT-3
+2021-04-06 20:41:07,566 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-3
+2021-04-06 20:41:07,573 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_MT-3
+2021-04-06 20:41:07,577 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_MT-4
+2021-04-06 20:41:07,580 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-4
+2021-04-06 20:41:07,581 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_MT-4
+2021-04-06 20:41:07,582 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Link_Basic-1
+2021-04-06 20:41:07,584 INFO  ExportHelperExtension.cs: 1136 - Found 43 in Link_Basic-1
+2021-04-06 20:41:07,604 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Link_Basic-1
+2021-04-06 20:41:07,605 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Shaft_Key_BM-2
+2021-04-06 20:41:07,606 INFO  ExportHelperExtension.cs: 1136 - Found 25 in Shaft_Key_BM-2
+2021-04-06 20:41:07,614 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Shaft_Key_BM-2
+2021-04-06 20:41:07,621 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Mid_Plate-1
+2021-04-06 20:41:07,808 INFO  ExportHelperExtension.cs: 1136 - Found 33 in Mid_Plate-1
+2021-04-06 20:41:07,810 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Mid_Plate-1
+2021-04-06 20:41:07,811 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Top_Plate_In-2
+2021-04-06 20:41:07,813 INFO  ExportHelperExtension.cs: 1136 - Found 31 in Top_Plate_In-2
+2021-04-06 20:41:07,815 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Top_Plate_In-2
+2021-04-06 20:41:07,816 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_MT-1
+2021-04-06 20:41:07,818 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-1
+2021-04-06 20:41:07,819 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_MT-1
+2021-04-06 20:41:07,821 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_MT-5
+2021-04-06 20:41:07,823 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-5
+2021-04-06 20:41:07,824 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_MT-5
+2021-04-06 20:41:07,825 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_MT-8
+2021-04-06 20:41:07,826 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-8
+2021-04-06 20:41:07,850 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_MT-8
+2021-04-06 20:41:07,851 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 5972K361_BALL BEARING-1
+2021-04-06 20:41:07,852 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 5972K361_BALL BEARING-1
+2021-04-06 20:41:07,855 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 5972K361_BALL BEARING-1
+2021-04-06 20:41:07,857 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-2
+2021-04-06 20:41:07,862 INFO  ExportHelperExtension.cs: 1136 - Found 49 in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-2
+2021-04-06 20:41:07,866 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-2
+2021-04-06 20:41:07,871 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_BM-4
+2021-04-06 20:41:07,875 INFO  ExportHelperExtension.cs: 1136 - Found 39 in Support_Shaft_BM-4
+2021-04-06 20:41:07,879 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_BM-4
+2021-04-06 20:41:07,880 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-1
+2021-04-06 20:41:07,882 INFO  ExportHelperExtension.cs: 1136 - Found 49 in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-1
+2021-04-06 20:41:07,883 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-1
+2021-04-06 20:41:07,884 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Shaft_Key_BM-3
+2021-04-06 20:41:07,886 INFO  ExportHelperExtension.cs: 1136 - Found 25 in Shaft_Key_BM-3
+2021-04-06 20:41:07,912 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Shaft_Key_BM-3
+2021-04-06 20:41:07,913 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Keyed_Shaft_Bottom-1
+2021-04-06 20:41:07,914 INFO  ExportHelperExtension.cs: 1136 - Found 32 in Keyed_Shaft_Bottom-1
+2021-04-06 20:41:07,917 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Keyed_Shaft_Bottom-1
+2021-04-06 20:41:07,925 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_MT-2
+2021-04-06 20:41:07,927 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-2
+2021-04-06 20:41:07,928 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_MT-2
+2021-04-06 20:41:07,930 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Link_Basic-2
+2021-04-06 20:41:07,933 INFO  ExportHelperExtension.cs: 1136 - Found 43 in Link_Basic-2
+2021-04-06 20:41:07,938 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Link_Basic-2
+2021-04-06 20:41:07,941 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Top_Plate-1
+2021-04-06 20:41:07,943 INFO  ExportHelperExtension.cs: 1136 - Found 33 in Top_Plate-1
+2021-04-06 20:41:07,954 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Top_Plate-1
+2021-04-06 20:41:07,955 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-1
+2021-04-06 20:41:07,963 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-1
+2021-04-06 20:41:07,965 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-1
+2021-04-06 20:41:07,966 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Link_Bottom-1
+2021-04-06 20:41:07,969 INFO  ExportHelperExtension.cs: 1136 - Found 31 in Link_Bottom-1
+2021-04-06 20:41:07,972 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Link_Bottom-1
+2021-04-06 20:41:07,973 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_MT-7
+2021-04-06 20:41:07,975 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-7
+2021-04-06 20:41:07,976 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_MT-7
+2021-04-06 20:41:07,977 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-2
+2021-04-06 20:41:07,979 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-2
+2021-04-06 20:41:07,981 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-2
+2021-04-06 20:41:07,982 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_MT-6
+2021-04-06 20:41:07,992 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-6
+2021-04-06 20:41:07,994 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_MT-6
+2021-04-06 20:41:07,996 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Mid_Plate_In-1
+2021-04-06 20:41:08,000 INFO  ExportHelperExtension.cs: 1136 - Found 31 in Mid_Plate_In-1
+2021-04-06 20:41:08,004 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Mid_Plate_In-1
+2021-04-06 20:41:08,005 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from BlackBox_SPG30_Bracket-3
+2021-04-06 20:41:08,007 INFO  ExportHelperExtension.cs: 1136 - Found 34 in BlackBox_SPG30_Bracket-3
+2021-04-06 20:41:08,009 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in BlackBox_SPG30_Bracket-3
+2021-04-06 20:41:08,010 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from BlackBox_SPG30_Motor-1
+2021-04-06 20:41:08,011 INFO  ExportHelperExtension.cs: 1136 - Found 39 in BlackBox_SPG30_Motor-1
+2021-04-06 20:41:08,013 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in BlackBox_SPG30_Motor-1
+2021-04-06 20:41:08,014 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-3
+2021-04-06 20:41:08,016 INFO  ExportHelperExtension.cs: 1136 - Found 49 in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-3
+2021-04-06 20:41:08,017 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-3
+2021-04-06 20:41:08,023 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-5
+2021-04-06 20:41:08,024 INFO  ExportHelperExtension.cs: 1136 - Found 49 in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-5
+2021-04-06 20:41:08,026 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-5
+2021-04-06 20:41:08,028 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Link_End_1-1
+2021-04-06 20:41:08,031 INFO  ExportHelperExtension.cs: 1136 - Found 34 in Link_End_1-1
+2021-04-06 20:41:08,033 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Link_End_1-1
+2021-04-06 20:41:08,035 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from BlackBox_SPG30_Bracket-1
+2021-04-06 20:41:08,037 INFO  ExportHelperExtension.cs: 1136 - Found 34 in BlackBox_SPG30_Bracket-1
+2021-04-06 20:41:08,038 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in BlackBox_SPG30_Bracket-1
+2021-04-06 20:41:08,040 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Keyed_Shaft_Bottom-3
+2021-04-06 20:41:08,041 INFO  ExportHelperExtension.cs: 1136 - Found 32 in Keyed_Shaft_Bottom-3
+2021-04-06 20:41:08,043 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Keyed_Shaft_Bottom-3
+2021-04-06 20:41:08,062 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-4
+2021-04-06 20:41:08,068 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-4
+2021-04-06 20:41:08,073 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-4
+2021-04-06 20:41:08,075 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 2600N120_METAL MITER GEAR-1
+2021-04-06 20:41:08,076 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 2600N120_METAL MITER GEAR-1
+2021-04-06 20:41:08,078 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 2600N120_METAL MITER GEAR-1
+2021-04-06 20:41:08,080 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Link_Hook-1
+2021-04-06 20:41:08,081 INFO  ExportHelperExtension.cs: 1136 - Found 33 in Link_Hook-1
+2021-04-06 20:41:08,083 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Link_Hook-1
+2021-04-06 20:41:08,085 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 2600N120_METAL MITER GEAR-3
+2021-04-06 20:41:08,086 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 2600N120_METAL MITER GEAR-3
+2021-04-06 20:41:08,088 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 2600N120_METAL MITER GEAR-3
+2021-04-06 20:41:08,090 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Shaft_Key_Link-2
+2021-04-06 20:41:08,091 INFO  ExportHelperExtension.cs: 1136 - Found 25 in Shaft_Key_Link-2
+2021-04-06 20:41:08,093 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Shaft_Key_Link-2
+2021-04-06 20:41:08,095 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from BlackBox_SPG30_Bracket-2
+2021-04-06 20:41:08,097 INFO  ExportHelperExtension.cs: 1136 - Found 34 in BlackBox_SPG30_Bracket-2
+2021-04-06 20:41:08,099 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in BlackBox_SPG30_Bracket-2
+2021-04-06 20:41:08,100 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Shaft_Key_BM-5
+2021-04-06 20:41:08,102 INFO  ExportHelperExtension.cs: 1136 - Found 25 in Shaft_Key_BM-5
+2021-04-06 20:41:08,104 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Shaft_Key_BM-5
+2021-04-06 20:41:08,105 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-4
+2021-04-06 20:41:08,109 INFO  ExportHelperExtension.cs: 1136 - Found 49 in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-4
+2021-04-06 20:41:08,112 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-4
+2021-04-06 20:41:08,113 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Link_End-1
+2021-04-06 20:41:08,115 INFO  ExportHelperExtension.cs: 1136 - Found 34 in Link_End-1
+2021-04-06 20:41:08,117 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Link_End-1
+2021-04-06 20:41:08,119 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Shaft_Key_BM-4
+2021-04-06 20:41:08,136 INFO  ExportHelperExtension.cs: 1136 - Found 25 in Shaft_Key_BM-4
+2021-04-06 20:41:08,138 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Shaft_Key_BM-4
+2021-04-06 20:41:08,139 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Keyed_Shaft_BM-1
+2021-04-06 20:41:08,141 INFO  ExportHelperExtension.cs: 1136 - Found 32 in Keyed_Shaft_BM-1
+2021-04-06 20:41:08,143 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Keyed_Shaft_BM-1
+2021-04-06 20:41:08,144 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-3
+2021-04-06 20:41:08,146 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-3
+2021-04-06 20:41:08,147 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-3
+2021-04-06 20:41:08,149 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from BlackBox_SPG30_Motor-2
+2021-04-06 20:41:08,150 INFO  ExportHelperExtension.cs: 1136 - Found 39 in BlackBox_SPG30_Motor-2
+2021-04-06 20:41:08,152 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in BlackBox_SPG30_Motor-2
+2021-04-06 20:41:08,153 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from BlackBox_SPG30_Motor-3
+2021-04-06 20:41:08,155 INFO  ExportHelperExtension.cs: 1136 - Found 39 in BlackBox_SPG30_Motor-3
+2021-04-06 20:41:08,156 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in BlackBox_SPG30_Motor-3
+2021-04-06 20:41:08,157 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 3560N130_ METAL MITER GEAR-1
+2021-04-06 20:41:08,181 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 3560N130_ METAL MITER GEAR-1
+2021-04-06 20:41:08,191 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 3560N130_ METAL MITER GEAR-1
+2021-04-06 20:41:08,195 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 2600N120_METAL MITER GEAR-2
+2021-04-06 20:41:08,203 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 2600N120_METAL MITER GEAR-2
+2021-04-06 20:41:08,204 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 2600N120_METAL MITER GEAR-2
+2021-04-06 20:41:08,206 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 3560N130_ METAL MITER GEAR-2
+2021-04-06 20:41:08,207 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 3560N130_ METAL MITER GEAR-2
+2021-04-06 20:41:08,209 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 3560N130_ METAL MITER GEAR-2
+2021-04-06 20:41:08,210 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 3560N130_ METAL MITER GEAR-3
+2021-04-06 20:41:08,223 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 3560N130_ METAL MITER GEAR-3
+2021-04-06 20:41:08,226 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 3560N130_ METAL MITER GEAR-3
+2021-04-06 20:41:08,229 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Hook-1
+2021-04-06 20:41:08,231 INFO  ExportHelperExtension.cs: 1136 - Found 26 in Hook-1
+2021-04-06 20:41:08,236 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Hook-1
+2021-04-06 20:41:08,242 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Arm_Final_Planet
+2021-04-06 20:41:08,257 INFO  ExportHelperExtension.cs: 1136 - Found 234 in Arm_Final_Planet
+2021-04-06 20:41:08,263 INFO  ExportHelperExtension.cs: 1145 - Found 3 features of type [RefAxis] in Arm_Final_Planet
+2021-04-06 20:41:08,264 INFO  ExportHelperExtension.cs: 1148 - Proceeding through assembly components
+2021-04-06 20:41:08,266 INFO  ExportHelperExtension.cs: 1160 - 54 components to check
+2021-04-06 20:41:08,269 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Base_Plate-1
+2021-04-06 20:41:08,332 INFO  ExportHelperExtension.cs: 1136 - Found 33 in Base_Plate-1
+2021-04-06 20:41:08,334 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Base_Plate-1
+2021-04-06 20:41:08,335 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_BM-1
+2021-04-06 20:41:08,337 INFO  ExportHelperExtension.cs: 1136 - Found 39 in Support_Shaft_BM-1
+2021-04-06 20:41:08,366 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_BM-1
+2021-04-06 20:41:08,368 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_BM-2
+2021-04-06 20:41:08,371 INFO  ExportHelperExtension.cs: 1136 - Found 39 in Support_Shaft_BM-2
+2021-04-06 20:41:08,373 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_BM-2
+2021-04-06 20:41:08,374 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_BM-3
+2021-04-06 20:41:08,376 INFO  ExportHelperExtension.cs: 1136 - Found 39 in Support_Shaft_BM-3
+2021-04-06 20:41:08,378 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_BM-3
+2021-04-06 20:41:08,380 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_MT-3
+2021-04-06 20:41:08,382 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-3
+2021-04-06 20:41:08,384 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_MT-3
+2021-04-06 20:41:08,387 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_MT-4
+2021-04-06 20:41:08,388 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-4
+2021-04-06 20:41:08,389 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_MT-4
+2021-04-06 20:41:08,391 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Link_Basic-1
+2021-04-06 20:41:08,392 INFO  ExportHelperExtension.cs: 1136 - Found 43 in Link_Basic-1
+2021-04-06 20:41:08,396 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Link_Basic-1
+2021-04-06 20:41:08,397 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Shaft_Key_BM-2
+2021-04-06 20:41:08,400 INFO  ExportHelperExtension.cs: 1136 - Found 25 in Shaft_Key_BM-2
+2021-04-06 20:41:08,402 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Shaft_Key_BM-2
+2021-04-06 20:41:08,404 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Mid_Plate-1
+2021-04-06 20:41:08,405 INFO  ExportHelperExtension.cs: 1136 - Found 33 in Mid_Plate-1
+2021-04-06 20:41:08,409 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Mid_Plate-1
+2021-04-06 20:41:08,413 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Top_Plate_In-2
+2021-04-06 20:41:08,416 INFO  ExportHelperExtension.cs: 1136 - Found 31 in Top_Plate_In-2
+2021-04-06 20:41:08,417 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Top_Plate_In-2
+2021-04-06 20:41:08,419 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_MT-1
+2021-04-06 20:41:08,420 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-1
+2021-04-06 20:41:08,422 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_MT-1
+2021-04-06 20:41:08,431 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_MT-5
+2021-04-06 20:41:08,432 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-5
+2021-04-06 20:41:08,434 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_MT-5
+2021-04-06 20:41:08,435 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_MT-8
+2021-04-06 20:41:08,436 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-8
+2021-04-06 20:41:08,438 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_MT-8
+2021-04-06 20:41:08,440 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 5972K361_BALL BEARING-1
+2021-04-06 20:41:08,441 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 5972K361_BALL BEARING-1
+2021-04-06 20:41:08,443 INFO  ExportHelperExtension.cs: 1145 - Found 1 features of type [RefAxis] in 5972K361_BALL BEARING-1
+2021-04-06 20:41:08,444 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-2
+2021-04-06 20:41:08,446 INFO  ExportHelperExtension.cs: 1136 - Found 49 in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-2
+2021-04-06 20:41:08,448 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-2
+2021-04-06 20:41:08,449 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_BM-4
+2021-04-06 20:41:08,450 INFO  ExportHelperExtension.cs: 1136 - Found 39 in Support_Shaft_BM-4
+2021-04-06 20:41:08,456 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_BM-4
+2021-04-06 20:41:08,457 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-1
+2021-04-06 20:41:08,459 INFO  ExportHelperExtension.cs: 1136 - Found 49 in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-1
+2021-04-06 20:41:08,460 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-1
+2021-04-06 20:41:08,462 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Shaft_Key_BM-3
+2021-04-06 20:41:08,463 INFO  ExportHelperExtension.cs: 1136 - Found 25 in Shaft_Key_BM-3
+2021-04-06 20:41:08,464 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Shaft_Key_BM-3
+2021-04-06 20:41:08,465 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Keyed_Shaft_Bottom-1
+2021-04-06 20:41:08,467 INFO  ExportHelperExtension.cs: 1136 - Found 32 in Keyed_Shaft_Bottom-1
+2021-04-06 20:41:08,470 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Keyed_Shaft_Bottom-1
+2021-04-06 20:41:08,471 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_MT-2
+2021-04-06 20:41:08,472 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-2
+2021-04-06 20:41:08,475 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_MT-2
+2021-04-06 20:41:08,476 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Link_Basic-2
+2021-04-06 20:41:08,493 INFO  ExportHelperExtension.cs: 1136 - Found 43 in Link_Basic-2
+2021-04-06 20:41:08,496 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Link_Basic-2
+2021-04-06 20:41:08,500 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Top_Plate-1
+2021-04-06 20:41:08,507 INFO  ExportHelperExtension.cs: 1136 - Found 33 in Top_Plate-1
+2021-04-06 20:41:08,511 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Top_Plate-1
+2021-04-06 20:41:08,512 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-1
+2021-04-06 20:41:08,515 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-1
+2021-04-06 20:41:08,517 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-1
+2021-04-06 20:41:08,518 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Link_Bottom-1
+2021-04-06 20:41:08,520 INFO  ExportHelperExtension.cs: 1136 - Found 31 in Link_Bottom-1
+2021-04-06 20:41:08,521 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Link_Bottom-1
+2021-04-06 20:41:08,523 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_MT-7
+2021-04-06 20:41:08,524 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-7
+2021-04-06 20:41:08,525 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_MT-7
+2021-04-06 20:41:08,553 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-2
+2021-04-06 20:41:08,557 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-2
+2021-04-06 20:41:08,560 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-2
+2021-04-06 20:41:08,562 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_MT-6
+2021-04-06 20:41:08,566 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-6
+2021-04-06 20:41:08,570 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_MT-6
+2021-04-06 20:41:08,572 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Mid_Plate_In-1
+2021-04-06 20:41:08,573 INFO  ExportHelperExtension.cs: 1136 - Found 31 in Mid_Plate_In-1
+2021-04-06 20:41:08,575 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Mid_Plate_In-1
+2021-04-06 20:41:08,576 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from BlackBox_SPG30_Bracket-3
+2021-04-06 20:41:08,578 INFO  ExportHelperExtension.cs: 1136 - Found 34 in BlackBox_SPG30_Bracket-3
+2021-04-06 20:41:08,609 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in BlackBox_SPG30_Bracket-3
+2021-04-06 20:41:08,611 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from BlackBox_SPG30_Motor-1
+2021-04-06 20:41:08,612 INFO  ExportHelperExtension.cs: 1136 - Found 39 in BlackBox_SPG30_Motor-1
+2021-04-06 20:41:08,616 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in BlackBox_SPG30_Motor-1
+2021-04-06 20:41:08,619 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-3
+2021-04-06 20:41:08,624 INFO  ExportHelperExtension.cs: 1136 - Found 49 in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-3
+2021-04-06 20:41:08,627 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-3
+2021-04-06 20:41:08,628 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-5
+2021-04-06 20:41:08,630 INFO  ExportHelperExtension.cs: 1136 - Found 49 in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-5
+2021-04-06 20:41:08,632 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-5
+2021-04-06 20:41:08,634 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Link_End_1-1
+2021-04-06 20:41:08,636 INFO  ExportHelperExtension.cs: 1136 - Found 34 in Link_End_1-1
+2021-04-06 20:41:08,637 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Link_End_1-1
+2021-04-06 20:41:08,658 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from BlackBox_SPG30_Bracket-1
+2021-04-06 20:41:08,660 INFO  ExportHelperExtension.cs: 1136 - Found 34 in BlackBox_SPG30_Bracket-1
+2021-04-06 20:41:08,662 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in BlackBox_SPG30_Bracket-1
+2021-04-06 20:41:08,663 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Keyed_Shaft_Bottom-3
+2021-04-06 20:41:08,664 INFO  ExportHelperExtension.cs: 1136 - Found 32 in Keyed_Shaft_Bottom-3
+2021-04-06 20:41:08,666 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Keyed_Shaft_Bottom-3
+2021-04-06 20:41:08,670 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-4
+2021-04-06 20:41:08,672 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-4
+2021-04-06 20:41:08,673 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-4
+2021-04-06 20:41:08,675 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 2600N120_METAL MITER GEAR-1
+2021-04-06 20:41:08,676 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 2600N120_METAL MITER GEAR-1
+2021-04-06 20:41:08,678 INFO  ExportHelperExtension.cs: 1145 - Found 1 features of type [RefAxis] in 2600N120_METAL MITER GEAR-1
+2021-04-06 20:41:08,682 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Link_Hook-1
+2021-04-06 20:41:08,685 INFO  ExportHelperExtension.cs: 1136 - Found 33 in Link_Hook-1
+2021-04-06 20:41:08,688 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Link_Hook-1
+2021-04-06 20:41:08,689 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 2600N120_METAL MITER GEAR-3
+2021-04-06 20:41:08,692 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 2600N120_METAL MITER GEAR-3
+2021-04-06 20:41:08,700 INFO  ExportHelperExtension.cs: 1145 - Found 1 features of type [RefAxis] in 2600N120_METAL MITER GEAR-3
+2021-04-06 20:41:08,705 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Shaft_Key_Link-2
+2021-04-06 20:41:08,707 INFO  ExportHelperExtension.cs: 1136 - Found 25 in Shaft_Key_Link-2
+2021-04-06 20:41:08,709 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Shaft_Key_Link-2
+2021-04-06 20:41:08,710 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from BlackBox_SPG30_Bracket-2
+2021-04-06 20:41:08,711 INFO  ExportHelperExtension.cs: 1136 - Found 34 in BlackBox_SPG30_Bracket-2
+2021-04-06 20:41:08,731 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in BlackBox_SPG30_Bracket-2
+2021-04-06 20:41:08,732 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Shaft_Key_BM-5
+2021-04-06 20:41:08,734 INFO  ExportHelperExtension.cs: 1136 - Found 25 in Shaft_Key_BM-5
+2021-04-06 20:41:08,735 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Shaft_Key_BM-5
+2021-04-06 20:41:08,737 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-4
+2021-04-06 20:41:08,738 INFO  ExportHelperExtension.cs: 1136 - Found 49 in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-4
+2021-04-06 20:41:08,742 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-4
+2021-04-06 20:41:08,743 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Link_End-1
+2021-04-06 20:41:08,745 INFO  ExportHelperExtension.cs: 1136 - Found 34 in Link_End-1
+2021-04-06 20:41:08,747 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Link_End-1
+2021-04-06 20:41:08,748 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Shaft_Key_BM-4
+2021-04-06 20:41:08,750 INFO  ExportHelperExtension.cs: 1136 - Found 25 in Shaft_Key_BM-4
+2021-04-06 20:41:08,751 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Shaft_Key_BM-4
+2021-04-06 20:41:08,752 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Keyed_Shaft_BM-1
+2021-04-06 20:41:08,754 INFO  ExportHelperExtension.cs: 1136 - Found 32 in Keyed_Shaft_BM-1
+2021-04-06 20:41:08,766 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Keyed_Shaft_BM-1
+2021-04-06 20:41:08,767 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-3
+2021-04-06 20:41:08,768 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-3
+2021-04-06 20:41:08,770 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-3
+2021-04-06 20:41:08,771 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from BlackBox_SPG30_Motor-2
+2021-04-06 20:41:08,772 INFO  ExportHelperExtension.cs: 1136 - Found 39 in BlackBox_SPG30_Motor-2
+2021-04-06 20:41:08,774 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in BlackBox_SPG30_Motor-2
+2021-04-06 20:41:08,775 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from BlackBox_SPG30_Motor-3
+2021-04-06 20:41:08,776 INFO  ExportHelperExtension.cs: 1136 - Found 39 in BlackBox_SPG30_Motor-3
+2021-04-06 20:41:08,778 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in BlackBox_SPG30_Motor-3
+2021-04-06 20:41:08,788 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 3560N130_ METAL MITER GEAR-1
+2021-04-06 20:41:08,798 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 3560N130_ METAL MITER GEAR-1
+2021-04-06 20:41:08,800 INFO  ExportHelperExtension.cs: 1145 - Found 1 features of type [RefAxis] in 3560N130_ METAL MITER GEAR-1
+2021-04-06 20:41:08,801 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 2600N120_METAL MITER GEAR-2
+2021-04-06 20:41:08,803 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 2600N120_METAL MITER GEAR-2
+2021-04-06 20:41:08,807 INFO  ExportHelperExtension.cs: 1145 - Found 1 features of type [RefAxis] in 2600N120_METAL MITER GEAR-2
+2021-04-06 20:41:08,813 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 3560N130_ METAL MITER GEAR-2
+2021-04-06 20:41:08,832 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 3560N130_ METAL MITER GEAR-2
+2021-04-06 20:41:08,835 INFO  ExportHelperExtension.cs: 1145 - Found 1 features of type [RefAxis] in 3560N130_ METAL MITER GEAR-2
+2021-04-06 20:41:08,837 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 3560N130_ METAL MITER GEAR-3
+2021-04-06 20:41:08,838 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 3560N130_ METAL MITER GEAR-3
+2021-04-06 20:41:08,847 INFO  ExportHelperExtension.cs: 1145 - Found 1 features of type [RefAxis] in 3560N130_ METAL MITER GEAR-3
+2021-04-06 20:41:08,849 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Hook-1
+2021-04-06 20:41:08,868 INFO  ExportHelperExtension.cs: 1136 - Found 26 in Hook-1
+2021-04-06 20:41:08,875 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Hook-1
+2021-04-06 20:41:09,943 INFO  SwAddin.cs: 339 - Loading config tree
+2021-04-06 20:41:09,970 INFO  ExportPropertyManagerExtension.cs: 520 - Starting new configuration
+2021-04-06 20:41:09,977 INFO  SwAddin.cs: 344 - Showing property manager
+2021-04-06 20:41:21,025 INFO  ExportPropertyManager.cs: 1018 - OnComboboxSelectionChanged called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2021-04-06 20:42:35,385 INFO  ExportPropertyManager.cs: 1136 - OnNumberBoxTrackingCompleted called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2021-04-06 20:42:52,737 INFO  ExportPropertyManager.cs: 1018 - OnComboboxSelectionChanged called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2021-04-06 20:42:54,342 INFO  ExportPropertyManager.cs: 1018 - OnComboboxSelectionChanged called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2021-04-06 20:43:00,926 INFO  ExportPropertyManager.cs: 1018 - OnComboboxSelectionChanged called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2021-04-06 20:43:04,280 INFO  ExportPropertyManager.cs: 1018 - OnComboboxSelectionChanged called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2021-04-06 20:45:19,131 INFO  ExportPropertyManager.cs: 1136 - OnNumberBoxTrackingCompleted called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2021-04-06 20:45:32,111 INFO  ExportPropertyManager.cs: 1018 - OnComboboxSelectionChanged called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2021-04-06 20:45:33,654 INFO  ExportPropertyManager.cs: 1018 - OnComboboxSelectionChanged called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2021-04-06 20:45:37,982 INFO  ExportPropertyManager.cs: 1018 - OnComboboxSelectionChanged called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2021-04-06 20:47:19,579 INFO  ExportPropertyManager.cs: 1018 - OnComboboxSelectionChanged called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2021-04-06 20:47:19,672 INFO  ExportPropertyManager.cs: 1018 - OnComboboxSelectionChanged called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2021-04-06 20:47:28,361 INFO  ExportPropertyManager.cs: 1136 - OnNumberBoxTrackingCompleted called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2021-04-06 20:47:44,118 INFO  ExportPropertyManager.cs: 1018 - OnComboboxSelectionChanged called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2021-04-06 20:47:45,757 INFO  ExportPropertyManager.cs: 1018 - OnComboboxSelectionChanged called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2021-04-06 20:47:48,222 INFO  ExportPropertyManager.cs: 1018 - OnComboboxSelectionChanged called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2021-04-06 20:50:02,109 INFO  ExportPropertyManager.cs: 422 - Configuration saved
+2021-04-06 20:50:03,447 INFO  ExportHelperExtension.cs: 347 - Creating joint link_1
+2021-04-06 20:50:03,975 WARN  ExportHelperExtension.cs: 351 - Creating joint from parent base_link to child link_1 failed
+2021-04-06 20:50:03,994 INFO  ExportHelperExtension.cs: 347 - Creating joint link_2
+2021-04-06 20:50:04,183 WARN  ExportHelperExtension.cs: 351 - Creating joint from parent link_1 to child link_2 failed
+2021-04-06 20:50:08,003 INFO  ExportHelperExtension.cs: 347 - Creating joint link_3
+2021-04-06 20:50:08,194 WARN  ExportHelperExtension.cs: 351 - Creating joint from parent link_2 to child link_3 failed
+2021-04-06 20:50:10,450 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Arm_Final_Planet
+2021-04-06 20:50:10,477 INFO  ExportHelperExtension.cs: 1136 - Found 235 in Arm_Final_Planet
+2021-04-06 20:50:10,478 INFO  ExportHelperExtension.cs: 1145 - Found 5 features of type [CoordSys] in Arm_Final_Planet
+2021-04-06 20:50:10,479 INFO  ExportHelperExtension.cs: 1148 - Proceeding through assembly components
+2021-04-06 20:50:10,480 INFO  ExportHelperExtension.cs: 1160 - 54 components to check
+2021-04-06 20:50:10,480 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Base_Plate-1
+2021-04-06 20:50:10,480 INFO  ExportHelperExtension.cs: 1136 - Found 33 in Base_Plate-1
+2021-04-06 20:50:10,481 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Base_Plate-1
+2021-04-06 20:50:10,481 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_BM-1
+2021-04-06 20:50:10,482 INFO  ExportHelperExtension.cs: 1136 - Found 39 in Support_Shaft_BM-1
+2021-04-06 20:50:10,483 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_BM-1
+2021-04-06 20:50:10,484 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_BM-2
+2021-04-06 20:50:10,484 INFO  ExportHelperExtension.cs: 1136 - Found 39 in Support_Shaft_BM-2
+2021-04-06 20:50:10,485 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_BM-2
+2021-04-06 20:50:10,485 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_BM-3
+2021-04-06 20:50:10,486 INFO  ExportHelperExtension.cs: 1136 - Found 39 in Support_Shaft_BM-3
+2021-04-06 20:50:10,486 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_BM-3
+2021-04-06 20:50:10,487 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_MT-3
+2021-04-06 20:50:10,487 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-3
+2021-04-06 20:50:10,488 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_MT-3
+2021-04-06 20:50:10,488 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_MT-4
+2021-04-06 20:50:10,489 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-4
+2021-04-06 20:50:10,489 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_MT-4
+2021-04-06 20:50:10,490 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Link_Basic-1
+2021-04-06 20:50:10,490 INFO  ExportHelperExtension.cs: 1136 - Found 43 in Link_Basic-1
+2021-04-06 20:50:10,491 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Link_Basic-1
+2021-04-06 20:50:10,492 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Shaft_Key_BM-2
+2021-04-06 20:50:10,493 INFO  ExportHelperExtension.cs: 1136 - Found 25 in Shaft_Key_BM-2
+2021-04-06 20:50:10,493 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Shaft_Key_BM-2
+2021-04-06 20:50:10,494 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Mid_Plate-1
+2021-04-06 20:50:10,495 INFO  ExportHelperExtension.cs: 1136 - Found 33 in Mid_Plate-1
+2021-04-06 20:50:10,495 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Mid_Plate-1
+2021-04-06 20:50:10,496 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Top_Plate_In-2
+2021-04-06 20:50:10,496 INFO  ExportHelperExtension.cs: 1136 - Found 31 in Top_Plate_In-2
+2021-04-06 20:50:10,497 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Top_Plate_In-2
+2021-04-06 20:50:10,498 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_MT-1
+2021-04-06 20:50:10,498 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-1
+2021-04-06 20:50:10,499 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_MT-1
+2021-04-06 20:50:10,499 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_MT-5
+2021-04-06 20:50:10,500 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-5
+2021-04-06 20:50:10,500 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_MT-5
+2021-04-06 20:50:10,501 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_MT-8
+2021-04-06 20:50:10,501 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-8
+2021-04-06 20:50:10,502 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_MT-8
+2021-04-06 20:50:10,502 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 5972K361_BALL BEARING-1
+2021-04-06 20:50:10,503 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 5972K361_BALL BEARING-1
+2021-04-06 20:50:10,504 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 5972K361_BALL BEARING-1
+2021-04-06 20:50:10,505 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-2
+2021-04-06 20:50:10,505 INFO  ExportHelperExtension.cs: 1136 - Found 49 in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-2
+2021-04-06 20:50:10,506 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-2
+2021-04-06 20:50:10,507 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_BM-4
+2021-04-06 20:50:10,507 INFO  ExportHelperExtension.cs: 1136 - Found 39 in Support_Shaft_BM-4
+2021-04-06 20:50:10,508 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_BM-4
+2021-04-06 20:50:10,509 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-1
+2021-04-06 20:50:10,510 INFO  ExportHelperExtension.cs: 1136 - Found 49 in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-1
+2021-04-06 20:50:10,511 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-1
+2021-04-06 20:50:10,512 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Shaft_Key_BM-3
+2021-04-06 20:50:10,512 INFO  ExportHelperExtension.cs: 1136 - Found 25 in Shaft_Key_BM-3
+2021-04-06 20:50:10,513 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Shaft_Key_BM-3
+2021-04-06 20:50:10,514 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Keyed_Shaft_Bottom-1
+2021-04-06 20:50:10,514 INFO  ExportHelperExtension.cs: 1136 - Found 32 in Keyed_Shaft_Bottom-1
+2021-04-06 20:50:10,515 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Keyed_Shaft_Bottom-1
+2021-04-06 20:50:10,516 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_MT-2
+2021-04-06 20:50:10,516 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-2
+2021-04-06 20:50:10,517 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_MT-2
+2021-04-06 20:50:10,517 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Link_Basic-2
+2021-04-06 20:50:10,518 INFO  ExportHelperExtension.cs: 1136 - Found 43 in Link_Basic-2
+2021-04-06 20:50:10,519 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Link_Basic-2
+2021-04-06 20:50:10,519 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Top_Plate-1
+2021-04-06 20:50:10,520 INFO  ExportHelperExtension.cs: 1136 - Found 33 in Top_Plate-1
+2021-04-06 20:50:10,521 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Top_Plate-1
+2021-04-06 20:50:10,521 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-1
+2021-04-06 20:50:10,522 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-1
+2021-04-06 20:50:10,523 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-1
+2021-04-06 20:50:10,523 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Link_Bottom-1
+2021-04-06 20:50:10,524 INFO  ExportHelperExtension.cs: 1136 - Found 31 in Link_Bottom-1
+2021-04-06 20:50:10,525 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Link_Bottom-1
+2021-04-06 20:50:10,526 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_MT-7
+2021-04-06 20:50:10,526 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-7
+2021-04-06 20:50:10,527 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_MT-7
+2021-04-06 20:50:10,527 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-2
+2021-04-06 20:50:10,528 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-2
+2021-04-06 20:50:10,529 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-2
+2021-04-06 20:50:10,529 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Support_Shaft_MT-6
+2021-04-06 20:50:10,530 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-6
+2021-04-06 20:50:10,530 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Support_Shaft_MT-6
+2021-04-06 20:50:10,531 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Mid_Plate_In-1
+2021-04-06 20:50:10,531 INFO  ExportHelperExtension.cs: 1136 - Found 31 in Mid_Plate_In-1
+2021-04-06 20:50:10,532 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Mid_Plate_In-1
+2021-04-06 20:50:10,532 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from BlackBox_SPG30_Bracket-3
+2021-04-06 20:50:10,533 INFO  ExportHelperExtension.cs: 1136 - Found 34 in BlackBox_SPG30_Bracket-3
+2021-04-06 20:50:10,534 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in BlackBox_SPG30_Bracket-3
+2021-04-06 20:50:10,535 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from BlackBox_SPG30_Motor-1
+2021-04-06 20:50:10,535 INFO  ExportHelperExtension.cs: 1136 - Found 39 in BlackBox_SPG30_Motor-1
+2021-04-06 20:50:10,536 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in BlackBox_SPG30_Motor-1
+2021-04-06 20:50:10,536 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-3
+2021-04-06 20:50:10,537 INFO  ExportHelperExtension.cs: 1136 - Found 49 in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-3
+2021-04-06 20:50:10,538 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-3
+2021-04-06 20:50:10,538 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-5
+2021-04-06 20:50:10,539 INFO  ExportHelperExtension.cs: 1136 - Found 49 in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-5
+2021-04-06 20:50:10,540 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-5
+2021-04-06 20:50:10,541 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Link_End_1-1
+2021-04-06 20:50:10,541 INFO  ExportHelperExtension.cs: 1136 - Found 34 in Link_End_1-1
+2021-04-06 20:50:10,542 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Link_End_1-1
+2021-04-06 20:50:10,543 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from BlackBox_SPG30_Bracket-1
+2021-04-06 20:50:10,544 INFO  ExportHelperExtension.cs: 1136 - Found 34 in BlackBox_SPG30_Bracket-1
+2021-04-06 20:50:10,544 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in BlackBox_SPG30_Bracket-1
+2021-04-06 20:50:10,545 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Keyed_Shaft_Bottom-3
+2021-04-06 20:50:10,546 INFO  ExportHelperExtension.cs: 1136 - Found 32 in Keyed_Shaft_Bottom-3
+2021-04-06 20:50:10,546 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Keyed_Shaft_Bottom-3
+2021-04-06 20:50:10,547 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-4
+2021-04-06 20:50:10,547 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-4
+2021-04-06 20:50:10,548 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-4
+2021-04-06 20:50:10,549 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 2600N120_METAL MITER GEAR-1
+2021-04-06 20:50:10,570 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 2600N120_METAL MITER GEAR-1
+2021-04-06 20:50:10,571 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 2600N120_METAL MITER GEAR-1
+2021-04-06 20:50:10,572 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Link_Hook-1
+2021-04-06 20:50:10,573 INFO  ExportHelperExtension.cs: 1136 - Found 33 in Link_Hook-1
+2021-04-06 20:50:10,574 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Link_Hook-1
+2021-04-06 20:50:10,574 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 2600N120_METAL MITER GEAR-3
+2021-04-06 20:50:10,575 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 2600N120_METAL MITER GEAR-3
+2021-04-06 20:50:10,576 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 2600N120_METAL MITER GEAR-3
+2021-04-06 20:50:10,577 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Shaft_Key_Link-2
+2021-04-06 20:50:10,578 INFO  ExportHelperExtension.cs: 1136 - Found 25 in Shaft_Key_Link-2
+2021-04-06 20:50:10,578 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Shaft_Key_Link-2
+2021-04-06 20:50:10,579 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from BlackBox_SPG30_Bracket-2
+2021-04-06 20:50:10,579 INFO  ExportHelperExtension.cs: 1136 - Found 34 in BlackBox_SPG30_Bracket-2
+2021-04-06 20:50:10,580 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in BlackBox_SPG30_Bracket-2
+2021-04-06 20:50:10,580 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Shaft_Key_BM-5
+2021-04-06 20:50:10,581 INFO  ExportHelperExtension.cs: 1136 - Found 25 in Shaft_Key_BM-5
+2021-04-06 20:50:10,582 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Shaft_Key_BM-5
+2021-04-06 20:50:10,589 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-4
+2021-04-06 20:50:10,601 INFO  ExportHelperExtension.cs: 1136 - Found 49 in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-4
+2021-04-06 20:50:10,602 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-4
+2021-04-06 20:50:10,603 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Link_End-1
+2021-04-06 20:50:10,604 INFO  ExportHelperExtension.cs: 1136 - Found 34 in Link_End-1
+2021-04-06 20:50:10,605 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Link_End-1
+2021-04-06 20:50:10,605 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Shaft_Key_BM-4
+2021-04-06 20:50:10,606 INFO  ExportHelperExtension.cs: 1136 - Found 25 in Shaft_Key_BM-4
+2021-04-06 20:50:10,608 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Shaft_Key_BM-4
+2021-04-06 20:50:10,609 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Keyed_Shaft_BM-1
+2021-04-06 20:50:10,610 INFO  ExportHelperExtension.cs: 1136 - Found 32 in Keyed_Shaft_BM-1
+2021-04-06 20:50:10,611 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Keyed_Shaft_BM-1
+2021-04-06 20:50:10,612 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-3
+2021-04-06 20:50:10,613 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-3
+2021-04-06 20:50:10,614 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-3
+2021-04-06 20:50:10,614 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from BlackBox_SPG30_Motor-2
+2021-04-06 20:50:10,615 INFO  ExportHelperExtension.cs: 1136 - Found 39 in BlackBox_SPG30_Motor-2
+2021-04-06 20:50:10,617 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in BlackBox_SPG30_Motor-2
+2021-04-06 20:50:10,618 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from BlackBox_SPG30_Motor-3
+2021-04-06 20:50:10,619 INFO  ExportHelperExtension.cs: 1136 - Found 39 in BlackBox_SPG30_Motor-3
+2021-04-06 20:50:10,620 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in BlackBox_SPG30_Motor-3
+2021-04-06 20:50:10,621 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 3560N130_ METAL MITER GEAR-1
+2021-04-06 20:50:10,622 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 3560N130_ METAL MITER GEAR-1
+2021-04-06 20:50:10,624 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 3560N130_ METAL MITER GEAR-1
+2021-04-06 20:50:10,624 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 2600N120_METAL MITER GEAR-2
+2021-04-06 20:50:10,626 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 2600N120_METAL MITER GEAR-2
+2021-04-06 20:50:10,627 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 2600N120_METAL MITER GEAR-2
+2021-04-06 20:50:10,628 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 3560N130_ METAL MITER GEAR-2
+2021-04-06 20:50:10,629 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 3560N130_ METAL MITER GEAR-2
+2021-04-06 20:50:10,630 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 3560N130_ METAL MITER GEAR-2
+2021-04-06 20:50:10,630 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 3560N130_ METAL MITER GEAR-3
+2021-04-06 20:50:10,631 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 3560N130_ METAL MITER GEAR-3
+2021-04-06 20:50:10,632 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 3560N130_ METAL MITER GEAR-3
+2021-04-06 20:50:10,633 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Hook-1
+2021-04-06 20:50:10,634 INFO  ExportHelperExtension.cs: 1136 - Found 26 in Hook-1
+2021-04-06 20:50:10,635 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in Hook-1
+2021-04-06 20:50:10,635 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Arm_Final_Planet
+2021-04-06 20:50:10,637 INFO  ExportHelperExtension.cs: 1136 - Found 235 in Arm_Final_Planet
+2021-04-06 20:50:10,639 INFO  ExportHelperExtension.cs: 1145 - Found 3 features of type [RefAxis] in Arm_Final_Planet
+2021-04-06 20:50:10,639 INFO  ExportHelperExtension.cs: 1148 - Proceeding through assembly components
+2021-04-06 20:50:10,640 INFO  ExportHelperExtension.cs: 1160 - 54 components to check
+2021-04-06 20:50:10,641 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Base_Plate-1
+2021-04-06 20:50:10,642 INFO  ExportHelperExtension.cs: 1136 - Found 33 in Base_Plate-1
+2021-04-06 20:50:10,643 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Base_Plate-1
+2021-04-06 20:50:10,644 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_BM-1
+2021-04-06 20:50:10,645 INFO  ExportHelperExtension.cs: 1136 - Found 39 in Support_Shaft_BM-1
+2021-04-06 20:50:10,645 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_BM-1
+2021-04-06 20:50:10,646 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_BM-2
+2021-04-06 20:50:10,647 INFO  ExportHelperExtension.cs: 1136 - Found 39 in Support_Shaft_BM-2
+2021-04-06 20:50:10,647 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_BM-2
+2021-04-06 20:50:10,648 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_BM-3
+2021-04-06 20:50:10,648 INFO  ExportHelperExtension.cs: 1136 - Found 39 in Support_Shaft_BM-3
+2021-04-06 20:50:10,649 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_BM-3
+2021-04-06 20:50:10,650 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_MT-3
+2021-04-06 20:50:10,650 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-3
+2021-04-06 20:50:10,651 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_MT-3
+2021-04-06 20:50:10,652 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_MT-4
+2021-04-06 20:50:10,652 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-4
+2021-04-06 20:50:10,653 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_MT-4
+2021-04-06 20:50:10,653 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Link_Basic-1
+2021-04-06 20:50:10,654 INFO  ExportHelperExtension.cs: 1136 - Found 43 in Link_Basic-1
+2021-04-06 20:50:10,655 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Link_Basic-1
+2021-04-06 20:50:10,655 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Shaft_Key_BM-2
+2021-04-06 20:50:10,656 INFO  ExportHelperExtension.cs: 1136 - Found 25 in Shaft_Key_BM-2
+2021-04-06 20:50:10,656 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Shaft_Key_BM-2
+2021-04-06 20:50:10,657 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Mid_Plate-1
+2021-04-06 20:50:10,658 INFO  ExportHelperExtension.cs: 1136 - Found 33 in Mid_Plate-1
+2021-04-06 20:50:10,659 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Mid_Plate-1
+2021-04-06 20:50:10,659 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Top_Plate_In-2
+2021-04-06 20:50:10,660 INFO  ExportHelperExtension.cs: 1136 - Found 31 in Top_Plate_In-2
+2021-04-06 20:50:10,660 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Top_Plate_In-2
+2021-04-06 20:50:10,661 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_MT-1
+2021-04-06 20:50:10,661 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-1
+2021-04-06 20:50:10,662 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_MT-1
+2021-04-06 20:50:10,663 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_MT-5
+2021-04-06 20:50:10,663 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-5
+2021-04-06 20:50:10,664 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_MT-5
+2021-04-06 20:50:10,665 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_MT-8
+2021-04-06 20:50:10,666 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-8
+2021-04-06 20:50:10,667 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_MT-8
+2021-04-06 20:50:10,667 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 5972K361_BALL BEARING-1
+2021-04-06 20:50:10,668 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 5972K361_BALL BEARING-1
+2021-04-06 20:50:10,669 INFO  ExportHelperExtension.cs: 1145 - Found 1 features of type [RefAxis] in 5972K361_BALL BEARING-1
+2021-04-06 20:50:10,669 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-2
+2021-04-06 20:50:10,670 INFO  ExportHelperExtension.cs: 1136 - Found 49 in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-2
+2021-04-06 20:50:10,671 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-2
+2021-04-06 20:50:10,671 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_BM-4
+2021-04-06 20:50:10,672 INFO  ExportHelperExtension.cs: 1136 - Found 39 in Support_Shaft_BM-4
+2021-04-06 20:50:10,673 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_BM-4
+2021-04-06 20:50:10,673 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-1
+2021-04-06 20:50:10,674 INFO  ExportHelperExtension.cs: 1136 - Found 49 in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-1
+2021-04-06 20:50:10,675 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-1
+2021-04-06 20:50:10,676 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Shaft_Key_BM-3
+2021-04-06 20:50:10,676 INFO  ExportHelperExtension.cs: 1136 - Found 25 in Shaft_Key_BM-3
+2021-04-06 20:50:10,697 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Shaft_Key_BM-3
+2021-04-06 20:50:10,698 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Keyed_Shaft_Bottom-1
+2021-04-06 20:50:10,713 INFO  ExportHelperExtension.cs: 1136 - Found 32 in Keyed_Shaft_Bottom-1
+2021-04-06 20:50:10,714 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Keyed_Shaft_Bottom-1
+2021-04-06 20:50:10,714 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_MT-2
+2021-04-06 20:50:10,715 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-2
+2021-04-06 20:50:10,716 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_MT-2
+2021-04-06 20:50:10,716 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Link_Basic-2
+2021-04-06 20:50:10,717 INFO  ExportHelperExtension.cs: 1136 - Found 43 in Link_Basic-2
+2021-04-06 20:50:10,717 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Link_Basic-2
+2021-04-06 20:50:10,718 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Top_Plate-1
+2021-04-06 20:50:10,718 INFO  ExportHelperExtension.cs: 1136 - Found 33 in Top_Plate-1
+2021-04-06 20:50:10,719 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Top_Plate-1
+2021-04-06 20:50:10,719 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-1
+2021-04-06 20:50:10,720 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-1
+2021-04-06 20:50:10,721 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-1
+2021-04-06 20:50:10,721 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Link_Bottom-1
+2021-04-06 20:50:10,722 INFO  ExportHelperExtension.cs: 1136 - Found 31 in Link_Bottom-1
+2021-04-06 20:50:10,723 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Link_Bottom-1
+2021-04-06 20:50:10,724 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_MT-7
+2021-04-06 20:50:10,724 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-7
+2021-04-06 20:50:10,725 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_MT-7
+2021-04-06 20:50:10,726 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-2
+2021-04-06 20:50:10,727 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-2
+2021-04-06 20:50:10,727 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-2
+2021-04-06 20:50:10,728 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Support_Shaft_MT-6
+2021-04-06 20:50:10,729 INFO  ExportHelperExtension.cs: 1136 - Found 35 in Support_Shaft_MT-6
+2021-04-06 20:50:10,730 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Support_Shaft_MT-6
+2021-04-06 20:50:10,731 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Mid_Plate_In-1
+2021-04-06 20:50:10,732 INFO  ExportHelperExtension.cs: 1136 - Found 31 in Mid_Plate_In-1
+2021-04-06 20:50:10,733 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Mid_Plate_In-1
+2021-04-06 20:50:10,734 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from BlackBox_SPG30_Bracket-3
+2021-04-06 20:50:10,735 INFO  ExportHelperExtension.cs: 1136 - Found 34 in BlackBox_SPG30_Bracket-3
+2021-04-06 20:50:10,736 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in BlackBox_SPG30_Bracket-3
+2021-04-06 20:50:10,737 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from BlackBox_SPG30_Motor-1
+2021-04-06 20:50:10,738 INFO  ExportHelperExtension.cs: 1136 - Found 39 in BlackBox_SPG30_Motor-1
+2021-04-06 20:50:10,739 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in BlackBox_SPG30_Motor-1
+2021-04-06 20:50:10,740 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-3
+2021-04-06 20:50:10,741 INFO  ExportHelperExtension.cs: 1136 - Found 49 in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-3
+2021-04-06 20:50:10,743 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-3
+2021-04-06 20:50:10,743 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-5
+2021-04-06 20:50:10,744 INFO  ExportHelperExtension.cs: 1136 - Found 49 in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-5
+2021-04-06 20:50:10,745 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-5
+2021-04-06 20:50:10,746 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Link_End_1-1
+2021-04-06 20:50:10,747 INFO  ExportHelperExtension.cs: 1136 - Found 34 in Link_End_1-1
+2021-04-06 20:50:10,748 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Link_End_1-1
+2021-04-06 20:50:10,749 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from BlackBox_SPG30_Bracket-1
+2021-04-06 20:50:10,749 INFO  ExportHelperExtension.cs: 1136 - Found 34 in BlackBox_SPG30_Bracket-1
+2021-04-06 20:50:10,750 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in BlackBox_SPG30_Bracket-1
+2021-04-06 20:50:10,751 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Keyed_Shaft_Bottom-3
+2021-04-06 20:50:10,752 INFO  ExportHelperExtension.cs: 1136 - Found 32 in Keyed_Shaft_Bottom-3
+2021-04-06 20:50:10,753 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Keyed_Shaft_Bottom-3
+2021-04-06 20:50:10,753 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-4
+2021-04-06 20:50:10,754 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-4
+2021-04-06 20:50:10,755 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-4
+2021-04-06 20:50:10,756 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 2600N120_METAL MITER GEAR-1
+2021-04-06 20:50:10,756 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 2600N120_METAL MITER GEAR-1
+2021-04-06 20:50:10,757 INFO  ExportHelperExtension.cs: 1145 - Found 1 features of type [RefAxis] in 2600N120_METAL MITER GEAR-1
+2021-04-06 20:50:10,758 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Link_Hook-1
+2021-04-06 20:50:10,759 INFO  ExportHelperExtension.cs: 1136 - Found 33 in Link_Hook-1
+2021-04-06 20:50:10,760 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Link_Hook-1
+2021-04-06 20:50:10,761 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 2600N120_METAL MITER GEAR-3
+2021-04-06 20:50:10,761 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 2600N120_METAL MITER GEAR-3
+2021-04-06 20:50:10,762 INFO  ExportHelperExtension.cs: 1145 - Found 1 features of type [RefAxis] in 2600N120_METAL MITER GEAR-3
+2021-04-06 20:50:10,762 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Shaft_Key_Link-2
+2021-04-06 20:50:10,763 INFO  ExportHelperExtension.cs: 1136 - Found 25 in Shaft_Key_Link-2
+2021-04-06 20:50:10,764 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Shaft_Key_Link-2
+2021-04-06 20:50:10,764 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from BlackBox_SPG30_Bracket-2
+2021-04-06 20:50:10,765 INFO  ExportHelperExtension.cs: 1136 - Found 34 in BlackBox_SPG30_Bracket-2
+2021-04-06 20:50:10,765 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in BlackBox_SPG30_Bracket-2
+2021-04-06 20:50:10,766 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Shaft_Key_BM-5
+2021-04-06 20:50:10,766 INFO  ExportHelperExtension.cs: 1136 - Found 25 in Shaft_Key_BM-5
+2021-04-06 20:50:10,767 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Shaft_Key_BM-5
+2021-04-06 20:50:10,767 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-4
+2021-04-06 20:50:10,768 INFO  ExportHelperExtension.cs: 1136 - Found 49 in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-4
+2021-04-06 20:50:10,768 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 3390N120_ CLAMPING TWO-PIECE SHAFT COLLAR WITH KEYWAY-4
+2021-04-06 20:50:10,769 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Link_End-1
+2021-04-06 20:50:10,769 INFO  ExportHelperExtension.cs: 1136 - Found 34 in Link_End-1
+2021-04-06 20:50:10,770 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Link_End-1
+2021-04-06 20:50:10,770 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Shaft_Key_BM-4
+2021-04-06 20:50:10,771 INFO  ExportHelperExtension.cs: 1136 - Found 25 in Shaft_Key_BM-4
+2021-04-06 20:50:10,771 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Shaft_Key_BM-4
+2021-04-06 20:50:10,771 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Keyed_Shaft_BM-1
+2021-04-06 20:50:10,772 INFO  ExportHelperExtension.cs: 1136 - Found 32 in Keyed_Shaft_BM-1
+2021-04-06 20:50:10,773 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Keyed_Shaft_BM-1
+2021-04-06 20:50:10,773 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-3
+2021-04-06 20:50:10,773 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-3
+2021-04-06 20:50:10,774 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 1434K340_LIGHT DTY TWO-BOLT FLANGE-MOUNTED ROLLER BRNG-3
+2021-04-06 20:50:10,774 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from BlackBox_SPG30_Motor-2
+2021-04-06 20:50:10,775 INFO  ExportHelperExtension.cs: 1136 - Found 39 in BlackBox_SPG30_Motor-2
+2021-04-06 20:50:10,776 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in BlackBox_SPG30_Motor-2
+2021-04-06 20:50:10,776 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from BlackBox_SPG30_Motor-3
+2021-04-06 20:50:10,777 INFO  ExportHelperExtension.cs: 1136 - Found 39 in BlackBox_SPG30_Motor-3
+2021-04-06 20:50:10,777 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in BlackBox_SPG30_Motor-3
+2021-04-06 20:50:10,777 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 3560N130_ METAL MITER GEAR-1
+2021-04-06 20:50:10,778 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 3560N130_ METAL MITER GEAR-1
+2021-04-06 20:50:10,778 INFO  ExportHelperExtension.cs: 1145 - Found 1 features of type [RefAxis] in 3560N130_ METAL MITER GEAR-1
+2021-04-06 20:50:10,779 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 2600N120_METAL MITER GEAR-2
+2021-04-06 20:50:10,779 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 2600N120_METAL MITER GEAR-2
+2021-04-06 20:50:10,780 INFO  ExportHelperExtension.cs: 1145 - Found 1 features of type [RefAxis] in 2600N120_METAL MITER GEAR-2
+2021-04-06 20:50:10,780 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 3560N130_ METAL MITER GEAR-2
+2021-04-06 20:50:10,781 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 3560N130_ METAL MITER GEAR-2
+2021-04-06 20:50:10,781 INFO  ExportHelperExtension.cs: 1145 - Found 1 features of type [RefAxis] in 3560N130_ METAL MITER GEAR-2
+2021-04-06 20:50:10,781 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 3560N130_ METAL MITER GEAR-3
+2021-04-06 20:50:10,782 INFO  ExportHelperExtension.cs: 1136 - Found 33 in 3560N130_ METAL MITER GEAR-3
+2021-04-06 20:50:10,782 INFO  ExportHelperExtension.cs: 1145 - Found 1 features of type [RefAxis] in 3560N130_ METAL MITER GEAR-3
+2021-04-06 20:50:10,783 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Hook-1
+2021-04-06 20:50:10,783 INFO  ExportHelperExtension.cs: 1136 - Found 26 in Hook-1
+2021-04-06 20:50:10,784 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Hook-1
+2021-04-06 20:50:10,886 INFO  ExportPropertyManager.cs: 1142 - AfterClose called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2021-04-06 20:51:56,424 INFO  AssemblyExportForm.cs: 253 - Completing URDF export
+2021-04-06 20:51:56,443 INFO  ConfigurationSerialization.cs: 276 - URDF Configuration found
+<Link z:Id="i1" xmlns="http://schemas.datacontract.org/2004/07/SW2URDF" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/"><Attributes><Attribute z:Id="i2"><AttributeType>name</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">base_link</Value></Attribute></Attributes><ChildElements><URDFElement z:Id="i3" i:type="Inertial"><Attributes/><ChildElements><URDFElement z:Id="i4" i:type="Origin"><Attributes><Attribute z:Id="i5"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i6"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i6"/><XYZAttribute z:Ref="i5"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i7" i:type="Mass"><Attributes><Attribute z:Id="i8"><AttributeType>value</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute></Attributes><ChildElements/><ElementName>mass</ElementName><required>false</required><ValueAttribute z:Ref="i8"/></URDFElement><URDFElement z:Id="i9" i:type="Inertia"><Attributes><Attribute z:Id="i10"><AttributeType>ixx</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i11"><AttributeType>ixy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i12"><AttributeType>ixz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i13"><AttributeType>iyy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i14"><AttributeType>iyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i15"><AttributeType>izz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute></Attributes><ChildElements/><ElementName>inertia</ElementName><required>false</required><IxxAttribute z:Ref="i10"/><IxyAttribute z:Ref="i11"/><IxzAttribute z:Ref="i12"/><IyyAttribute z:Ref="i13"/><IyzAttribute z:Ref="i14"/><IzzAttribute z:Ref="i15"/></URDFElement></ChildElements><ElementName>inertial</ElementName><required>false</required><Inertia z:Ref="i9"/><Mass z:Ref="i7"/><Origin z:Ref="i4"/></URDFElement><URDFElement z:Id="i16" i:type="Visual"><Attributes/><ChildElements><URDFElement z:Id="i17" i:type="Origin"><Attributes><Attribute z:Id="i18"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i19"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i19"/><XYZAttribute z:Ref="i18"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i20" i:type="Geometry"><Attributes/><ChildElements><URDFElement z:Id="i21" i:type="Mesh"><Attributes><Attribute z:Id="i22"><AttributeType>filename</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>mesh</ElementName><required>false</required><FilenameAttribute z:Ref="i22"/></URDFElement></ChildElements><ElementName>geometry</ElementName><required>true</required><Mesh z:Ref="i21"/></URDFElement><URDFElement z:Id="i23" i:type="Material"><Attributes><Attribute z:Id="i24"><AttributeType>name</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/></Attribute></Attributes><ChildElements><URDFElement z:Id="i25" i:type="Color"><Attributes><Attribute z:Id="i26"><AttributeType>rgba</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>1</a:double><a:double>1</a:double><a:double>1</a:double><a:double>1</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>color</ElementName><required>false</required><RGBAAttribute z:Ref="i26"/></URDFElement><URDFElement z:Id="i27" i:type="Texture"><Attributes><Attribute z:Id="i28"><AttributeType>filename</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>texture</ElementName><required>false</required><FilenameAttribute z:Ref="i28"/><wFilename/></URDFElement></ChildElements><ElementName>material</ElementName><required>false</required><Color z:Ref="i25"/><NameAttribute z:Ref="i24"/><Texture z:Ref="i27"/></URDFElement></ChildElements><ElementName>visual</ElementName><required>false</required><Geometry z:Ref="i20"/><Material z:Ref="i23"/><Origin z:Ref="i17"/></URDFElement><URDFElement z:Id="i29" i:type="Collision"><Attributes/><ChildElements><URDFElement z:Id="i30" i:type="Origin"><Attributes><Attribute z:Id="i31"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i32"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i32"/><XYZAttribute z:Ref="i31"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i33" i:type="Geometry"><Attributes/><ChildElements><URDFElement z:Id="i34" i:type="Mesh"><Attributes><Attribute z:Id="i35"><AttributeType>filename</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>mesh</ElementName><required>false</required><FilenameAttribute z:Ref="i35"/></URDFElement></ChildElements><ElementName>geometry</ElementName><required>true</required><Mesh z:Ref="i34"/></URDFElement></ChildElements><ElementName>collision</ElementName><required>false</required><Geometry z:Ref="i33"/><Origin z:Ref="i30"/></URDFElement><URDFElement z:Id="i36" i:type="Joint"><Attributes><Attribute z:Id="i37"><AttributeType>name</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/></Attribute><Attribute z:Id="i38"><AttributeType>type</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/></Attribute></Attributes><ChildElements><URDFElement z:Id="i39" i:type="Origin"><Attributes><Attribute z:Id="i40"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i41"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i41"/><XYZAttribute z:Ref="i40"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i42" i:type="ParentLink"><Attributes><Attribute z:Id="i43"><AttributeType>link</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/></Attribute></Attributes><ChildElements/><ElementName>parent</ElementName><required>true</required><NameAttribute z:Ref="i43"/></URDFElement><URDFElement z:Id="i44" i:type="ChildLink"><Attributes><Attribute z:Id="i45"><AttributeType>link</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/></Attribute></Attributes><ChildElements/><ElementName>child</ElementName><required>true</required><NameAttribute z:Ref="i45"/></URDFElement><URDFElement z:Id="i46" i:type="Axis"><Attributes><Attribute z:Id="i47"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>axis</ElementName><required>false</required><XYZAttribute z:Ref="i47"/></URDFElement><URDFElement z:Id="i48" i:type="Limit"><Attributes><Attribute z:Id="i49"><AttributeType>lower</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i50"><AttributeType>upper</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i51"><AttributeType>effort</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i52"><AttributeType>velocity</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>limit</ElementName><required>false</required><EffortAttribute z:Ref="i51"/><LowerAttribute z:Ref="i49"/><UpperAttribute z:Ref="i50"/><VelocityAttribute z:Ref="i52"/></URDFElement><URDFElement z:Id="i53" i:type="Calibration"><Attributes><Attribute z:Id="i54"><AttributeType>rising</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i55"><AttributeType>falling</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>calibration</ElementName><required>false</required><FallingAttribute z:Ref="i55"/><RisingAttribute z:Ref="i54"/></URDFElement><URDFElement z:Id="i56" i:type="Dynamics"><Attributes><Attribute z:Id="i57"><AttributeType>damping</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i58"><AttributeType>friction</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>dynamics</ElementName><required>false</required><DampingAttribute z:Ref="i57"/><FrictionAttribute z:Ref="i58"/></URDFElement><URDFElement z:Id="i59" i:type="SafetyController"><Attributes><Attribute z:Id="i60"><AttributeType>soft_upper</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i61"><AttributeType>soft_lower</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i62"><AttributeType>k_position</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i63"><AttributeType>k_velocity</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>safety_controller</ElementName><required>false</required><KPositionAttribute z:Ref="i62"/><KVelocityAttribute z:Ref="i63"/><SoftLowerAttribute z:Ref="i61"/><SoftUpperAttribute z:Ref="i60"/></URDFElement><URDFElement z:Id="i64" i:type="Mimic"><Attributes><Attribute z:Id="i65"><AttributeType>joint</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i66"><AttributeType>multiplier</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i67"><AttributeType>offset</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>mimic</ElementName><required>false</required><JointNameAttribute z:Ref="i65"/><MultiplierAttribute z:Ref="i66"/><OffsetAttribute z:Ref="i67"/></URDFElement></ChildElements><ElementName>joint</ElementName><required>false</required><Axis z:Ref="i46"/><AxisName/><Calibration z:Ref="i53"/><Child z:Ref="i44"/><CoordinateSystemName>base_frame</CoordinateSystemName><Dynamics z:Ref="i56"/><Limit z:Ref="i48"/><Mimic z:Ref="i64"/><NameAttribute z:Ref="i37"/><Origin z:Ref="i39"/><Parent z:Ref="i42"/><Safety z:Ref="i59"/><TypeAttribute z:Ref="i38"/></URDFElement></ChildElements><ElementName>link</ElementName><required>true</required><Children><Link z:Id="i68"><Attributes><Attribute z:Id="i69"><AttributeType>name</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">link_1</Value></Attribute></Attributes><ChildElements><URDFElement z:Id="i70" i:type="Inertial"><Attributes/><ChildElements><URDFElement z:Id="i71" i:type="Origin"><Attributes><Attribute z:Id="i72"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i73"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i73"/><XYZAttribute z:Ref="i72"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i74" i:type="Mass"><Attributes><Attribute z:Id="i75"><AttributeType>value</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute></Attributes><ChildElements/><ElementName>mass</ElementName><required>false</required><ValueAttribute z:Ref="i75"/></URDFElement><URDFElement z:Id="i76" i:type="Inertia"><Attributes><Attribute z:Id="i77"><AttributeType>ixx</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i78"><AttributeType>ixy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i79"><AttributeType>ixz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i80"><AttributeType>iyy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i81"><AttributeType>iyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i82"><AttributeType>izz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute></Attributes><ChildElements/><ElementName>inertia</ElementName><required>false</required><IxxAttribute z:Ref="i77"/><IxyAttribute z:Ref="i78"/><IxzAttribute z:Ref="i79"/><IyyAttribute z:Ref="i80"/><IyzAttribute z:Ref="i81"/><IzzAttribute z:Ref="i82"/></URDFElement></ChildElements><ElementName>inertial</ElementName><required>false</required><Inertia z:Ref="i76"/><Mass z:Ref="i74"/><Origin z:Ref="i71"/></URDFElement><URDFElement z:Id="i83" i:type="Visual"><Attributes/><ChildElements><URDFElement z:Id="i84" i:type="Origin"><Attributes><Attribute z:Id="i85"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i86"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i86"/><XYZAttribute z:Ref="i85"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i87" i:type="Geometry"><Attributes/><ChildElements><URDFElement z:Id="i88" i:type="Mesh"><Attributes><Attribute z:Id="i89"><AttributeType>filename</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>mesh</ElementName><required>false</required><FilenameAttribute z:Ref="i89"/></URDFElement></ChildElements><ElementName>geometry</ElementName><required>true</required><Mesh z:Ref="i88"/></URDFElement><URDFElement z:Id="i90" i:type="Material"><Attributes><Attribute z:Id="i91"><AttributeType>name</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/></Attribute></Attributes><ChildElements><URDFElement z:Id="i92" i:type="Color"><Attributes><Attribute z:Id="i93"><AttributeType>rgba</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>1</a:double><a:double>1</a:double><a:double>1</a:double><a:double>1</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>color</ElementName><required>false</required><RGBAAttribute z:Ref="i93"/></URDFElement><URDFElement z:Id="i94" i:type="Texture"><Attributes><Attribute z:Id="i95"><AttributeType>filename</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>texture</ElementName><required>false</required><FilenameAttribute z:Ref="i95"/><wFilename/></URDFElement></ChildElements><ElementName>material</ElementName><required>false</required><Color z:Ref="i92"/><NameAttribute z:Ref="i91"/><Texture z:Ref="i94"/></URDFElement></ChildElements><ElementName>visual</ElementName><required>false</required><Geometry z:Ref="i87"/><Material z:Ref="i90"/><Origin z:Ref="i84"/></URDFElement><URDFElement z:Id="i96" i:type="Collision"><Attributes/><ChildElements><URDFElement z:Id="i97" i:type="Origin"><Attributes><Attribute z:Id="i98"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i99"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i99"/><XYZAttribute z:Ref="i98"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i100" i:type="Geometry"><Attributes/><ChildElements><URDFElement z:Id="i101" i:type="Mesh"><Attributes><Attribute z:Id="i102"><AttributeType>filename</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>mesh</ElementName><required>false</required><FilenameAttribute z:Ref="i102"/></URDFElement></ChildElements><ElementName>geometry</ElementName><required>true</required><Mesh z:Ref="i101"/></URDFElement></ChildElements><ElementName>collision</ElementName><required>false</required><Geometry z:Ref="i100"/><Origin z:Ref="i97"/></URDFElement><URDFElement z:Id="i103" i:type="Joint"><Attributes><Attribute z:Id="i104"><AttributeType>name</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">joint_1</Value></Attribute><Attribute z:Id="i105"><AttributeType>type</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">revolute</Value></Attribute></Attributes><ChildElements><URDFElement z:Id="i106" i:type="Origin"><Attributes><Attribute z:Id="i107"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i108"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i108"/><XYZAttribute z:Ref="i107"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i109" i:type="ParentLink"><Attributes><Attribute z:Id="i110"><AttributeType>link</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/></Attribute></Attributes><ChildElements/><ElementName>parent</ElementName><required>true</required><NameAttribute z:Ref="i110"/></URDFElement><URDFElement z:Id="i111" i:type="ChildLink"><Attributes><Attribute z:Id="i112"><AttributeType>link</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/></Attribute></Attributes><ChildElements/><ElementName>child</ElementName><required>true</required><NameAttribute z:Ref="i112"/></URDFElement><URDFElement z:Id="i113" i:type="Axis"><Attributes><Attribute z:Id="i114"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>axis</ElementName><required>false</required><XYZAttribute z:Ref="i114"/></URDFElement><URDFElement z:Id="i115" i:type="Limit"><Attributes><Attribute z:Id="i116"><AttributeType>lower</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i117"><AttributeType>upper</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i118"><AttributeType>effort</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i119"><AttributeType>velocity</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>limit</ElementName><required>false</required><EffortAttribute z:Ref="i118"/><LowerAttribute z:Ref="i116"/><UpperAttribute z:Ref="i117"/><VelocityAttribute z:Ref="i119"/></URDFElement><URDFElement z:Id="i120" i:type="Calibration"><Attributes><Attribute z:Id="i121"><AttributeType>rising</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i122"><AttributeType>falling</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>calibration</ElementName><required>false</required><FallingAttribute z:Ref="i122"/><RisingAttribute z:Ref="i121"/></URDFElement><URDFElement z:Id="i123" i:type="Dynamics"><Attributes><Attribute z:Id="i124"><AttributeType>damping</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i125"><AttributeType>friction</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>dynamics</ElementName><required>false</required><DampingAttribute z:Ref="i124"/><FrictionAttribute z:Ref="i125"/></URDFElement><URDFElement z:Id="i126" i:type="SafetyController"><Attributes><Attribute z:Id="i127"><AttributeType>soft_upper</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i128"><AttributeType>soft_lower</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i129"><AttributeType>k_position</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i130"><AttributeType>k_velocity</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>safety_controller</ElementName><required>false</required><KPositionAttribute z:Ref="i129"/><KVelocityAttribute z:Ref="i130"/><SoftLowerAttribute z:Ref="i128"/><SoftUpperAttribute z:Ref="i127"/></URDFElement><URDFElement z:Id="i131" i:type="Mimic"><Attributes><Attribute z:Id="i132"><AttributeType>joint</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i133"><AttributeType>multiplier</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i134"><AttributeType>offset</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>mimic</ElementName><required>false</required><JointNameAttribute z:Ref="i132"/><MultiplierAttribute z:Ref="i133"/><OffsetAttribute z:Ref="i134"/></URDFElement></ChildElements><ElementName>joint</ElementName><required>false</required><Axis z:Ref="i113"/><AxisName>joint1_axis</AxisName><Calibration z:Ref="i120"/><Child z:Ref="i111"/><CoordinateSystemName>joint1_frame</CoordinateSystemName><Dynamics z:Ref="i123"/><Limit z:Ref="i115"/><Mimic z:Ref="i131"/><NameAttribute z:Ref="i104"/><Origin z:Ref="i106"/><Parent z:Ref="i109"/><Safety z:Ref="i126"/><TypeAttribute z:Ref="i105"/></URDFElement></ChildElements><ElementName>link</ElementName><required>true</required><Children><Link z:Id="i135"><Attributes><Attribute z:Id="i136"><AttributeType>name</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">link_2</Value></Attribute></Attributes><ChildElements><URDFElement z:Id="i137" i:type="Inertial"><Attributes/><ChildElements><URDFElement z:Id="i138" i:type="Origin"><Attributes><Attribute z:Id="i139"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i140"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i140"/><XYZAttribute z:Ref="i139"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i141" i:type="Mass"><Attributes><Attribute z:Id="i142"><AttributeType>value</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute></Attributes><ChildElements/><ElementName>mass</ElementName><required>false</required><ValueAttribute z:Ref="i142"/></URDFElement><URDFElement z:Id="i143" i:type="Inertia"><Attributes><Attribute z:Id="i144"><AttributeType>ixx</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i145"><AttributeType>ixy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i146"><AttributeType>ixz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i147"><AttributeType>iyy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i148"><AttributeType>iyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i149"><AttributeType>izz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute></Attributes><ChildElements/><ElementName>inertia</ElementName><required>false</required><IxxAttribute z:Ref="i144"/><IxyAttribute z:Ref="i145"/><IxzAttribute z:Ref="i146"/><IyyAttribute z:Ref="i147"/><IyzAttribute z:Ref="i148"/><IzzAttribute z:Ref="i149"/></URDFElement></ChildElements><ElementName>inertial</ElementName><required>false</required><Inertia z:Ref="i143"/><Mass z:Ref="i141"/><Origin z:Ref="i138"/></URDFElement><URDFElement z:Id="i150" i:type="Visual"><Attributes/><ChildElements><URDFElement z:Id="i151" i:type="Origin"><Attributes><Attribute z:Id="i152"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i153"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i153"/><XYZAttribute z:Ref="i152"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i154" i:type="Geometry"><Attributes/><ChildElements><URDFElement z:Id="i155" i:type="Mesh"><Attributes><Attribute z:Id="i156"><AttributeType>filename</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>mesh</ElementName><required>false</required><FilenameAttribute z:Ref="i156"/></URDFElement></ChildElements><ElementName>geometry</ElementName><required>true</required><Mesh z:Ref="i155"/></URDFElement><URDFElement z:Id="i157" i:type="Material"><Attributes><Attribute z:Id="i158"><AttributeType>name</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/></Attribute></Attributes><ChildElements><URDFElement z:Id="i159" i:type="Color"><Attributes><Attribute z:Id="i160"><AttributeType>rgba</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>1</a:double><a:double>1</a:double><a:double>1</a:double><a:double>1</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>color</ElementName><required>false</required><RGBAAttribute z:Ref="i160"/></URDFElement><URDFElement z:Id="i161" i:type="Texture"><Attributes><Attribute z:Id="i162"><AttributeType>filename</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>texture</ElementName><required>false</required><FilenameAttribute z:Ref="i162"/><wFilename/></URDFElement></ChildElements><ElementName>material</ElementName><required>false</required><Color z:Ref="i159"/><NameAttribute z:Ref="i158"/><Texture z:Ref="i161"/></URDFElement></ChildElements><ElementName>visual</ElementName><required>false</required><Geometry z:Ref="i154"/><Material z:Ref="i157"/><Origin z:Ref="i151"/></URDFElement><URDFElement z:Id="i163" i:type="Collision"><Attributes/><ChildElements><URDFElement z:Id="i164" i:type="Origin"><Attributes><Attribute z:Id="i165"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i166"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i166"/><XYZAttribute z:Ref="i165"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i167" i:type="Geometry"><Attributes/><ChildElements><URDFElement z:Id="i168" i:type="Mesh"><Attributes><Attribute z:Id="i169"><AttributeType>filename</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>mesh</ElementName><required>false</required><FilenameAttribute z:Ref="i169"/></URDFElement></ChildElements><ElementName>geometry</ElementName><required>true</required><Mesh z:Ref="i168"/></URDFElement></ChildElements><ElementName>collision</ElementName><required>false</required><Geometry z:Ref="i167"/><Origin z:Ref="i164"/></URDFElement><URDFElement z:Id="i170" i:type="Joint"><Attributes><Attribute z:Id="i171"><AttributeType>name</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">joint_2</Value></Attribute><Attribute z:Id="i172"><AttributeType>type</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">revolute</Value></Attribute></Attributes><ChildElements><URDFElement z:Id="i173" i:type="Origin"><Attributes><Attribute z:Id="i174"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i175"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i175"/><XYZAttribute z:Ref="i174"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i176" i:type="ParentLink"><Attributes><Attribute z:Id="i177"><AttributeType>link</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/></Attribute></Attributes><ChildElements/><ElementName>parent</ElementName><required>true</required><NameAttribute z:Ref="i177"/></URDFElement><URDFElement z:Id="i178" i:type="ChildLink"><Attributes><Attribute z:Id="i179"><AttributeType>link</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/></Attribute></Attributes><ChildElements/><ElementName>child</ElementName><required>true</required><NameAttribute z:Ref="i179"/></URDFElement><URDFElement z:Id="i180" i:type="Axis"><Attributes><Attribute z:Id="i181"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>axis</ElementName><required>false</required><XYZAttribute z:Ref="i181"/></URDFElement><URDFElement z:Id="i182" i:type="Limit"><Attributes><Attribute z:Id="i183"><AttributeType>lower</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i184"><AttributeType>upper</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i185"><AttributeType>effort</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i186"><AttributeType>velocity</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>limit</ElementName><required>false</required><EffortAttribute z:Ref="i185"/><LowerAttribute z:Ref="i183"/><UpperAttribute z:Ref="i184"/><VelocityAttribute z:Ref="i186"/></URDFElement><URDFElement z:Id="i187" i:type="Calibration"><Attributes><Attribute z:Id="i188"><AttributeType>rising</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i189"><AttributeType>falling</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>calibration</ElementName><required>false</required><FallingAttribute z:Ref="i189"/><RisingAttribute z:Ref="i188"/></URDFElement><URDFElement z:Id="i190" i:type="Dynamics"><Attributes><Attribute z:Id="i191"><AttributeType>damping</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i192"><AttributeType>friction</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>dynamics</ElementName><required>false</required><DampingAttribute z:Ref="i191"/><FrictionAttribute z:Ref="i192"/></URDFElement><URDFElement z:Id="i193" i:type="SafetyController"><Attributes><Attribute z:Id="i194"><AttributeType>soft_upper</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i195"><AttributeType>soft_lower</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i196"><AttributeType>k_position</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i197"><AttributeType>k_velocity</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>safety_controller</ElementName><required>false</required><KPositionAttribute z:Ref="i196"/><KVelocityAttribute z:Ref="i197"/><SoftLowerAttribute z:Ref="i195"/><SoftUpperAttribute z:Ref="i194"/></URDFElement><URDFElement z:Id="i198" i:type="Mimic"><Attributes><Attribute z:Id="i199"><AttributeType>joint</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i200"><AttributeType>multiplier</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i201"><AttributeType>offset</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>mimic</ElementName><required>false</required><JointNameAttribute z:Ref="i199"/><MultiplierAttribute z:Ref="i200"/><OffsetAttribute z:Ref="i201"/></URDFElement></ChildElements><ElementName>joint</ElementName><required>false</required><Axis z:Ref="i180"/><AxisName>joint2_axis</AxisName><Calibration z:Ref="i187"/><Child z:Ref="i178"/><CoordinateSystemName>ee_frame</CoordinateSystemName><Dynamics z:Ref="i190"/><Limit z:Ref="i182"/><Mimic z:Ref="i198"/><NameAttribute z:Ref="i171"/><Origin z:Ref="i173"/><Parent z:Ref="i176"/><Safety z:Ref="i193"/><TypeAttribute z:Ref="i172"/></URDFElement></ChildElements><ElementName>link</ElementName><required>true</required><Children><Link z:Id="i202"><Attributes><Attribute z:Id="i203"><AttributeType>name</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">link_3</Value></Attribute></Attributes><ChildElements><URDFElement z:Id="i204" i:type="Inertial"><Attributes/><ChildElements><URDFElement z:Id="i205" i:type="Origin"><Attributes><Attribute z:Id="i206"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i207"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i207"/><XYZAttribute z:Ref="i206"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i208" i:type="Mass"><Attributes><Attribute z:Id="i209"><AttributeType>value</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute></Attributes><ChildElements/><ElementName>mass</ElementName><required>false</required><ValueAttribute z:Ref="i209"/></URDFElement><URDFElement z:Id="i210" i:type="Inertia"><Attributes><Attribute z:Id="i211"><AttributeType>ixx</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i212"><AttributeType>ixy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i213"><AttributeType>ixz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i214"><AttributeType>iyy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i215"><AttributeType>iyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i216"><AttributeType>izz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute></Attributes><ChildElements/><ElementName>inertia</ElementName><required>false</required><IxxAttribute z:Ref="i211"/><IxyAttribute z:Ref="i212"/><IxzAttribute z:Ref="i213"/><IyyAttribute z:Ref="i214"/><IyzAttribute z:Ref="i215"/><IzzAttribute z:Ref="i216"/></URDFElement></ChildElements><ElementName>inertial</ElementName><required>false</required><Inertia z:Ref="i210"/><Mass z:Ref="i208"/><Origin z:Ref="i205"/></URDFElement><URDFElement z:Id="i217" i:type="Visual"><Attributes/><ChildElements><URDFElement z:Id="i218" i:type="Origin"><Attributes><Attribute z:Id="i219"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i220"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i220"/><XYZAttribute z:Ref="i219"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i221" i:type="Geometry"><Attributes/><ChildElements><URDFElement z:Id="i222" i:type="Mesh"><Attributes><Attribute z:Id="i223"><AttributeType>filename</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>mesh</ElementName><required>false</required><FilenameAttribute z:Ref="i223"/></URDFElement></ChildElements><ElementName>geometry</ElementName><required>true</required><Mesh z:Ref="i222"/></URDFElement><URDFElement z:Id="i224" i:type="Material"><Attributes><Attribute z:Id="i225"><AttributeType>name</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/></Attribute></Attributes><ChildElements><URDFElement z:Id="i226" i:type="Color"><Attributes><Attribute z:Id="i227"><AttributeType>rgba</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>1</a:double><a:double>1</a:double><a:double>1</a:double><a:double>1</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>color</ElementName><required>false</required><RGBAAttribute z:Ref="i227"/></URDFElement><URDFElement z:Id="i228" i:type="Texture"><Attributes><Attribute z:Id="i229"><AttributeType>filename</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>texture</ElementName><required>false</required><FilenameAttribute z:Ref="i229"/><wFilename/></URDFElement></ChildElements><ElementName>material</ElementName><required>false</required><Color z:Ref="i226"/><NameAttribute z:Ref="i225"/><Texture z:Ref="i228"/></URDFElement></ChildElements><ElementName>visual</ElementName><required>false</required><Geometry z:Ref="i221"/><Material z:Ref="i224"/><Origin z:Ref="i218"/></URDFElement><URDFElement z:Id="i230" i:type="Collision"><Attributes/><ChildElements><URDFElement z:Id="i231" i:type="Origin"><Attributes><Attribute z:Id="i232"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i233"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i233"/><XYZAttribute z:Ref="i232"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i234" i:type="Geometry"><Attributes/><ChildElements><URDFElement z:Id="i235" i:type="Mesh"><Attributes><Attribute z:Id="i236"><AttributeType>filename</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>mesh</ElementName><required>false</required><FilenameAttribute z:Ref="i236"/></URDFElement></ChildElements><ElementName>geometry</ElementName><required>true</required><Mesh z:Ref="i235"/></URDFElement></ChildElements><ElementName>collision</ElementName><required>false</required><Geometry z:Ref="i234"/><Origin z:Ref="i231"/></URDFElement><URDFElement z:Id="i237" i:type="Joint"><Attributes><Attribute z:Id="i238"><AttributeType>name</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">joint_3</Value></Attribute><Attribute z:Id="i239"><AttributeType>type</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">revolute</Value></Attribute></Attributes><ChildElements><URDFElement z:Id="i240" i:type="Origin"><Attributes><Attribute z:Id="i241"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i242"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i242"/><XYZAttribute z:Ref="i241"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i243" i:type="ParentLink"><Attributes><Attribute z:Id="i244"><AttributeType>link</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/></Attribute></Attributes><ChildElements/><ElementName>parent</ElementName><required>true</required><NameAttribute z:Ref="i244"/></URDFElement><URDFElement z:Id="i245" i:type="ChildLink"><Attributes><Attribute z:Id="i246"><AttributeType>link</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/></Attribute></Attributes><ChildElements/><ElementName>child</ElementName><required>true</required><NameAttribute z:Ref="i246"/></URDFElement><URDFElement z:Id="i247" i:type="Axis"><Attributes><Attribute z:Id="i248"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>axis</ElementName><required>false</required><XYZAttribute z:Ref="i248"/></URDFElement><URDFElement z:Id="i249" i:type="Limit"><Attributes><Attribute z:Id="i250"><AttributeType>lower</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i251"><AttributeType>upper</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i252"><AttributeType>effort</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i253"><AttributeType>velocity</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>limit</ElementName><required>false</required><EffortAttribute z:Ref="i252"/><LowerAttribute z:Ref="i250"/><UpperAttribute z:Ref="i251"/><VelocityAttribute z:Ref="i253"/></URDFElement><URDFElement z:Id="i254" i:type="Calibration"><Attributes><Attribute z:Id="i255"><AttributeType>rising</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i256"><AttributeType>falling</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>calibration</ElementName><required>false</required><FallingAttribute z:Ref="i256"/><RisingAttribute z:Ref="i255"/></URDFElement><URDFElement z:Id="i257" i:type="Dynamics"><Attributes><Attribute z:Id="i258"><AttributeType>damping</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i259"><AttributeType>friction</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>dynamics</ElementName><required>false</required><DampingAttribute z:Ref="i258"/><FrictionAttribute z:Ref="i259"/></URDFElement><URDFElement z:Id="i260" i:type="SafetyController"><Attributes><Attribute z:Id="i261"><AttributeType>soft_upper</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i262"><AttributeType>soft_lower</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i263"><AttributeType>k_position</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i264"><AttributeType>k_velocity</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>safety_controller</ElementName><required>false</required><KPositionAttribute z:Ref="i263"/><KVelocityAttribute z:Ref="i264"/><SoftLowerAttribute z:Ref="i262"/><SoftUpperAttribute z:Ref="i261"/></URDFElement><URDFElement z:Id="i265" i:type="Mimic"><Attributes><Attribute z:Id="i266"><AttributeType>joint</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i267"><AttributeType>multiplier</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i268"><AttributeType>offset</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>mimic</ElementName><required>false</required><JointNameAttribute z:Ref="i266"/><MultiplierAttribute z:Ref="i267"/><OffsetAttribute z:Ref="i268"/></URDFElement></ChildElements><ElementName>joint</ElementName><required>false</required><Axis z:Ref="i247"/><AxisName>joint3_axis</AxisName><Calibration z:Ref="i254"/><Child z:Ref="i245"/><CoordinateSystemName>joint3_frame</CoordinateSystemName><Dynamics z:Ref="i257"/><Limit z:Ref="i249"/><Mimic z:Ref="i265"/><NameAttribute z:Ref="i238"/><Origin z:Ref="i240"/><Parent z:Ref="i243"/><Safety z:Ref="i260"/><TypeAttribute z:Ref="i239"/></URDFElement></ChildElements><ElementName>link</ElementName><required>true</required><Children/><Collision z:Ref="i230"/><Inertial z:Ref="i204"/><Joint z:Ref="i237"/><NameAttribute z:Ref="i203"/><Parent z:Ref="i135"/><STLQualityFine>false</STLQualityFine><SWComponentPIDs xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:base64Binary>yDIAAAUAAAD//v8XSABvAG8AawAtADEAQABBAHIAbQBfAEYAaQBuAGEAbABfAFAAbABhAG4AZQB0AAQAAAAQAAAAAQAAAAEAAAA2AQAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8sMgA2ADAAMABOADEAMgAwAF8ATQBFAFQAQQBMACAATQBJAFQARQBSACAARwBFAEEAUgAtADIAQABBAHIAbQBfAEYAaQBuAGEAbABfAFAAbABhAG4AZQB0AAQAAAAQAAAAAQAAAAEAAAAWAQAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8bTABpAG4AawBfAEUAbgBkAC0AMQBAAEEAcgBtAF8ARgBpAG4AYQBsAF8AUABsAGEAbgBlAHQABAAAABAAAAABAAAAAQAAAAIBAAA=</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8cTABpAG4AawBfAEgAbwBvAGsALQAxAEAAQQByAG0AXwBGAGkAbgBhAGwAXwBQAGwAYQBuAGUAdAAEAAAAEAAAAAEAAAABAAAABgEAAA==</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8dTABpAG4AawBfAEUAbgBkAF8AMQAtADEAQABBAHIAbQBfAEYAaQBuAGEAbABfAFAAbABhAG4AZQB0AAQAAAAQAAAAAQAAAAEAAADkAAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8lSwBlAHkAZQBkAF8AUwBoAGEAZgB0AF8AQgBvAHQAdABvAG0ALQAzAEAAQQByAG0AXwBGAGkAbgBhAGwAXwBQAGwAYQBuAGUAdAAEAAAAEAAAAAEAAAABAAAA5QAAAA==</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8fUwBoAGEAZgB0AF8ASwBlAHkAXwBCAE0ALQA0AEAAQQByAG0AXwBGAGkAbgBhAGwAXwBQAGwAYQBuAGUAdAAEAAAAEAAAAAEAAAABAAAA5wAAAA==</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8fUwBoAGEAZgB0AF8ASwBlAHkAXwBCAE0ALQA1AEAAQQByAG0AXwBGAGkAbgBhAGwAXwBQAGwAYQBuAGUAdAAEAAAAEAAAAAEAAAABAAAA6AAAAA==</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v9IMwAzADkAMABOADEAMgAwAF8AIABDAEwAQQBNAFAASQBOAEcAIABUAFcATwAtAFAASQBFAEMARQAgAFMASABBAEYAVAAgAEMATwBMAEwAQQBSACAAVwBJAFQASAAgAEsARQBZAFcAQQBZAC0ANABAAEEAcgBtAF8ARgBpAG4AYQBsAF8AUABsAGEAbgBlAHQABAAAABAAAAABAAAAAQAAAOoAAAA=</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v9IMwAzADkAMABOADEAMgAwAF8AIABDAEwAQQBNAFAASQBOAEcAIABUAFcATwAtAFAASQBFAEMARQAgAFMASABBAEYAVAAgAEMATwBMAEwAQQBSACAAVwBJAFQASAAgAEsARQBZAFcAQQBZAC0ANQBAAEEAcgBtAF8ARgBpAG4AYQBsAF8AUABsAGEAbgBlAHQABAAAABAAAAABAAAAAQAAAOsAAAA=</a:base64Binary></SWComponentPIDs><SWMainComponentPID i:nil="true"/><Visual z:Ref="i217"/><isFixedFrame>false</isFixedFrame><isIncomplete>false</isIncomplete></Link></Children><Collision z:Ref="i163"/><Inertial z:Ref="i137"/><Joint z:Ref="i170"/><NameAttribute z:Ref="i136"/><Parent z:Ref="i68"/><STLQualityFine>false</STLQualityFine><SWComponentPIDs xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:base64Binary>yDIAAAUAAAD//v9JMQA0ADMANABLADMANAAwAF8ATABJAEcASABUACAARABUAFkAIABUAFcATwAtAEIATwBMAFQAIABGAEwAQQBOAEcARQAtAE0ATwBVAE4AVABFAEQAIABSAE8ATABMAEUAUgAgAEIAUgBOAEcALQAxAEAAQQByAG0AXwBGAGkAbgBhAGwAXwBQAGwAYQBuAGUAdAAEAAAAEAAAAAEAAAABAAAAcgAAAA==</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v9JMQA0ADMANABLADMANAAwAF8ATABJAEcASABUACAARABUAFkAIABUAFcATwAtAEIATwBMAFQAIABGAEwAQQBOAEcARQAtAE0ATwBVAE4AVABFAEQAIABSAE8ATABMAEUAUgAgAEIAUgBOAEcALQAyAEAAQQByAG0AXwBGAGkAbgBhAGwAXwBQAGwAYQBuAGUAdAAEAAAAEAAAAAEAAAABAAAAcwAAAA==</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8dTABpAG4AawBfAEIAYQBzAGkAYwAtADEAQABBAHIAbQBfAEYAaQBuAGEAbABfAFAAbABhAG4AZQB0AAQAAAAQAAAAAQAAAAEAAAB1AAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8lSwBlAHkAZQBkAF8AUwBoAGEAZgB0AF8AQgBvAHQAdABvAG0ALQAxAEAAQQByAG0AXwBGAGkAbgBhAGwAXwBQAGwAYQBuAGUAdAAEAAAAEAAAAAEAAAABAAAAhwAAAA==</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v9IMwAzADkAMABOADEAMgAwAF8AIABDAEwAQQBNAFAASQBOAEcAIABUAFcATwAtAFAASQBFAEMARQAgAFMASABBAEYAVAAgAEMATwBMAEwAQQBSACAAVwBJAFQASAAgAEsARQBZAFcAQQBZAC0AMgBAAEEAcgBtAF8ARgBpAG4AYQBsAF8AUABsAGEAbgBlAHQABAAAABAAAAABAAAAAQAAAJQAAAA=</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v9IMwAzADkAMABOADEAMgAwAF8AIABDAEwAQQBNAFAASQBOAEcAIABUAFcATwAtAFAASQBFAEMARQAgAFMASABBAEYAVAAgAEMATwBMAEwAQQBSACAAVwBJAFQASAAgAEsARQBZAFcAQQBZAC0AMQBAAEEAcgBtAF8ARgBpAG4AYQBsAF8AUABsAGEAbgBlAHQABAAAABAAAAABAAAAAQAAAJMAAAA=</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8fUwBoAGEAZgB0AF8ASwBlAHkAXwBCAE0ALQAyAEAAQQByAG0AXwBGAGkAbgBhAGwAXwBQAGwAYQBuAGUAdAAEAAAAEAAAAAEAAAABAAAAnAAAAA==</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8fUwBoAGEAZgB0AF8ASwBlAHkAXwBCAE0ALQAzAEAAQQByAG0AXwBGAGkAbgBhAGwAXwBQAGwAYQBuAGUAdAAEAAAAEAAAAAEAAAABAAAAnQAAAA==</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8dTABpAG4AawBfAEIAYQBzAGkAYwAtADIAQABBAHIAbQBfAEYAaQBuAGEAbABfAFAAbABhAG4AZQB0AAQAAAAQAAAAAQAAAAEAAACyAAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8nQgBsAGEAYwBrAEIAbwB4AF8AUwBQAEcAMwAwAF8ATQBvAHQAbwByAC0AMQBAAEEAcgBtAF8ARgBpAG4AYQBsAF8AUABsAGEAbgBlAHQABAAAABAAAAABAAAAAQAAANkAAAA=</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8nQgBsAGEAYwBrAEIAbwB4AF8AUwBQAEcAMwAwAF8ATQBvAHQAbwByAC0AMgBAAEEAcgBtAF8ARgBpAG4AYQBsAF8AUABsAGEAbgBlAHQABAAAABAAAAABAAAAAQAAANoAAAA=</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8pQgBsAGEAYwBrAEIAbwB4AF8AUwBQAEcAMwAwAF8AQgByAGEAYwBrAGUAdAAtADEAQABBAHIAbQBfAEYAaQBuAGEAbABfAFAAbABhAG4AZQB0AAQAAAAQAAAAAQAAAAEAAADQAAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8pQgBsAGEAYwBrAEIAbwB4AF8AUwBQAEcAMwAwAF8AQgByAGEAYwBrAGUAdAAtADIAQABBAHIAbQBfAEYAaQBuAGEAbABfAFAAbABhAG4AZQB0AAQAAAAQAAAAAQAAAAEAAADRAAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8sMgA2ADAAMABOADEAMgAwAF8ATQBFAFQAQQBMACAATQBJAFQARQBSACAARwBFAEEAUgAtADEAQABBAHIAbQBfAEYAaQBuAGEAbABfAFAAbABhAG4AZQB0AAQAAAAQAAAAAQAAAAEAAAAPAQAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8tMwA1ADYAMABOADEAMwAwAF8AIABNAEUAVABBAEwAIABNAEkAVABFAFIAIABHAEUAQQBSAC0AMQBAAEEAcgBtAF8ARgBpAG4AYQBsAF8AUABsAGEAbgBlAHQABAAAABAAAAABAAAAAQAAAA4BAAA=</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8tMwA1ADYAMABOADEAMwAwAF8AIABNAEUAVABBAEwAIABNAEkAVABFAFIAIABHAEUAQQBSAC0AMgBAAEEAcgBtAF8ARgBpAG4AYQBsAF8AUABsAGEAbgBlAHQABAAAABAAAAABAAAAAQAAABcBAAA=</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v9JMQA0ADMANABLADMANAAwAF8ATABJAEcASABUACAARABUAFkAIABUAFcATwAtAEIATwBMAFQAIABGAEwAQQBOAEcARQAtAE0ATwBVAE4AVABFAEQAIABSAE8ATABMAEUAUgAgAEIAUgBOAEcALQA0AEAAQQByAG0AXwBGAGkAbgBhAGwAXwBQAGwAYQBuAGUAdAAEAAAAEAAAAAEAAAABAAAAxAAAAA==</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v9JMQA0ADMANABLADMANAAwAF8ATABJAEcASABUACAARABUAFkAIABUAFcATwAtAEIATwBMAFQAIABGAEwAQQBOAEcARQAtAE0ATwBVAE4AVABFAEQAIABSAE8ATABMAEUAUgAgAEIAUgBOAEcALQAzAEAAQQByAG0AXwBGAGkAbgBhAGwAXwBQAGwAYQBuAGUAdAAEAAAAEAAAAAEAAAABAAAAwwAAAA==</a:base64Binary></SWComponentPIDs><SWMainComponentPID i:nil="true"/><Visual z:Ref="i150"/><isFixedFrame>false</isFixedFrame><isIncomplete>false</isIncomplete></Link></Children><Collision z:Ref="i96"/><Inertial z:Ref="i70"/><Joint z:Ref="i103"/><NameAttribute z:Ref="i69"/><Parent z:Ref="i1"/><STLQualityFine>false</STLQualityFine><SWComponentPIDs xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:base64Binary>yDIAAAUAAAD//v8fVABvAHAAXwBQAGwAYQB0AGUAXwBJAG4ALQAyAEAAQQByAG0AXwBGAGkAbgBhAGwAXwBQAGwAYQBuAGUAdAAEAAAAEAAAAAEAAAABAAAAZAAAAA==</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8eTABpAG4AawBfAEIAbwB0AHQAbwBtAC0AMQBAAEEAcgBtAF8ARgBpAG4AYQBsAF8AUABsAGEAbgBlAHQABAAAABAAAAABAAAAAQAAAHEAAAA=</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8jUwB1AHAAcABvAHIAdABfAFMAaABhAGYAdABfAE0AVAAtADgAQABBAHIAbQBfAEYAaQBuAGEAbABfAFAAbABhAG4AZQB0AAQAAAAQAAAAAQAAAAEAAABIAAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8jUwB1AHAAcABvAHIAdABfAFMAaABhAGYAdABfAE0AVAAtADcAQABBAHIAbQBfAEYAaQBuAGEAbABfAFAAbABhAG4AZQB0AAQAAAAQAAAAAQAAAAEAAABHAAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8jUwB1AHAAcABvAHIAdABfAFMAaABhAGYAdABfAE0AVAAtADYAQABBAHIAbQBfAEYAaQBuAGEAbABfAFAAbABhAG4AZQB0AAQAAAAQAAAAAQAAAAEAAABGAAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8jUwB1AHAAcABvAHIAdABfAFMAaABhAGYAdABfAE0AVAAtADUAQABBAHIAbQBfAEYAaQBuAGEAbABfAFAAbABhAG4AZQB0AAQAAAAQAAAAAQAAAAEAAABFAAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8fTQBpAGQAXwBQAGwAYQB0AGUAXwBJAG4ALQAxAEAAQQByAG0AXwBGAGkAbgBhAGwAXwBQAGwAYQBuAGUAdAAEAAAAEAAAAAEAAAABAAAALQAAAA==</a:base64Binary></SWComponentPIDs><SWMainComponentPID i:nil="true"/><Visual z:Ref="i83"/><isFixedFrame>false</isFixedFrame><isIncomplete>false</isIncomplete></Link></Children><Collision z:Ref="i29"/><Inertial z:Ref="i3"/><Joint z:Ref="i36"/><NameAttribute z:Ref="i2"/><Parent i:nil="true"/><STLQualityFine>false</STLQualityFine><SWComponentPIDs xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:base64Binary>yDIAAAUAAAD//v8dQgBhAHMAZQBfAFAAbABhAHQAZQAtADEAQABBAHIAbQBfAEYAaQBuAGEAbABfAFAAbABhAG4AZQB0AAQAAAAQAAAAAQAAAAEAAAAYAAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8jUwB1AHAAcABvAHIAdABfAFMAaABhAGYAdABfAEIATQAtADEAQABBAHIAbQBfAEYAaQBuAGEAbABfAFAAbABhAG4AZQB0AAQAAAAQAAAAAQAAAAEAAAAZAAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8jUwB1AHAAcABvAHIAdABfAFMAaABhAGYAdABfAEIATQAtADIAQABBAHIAbQBfAEYAaQBuAGEAbABfAFAAbABhAG4AZQB0AAQAAAAQAAAAAQAAAAEAAAAaAAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8jUwB1AHAAcABvAHIAdABfAFMAaABhAGYAdABfAEIATQAtADMAQABBAHIAbQBfAEYAaQBuAGEAbABfAFAAbABhAG4AZQB0AAQAAAAQAAAAAQAAAAEAAAAbAAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8jUwB1AHAAcABvAHIAdABfAFMAaABhAGYAdABfAEIATQAtADQAQABBAHIAbQBfAEYAaQBuAGEAbABfAFAAbABhAG4AZQB0AAQAAAAQAAAAAQAAAAEAAAAcAAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8cTQBpAGQAXwBQAGwAYQB0AGUALQAxAEAAQQByAG0AXwBGAGkAbgBhAGwAXwBQAGwAYQBuAGUAdAAEAAAAEAAAAAEAAAABAAAAJwAAAA==</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8cVABvAHAAXwBQAGwAYQB0AGUALQAxAEAAQQByAG0AXwBGAGkAbgBhAGwAXwBQAGwAYQBuAGUAdAAEAAAAEAAAAAEAAAABAAAAMAAAAA==</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8jUwB1AHAAcABvAHIAdABfAFMAaABhAGYAdABfAE0AVAAtADEAQABBAHIAbQBfAEYAaQBuAGEAbABfAFAAbABhAG4AZQB0AAQAAAAQAAAAAQAAAAEAAAAzAAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8jUwB1AHAAcABvAHIAdABfAFMAaABhAGYAdABfAE0AVAAtADIAQABBAHIAbQBfAEYAaQBuAGEAbABfAFAAbABhAG4AZQB0AAQAAAAQAAAAAQAAAAEAAAA0AAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8jUwB1AHAAcABvAHIAdABfAFMAaABhAGYAdABfAE0AVAAtADMAQABBAHIAbQBfAEYAaQBuAGEAbABfAFAAbABhAG4AZQB0AAQAAAAQAAAAAQAAAAEAAAA1AAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8jUwB1AHAAcABvAHIAdABfAFMAaABhAGYAdABfAE0AVAAtADQAQABBAHIAbQBfAEYAaQBuAGEAbABfAFAAbABhAG4AZQB0AAQAAAAQAAAAAQAAAAEAAAA2AAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8pQgBsAGEAYwBrAEIAbwB4AF8AUwBQAEcAMwAwAF8AQgByAGEAYwBrAGUAdAAtADMAQABBAHIAbQBfAEYAaQBuAGEAbABfAFAAbABhAG4AZQB0AAQAAAAQAAAAAQAAAAEAAAAKAQAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8nQgBsAGEAYwBrAEIAbwB4AF8AUwBQAEcAMwAwAF8ATQBvAHQAbwByAC0AMwBAAEEAcgBtAF8ARgBpAG4AYQBsAF8AUABsAGEAbgBlAHQABAAAABAAAAABAAAAAQAAAA0BAAA=</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8tMwA1ADYAMABOADEAMwAwAF8AIABNAEUAVABBAEwAIABNAEkAVABFAFIAIABHAEUAQQBSAC0AMwBAAEEAcgBtAF8ARgBpAG4AYQBsAF8AUABsAGEAbgBlAHQABAAAABAAAAABAAAAAQAAACsBAAA=</a:base64Binary></SWComponentPIDs><SWMainComponentPID i:nil="true"/><Visual z:Ref="i16"/><isFixedFrame>false</isFixedFrame><isIncomplete>false</isIncomplete></Link>
+2021-04-06 20:52:21,494 INFO  AssemblyExportForm.cs: 309 - Saving URDF package to C:\Users\Thomas_Wang\Downloads\cmu-robot-design_3\Arm_Final_Planet\Arm_Final_Planet
+2021-04-06 20:52:21,499 INFO  ExportHelper.cs: 147 - Beginning the export process
+2021-04-06 20:52:21,504 INFO  ExportHelper.cs: 153 - Creating package directories with name Arm_Final_Planet and save path C:\Users\Thomas_Wang\Downloads\cmu-robot-design_3\Arm_Final_Planet
+2021-04-06 20:52:24,497 INFO  ExportHelper.cs: 162 - Creating CMakeLists.txt at C:\Users\Thomas_Wang\Downloads\cmu-robot-design_3\Arm_Final_Planet\Arm_Final_Planet\CMakeLists.txt
+2021-04-06 20:52:24,511 INFO  ExportHelper.cs: 166 - Creating joint names config at C:\Users\Thomas_Wang\Downloads\cmu-robot-design_3\Arm_Final_Planet\Arm_Final_Planet\config\joint_names_Arm_Final_Planet.yaml
+2021-04-06 20:52:24,515 INFO  ExportHelper.cs: 170 - Creating package.xml at C:\Users\Thomas_Wang\Downloads\cmu-robot-design_3\Arm_Final_Planet\Arm_Final_Planet\package.xml
+2021-04-06 20:52:24,517 INFO  PackageXMLWriter.cs: 21 - Creating package.xml at C:\Users\Thomas_Wang\Downloads\cmu-robot-design_3\Arm_Final_Planet\Arm_Final_Planet\package.xml
+2021-04-06 20:52:24,537 INFO  ExportHelper.cs: 177 - Creating RVIZ launch file in C:\Users\Thomas_Wang\Downloads\cmu-robot-design_3\Arm_Final_Planet\Arm_Final_Planet\launch\
+2021-04-06 20:52:24,552 INFO  ExportHelper.cs: 182 - Creating Gazebo launch file in C:\Users\Thomas_Wang\Downloads\cmu-robot-design_3\Arm_Final_Planet\Arm_Final_Planet\launch\
+2021-04-06 20:52:24,556 INFO  ExportHelper.cs: 187 - Saving existing STL preferences
+2021-04-06 20:52:24,557 INFO  ExportHelper.cs: 450 - Saving users preferences
+2021-04-06 20:52:24,558 INFO  ExportHelper.cs: 190 - Modifying STL preferences
+2021-04-06 20:52:24,559 INFO  ExportHelper.cs: 464 - Setting STL preferences
+2021-04-06 20:52:24,571 INFO  ExportHelper.cs: 196 - Found 0 hidden components 
+2021-04-06 20:52:24,572 INFO  ExportHelper.cs: 197 - Hiding all components
+2021-04-06 20:52:24,704 INFO  ExportHelper.cs: 204 - Beginning individual files export
+2021-04-06 20:52:24,708 INFO  ExportHelper.cs: 270 - Exporting link: base_link
+2021-04-06 20:52:24,709 INFO  ExportHelper.cs: 272 - Link base_link has 1 children
+2021-04-06 20:52:24,710 INFO  ExportHelper.cs: 270 - Exporting link: link_1
+2021-04-06 20:52:24,711 INFO  ExportHelper.cs: 272 - Link link_1 has 1 children
+2021-04-06 20:52:24,712 INFO  ExportHelper.cs: 270 - Exporting link: link_2
+2021-04-06 20:52:24,713 INFO  ExportHelper.cs: 272 - Link link_2 has 1 children
+2021-04-06 20:52:24,715 INFO  ExportHelper.cs: 270 - Exporting link: link_3
+2021-04-06 20:52:24,716 INFO  ExportHelper.cs: 272 - Link link_3 has 0 children
+2021-04-06 20:52:24,717 INFO  ExportHelper.cs: 317 - link_3: Exporting STL with coordinate frame joint3_frame
+2021-04-06 20:52:24,718 INFO  ExportHelper.cs: 322 - link_3: Reference geometry name 
+2021-04-06 20:52:25,789 INFO  ExportHelper.cs: 330 - Saving STL to C:\Users\Thomas_Wang\Downloads\cmu-robot-design_3\Arm_Final_Planet\Arm_Final_Planet\meshes\link_3.STL
+2021-04-06 20:52:31,570 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2021-04-06 20:52:31,591 INFO  ExportHelper.cs: 317 - link_2: Exporting STL with coordinate frame ee_frame
+2021-04-06 20:52:31,592 INFO  ExportHelper.cs: 322 - link_2: Reference geometry name 
+2021-04-06 20:52:33,472 INFO  ExportHelper.cs: 330 - Saving STL to C:\Users\Thomas_Wang\Downloads\cmu-robot-design_3\Arm_Final_Planet\Arm_Final_Planet\meshes\link_2.STL
+2021-04-06 20:52:39,152 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2021-04-06 20:52:39,159 INFO  ExportHelper.cs: 317 - link_1: Exporting STL with coordinate frame joint1_frame
+2021-04-06 20:52:39,159 INFO  ExportHelper.cs: 322 - link_1: Reference geometry name 
+2021-04-06 20:52:39,925 INFO  ExportHelper.cs: 330 - Saving STL to C:\Users\Thomas_Wang\Downloads\cmu-robot-design_3\Arm_Final_Planet\Arm_Final_Planet\meshes\link_1.STL
+2021-04-06 20:52:44,763 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2021-04-06 20:52:44,769 INFO  ExportHelper.cs: 317 - base_link: Exporting STL with coordinate frame base_frame
+2021-04-06 20:52:44,769 INFO  ExportHelper.cs: 322 - base_link: Reference geometry name 
+2021-04-06 20:52:46,588 INFO  ExportHelper.cs: 330 - Saving STL to C:\Users\Thomas_Wang\Downloads\cmu-robot-design_3\Arm_Final_Planet\Arm_Final_Planet\meshes\base_link.STL
+2021-04-06 20:52:55,586 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2021-04-06 20:52:55,595 INFO  ExportHelper.cs: 145 - Showing all components except previously hidden components
+2021-04-06 20:53:04,401 INFO  ExportHelper.cs: 145 - Resetting STL preferences
+2021-04-06 20:53:04,403 INFO  ExportHelper.cs: 478 - Returning STL preferences to user preferences
+2021-04-06 20:53:04,404 INFO  ExportHelper.cs: 228 - Writing URDF file to C:\Users\Thomas_Wang\Downloads\cmu-robot-design_3\Arm_Final_Planet\Arm_Final_Planet\urdf\Arm_Final_Planet.urdf
+2021-04-06 20:53:04,548 INFO  CSVImportExport.cs: 32 - Writing CSV file C:\Users\Thomas_Wang\Downloads\cmu-robot-design_3\Arm_Final_Planet\Arm_Final_Planet\urdf\Arm_Final_Planet.csv
+2021-04-06 20:53:04,621 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2021-04-06 20:53:04,625 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2021-04-06 20:53:04,630 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2021-04-06 20:53:04,631 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2021-04-06 20:53:04,642 INFO  ExportHelper.cs: 234 - Copying log file
+2021-04-06 20:53:04,648 INFO  ExportHelper.cs: 439 - Copying C:\Users\Thomas_Wang\sw2urdf_logs\sw2urdf.log to C:\Users\Thomas_Wang\Downloads\cmu-robot-design_3\Arm_Final_Planet\Arm_Final_Planet\export.log

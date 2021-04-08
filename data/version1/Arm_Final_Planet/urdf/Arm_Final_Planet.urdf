@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Arm_Final_Planet">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0236142595030671 0.0236123169398758 0.0271965285802363"
+        rpy="0 0 0" />
+      <mass
+        value="0.207969641151488" />
+      <inertia
+        ixx="0.000200479509605447"
+        ixy="2.57676497106848E-05"
+        ixz="-5.56210516012336E-07"
+        iyy="0.000200456359940216"
+        iyz="5.56176752505245E-07"
+        izz="0.000374389478444941" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Arm_Final_Planet/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Arm_Final_Planet/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="-0.000236877819872278 0.000236877675092062 0.0697507249502627"
+        rpy="0 0 0" />
+      <mass
+        value="0.279095221258607" />
+      <inertia
+        ixx="0.000259960338493914"
+        ixy="-4.66608990127581E-09"
+        ixz="5.58517858668272E-10"
+        iyy="0.000278941883740979"
+        iyz="-5.58525895436961E-10"
+        izz="0.000494333710451036" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Arm_Final_Planet/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Arm_Final_Planet/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-10"
+      upper="10"
+      effort="0"
+      velocity="0" />
+    <dynamics
+      damping="1E-06"
+      friction="1E-06" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="0.123738961750669 -1.91570953544939E-09 0.00247497856528909"
+        rpy="0 0 0" />
+      <mass
+        value="0.281072816715612" />
+      <inertia
+        ixx="7.94917920285614E-05"
+        ixy="-8.14892063096842E-08"
+        ixz="8.2683816491101E-10"
+        iyy="0.000300028784163318"
+        iyz="-1.25470643727528E-12"
+        izz="0.000270604773050529" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Arm_Final_Planet/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.956862745098039 0.956862745098039 0.956862745098039 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Arm_Final_Planet/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="revolute">
+    <origin
+      xyz="-0.0007379 0.0002379 0.111"
+      rpy="3.1416 -1.5708 0" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-10"
+      upper="10"
+      effort="0"
+      velocity="0" />
+    <dynamics
+      damping="1E-06"
+      friction="1E-06" />
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="0.0777132274431743 -7.60367363517034E-09 -0.00134160773584074"
+        rpy="0 0 0" />
+      <mass
+        value="0.0670506734760102" />
+      <inertia
+        ixx="5.0747255741549E-05"
+        ixy="-1.037104349205E-07"
+        ixz="1.10572456045354E-10"
+        iyy="9.73378729019276E-05"
+        iyz="1.26012193654106E-12"
+        izz="5.45282291768862E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Arm_Final_Planet/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.956862745098039 0.956862745098039 0.956862745098039 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Arm_Final_Planet/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3"
+    type="revolute">
+    <origin
+      xyz="0.275 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-10"
+      upper="10"
+      effort="0"
+      velocity="0" />
+    <dynamics
+      damping="1E-05"
+      friction="1E-05" />
+  </joint>
+</robot>

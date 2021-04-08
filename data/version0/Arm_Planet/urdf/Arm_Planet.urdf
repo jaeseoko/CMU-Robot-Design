@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Arm_Planet">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0141014063334698 0.0150363298774114 0.0206389702337933"
+        rpy="0 0 0" />
+      <mass
+        value="0.0756504945211481" />
+      <inertia
+        ixx="3.72825003698555E-05"
+        ixy="4.34660129124362E-06"
+        ixz="4.06394105028578E-08"
+        iyy="3.7356825493195E-05"
+        iyz="-3.42845642809734E-08"
+        izz="6.89161311210801E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Arm_Planet/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Arm_Planet/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="swivel_link">
+    <inertial>
+      <origin
+        xyz="-5.87917836688059E-06 5.87917836659957E-06 0.0577660567706198"
+        rpy="0 0 0" />
+      <mass
+        value="0.0671123683100131" />
+      <inertia
+        ixx="3.26080656137997E-05"
+        ixy="-2.25017714900538E-09"
+        ixz="6.07725837555731E-22"
+        iyy="3.29676327601522E-05"
+        iyz="9.69541639612245E-22"
+        izz="6.17257454202734E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Arm_Planet/meshes/swivel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Arm_Planet/meshes/swivel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="swivel_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="swivel_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="planar_link_1">
+    <inertial>
+      <origin
+        xyz="0.0861648271497534 0.00122459336292865 2.70214300849142E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.10541072764971" />
+      <inertia
+        ixx="1.58996439496541E-05"
+        ixy="-5.07791233841799E-09"
+        ixz="-4.27972746139563E-09"
+        iyy="7.48290537126194E-05"
+        iyz="9.52185509306452E-09"
+        izz="6.96582925138146E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Arm_Planet/meshes/planar_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Arm_Planet/meshes/planar_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="planar_joint_1"
+    type="continuous">
+    <origin
+      xyz="0 0 0.086"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="swivel_link" />
+    <child
+      link="planar_link_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="planar_link_2">
+    <inertial>
+      <origin
+        xyz="0.0958032517884897 -1.22818422099158E-15 -0.00289882232752531"
+        rpy="0 0 0" />
+      <mass
+        value="0.0525608874236978" />
+      <inertia
+        ixx="2.05582341768284E-05"
+        ixy="4.41903180393255E-21"
+        ixz="-6.09851877156358E-21"
+        iyy="6.71893344302594E-05"
+        iyz="-7.20235502011744E-21"
+        izz="5.34389348709685E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Arm_Planet/meshes/planar_link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Arm_Planet/meshes/planar_link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="planar_joint_2"
+    type="continuous">
+    <origin
+      xyz="0.215 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="planar_link_1" />
+    <child
+      link="planar_link_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="ee_link">
+    <inertial>
+      <origin
+        xyz="-0.0058243321818386 0.000256152823266298 0.0221693599317853"
+        rpy="0 0 0" />
+      <mass
+        value="0.00187793691093205" />
+      <inertia
+        ixx="7.63090154927273E-07"
+        ixy="4.86403341564162E-09"
+        ixz="7.44359619992794E-08"
+        iyy="8.72070537887321E-07"
+        iyz="-3.34978702323009E-09"
+        izz="1.1528036464683E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Arm_Planet/meshes/ee_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Arm_Planet/meshes/ee_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ee_joint_fixed"
+    type="fixed">
+    <origin
+      xyz="0.24 0 0"
+      rpy="1.5708 0 1.5708" />
+    <parent
+      link="planar_link_2" />
+    <child
+      link="ee_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
