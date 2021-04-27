@@ -287,6 +287,8 @@ for i in range(duration):
     pos2,vel2,RF2,torque2 = p.getJointState(bodyId,2)
 
     ''' We Need angle and velocity for this: pos, vel '''
+    pos0 = encoder.read() # rad
+    vel0 = encoder.read() # rad/s
 
     tau0,tau1,tau2 = p.calculateInverseDynamics(bodyId,
                                                 [pos0,pos1,pos2],
