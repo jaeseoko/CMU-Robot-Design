@@ -264,14 +264,16 @@ for i in range(duration):
 
     pos = [0,0,0]
     
-    q0,v0,_,_ = p.getJointState(bodyId,0)
-    q1,v1,_,_ = p.getJointState(bodyId,1)
-    q2,v2,_,_ = p.getJointState(bodyId,2)
+    pos0,vel0,RF0,torque0 = p.getJointState(bodyId,0)
+    pos1,vel1,RF1,torque1 = p.getJointState(bodyId,1)
+    pos2,vel2,RF2,torque2 = p.getJointState(bodyId,2)
+
+    
 
     ''' For PID '''
-    error0 = targetORN[0]-q0
-    error1 = targetORN[1]-q1
-    error2 = targetORN[2]-q2
+    error0 = targetORN[0]-pos0
+    error1 = targetORN[1]-pos1
+    error2 = targetORN[2]-pos2
     
     # Divide this by actual step size when we control real robot.
     de0 = error0 - prev_error0
@@ -282,9 +284,7 @@ for i in range(duration):
     cumul_e1 += error1
     cumul_e2 += error2
 
-    pos0,vel0,RF0,torque0 = p.getJointState(bodyId,0)
-    pos1,vel1,RF1,torque1 = p.getJointState(bodyId,1)
-    pos2,vel2,RF2,torque2 = p.getJointState(bodyId,2)
+    
 
     ''' We Need angle and velocity for this: pos, vel '''
     pos0 = encoder.read() # rad
@@ -328,13 +328,13 @@ for i in range(duration):
     torqueLog0.append(force0)
     torqueLog1.append(force1)
     torqueLog2.append(force2)
-    angLog0.append(q0*180/np.pi)
-    angLog1.append(q1*180/np.pi)
-    angLog2.append(q2*180/np.pi)
+    angLog0.append(pos0*180/np.pi)
+    angLog1.append(pos1*180/np.pi)
+    angLog2.append(pos2*180/np.pi)
     minE.append(False)
     
 
-    if (np.abs(v0)+np.abs(v1)+np.abs(v2)) <tol and \
+    if (np.abs(vel0)+np.abs(vel1)+np.abs(vel2)) <tol and \
        (np.abs(error0)+np.abs(error1)+np.abs(error2)) <tol:
         if state1==False: 
             state1 = True
@@ -406,7 +406,8 @@ for i in range(duration):
     #                                         error1*180/np.pi,", ",
     #                                         error2*180/np.pi)
     print("Time elapsed: ",i/240," seconds")
-    print("joint angles: ",q0,", ",q1,", ",q2)
+    print("joint angles: ",pos0,", ",pos1,", ",pos2)
+    print("joint errors: ",error0,", ",error1,", ",error2)
 
     termTime = i+1
     p.stepSimulation()
