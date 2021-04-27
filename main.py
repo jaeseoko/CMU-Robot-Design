@@ -40,7 +40,7 @@ GPIO.setup(motor_1_Encoder_A_pin, GPIO.IN)
 GPIO.setup(motor_1_Encoder_B_pin, GPIO.IN)
 
 motor_driver_1_reverse_pwm = GPIO.PWM(motor_driver_1_reverse_pwm_pin, pwm_frequency)
-motor_driver_1_forward_pwm = GPIO.PWM(motor_driver_1_reverse_pwm_pin, pwm_frequency)
+motor_driver_1_forward_pwm = GPIO.PWM(motor_driver_1_forward_pwm_pin, pwm_frequency)
 
 # Second Motor related
 GPIO.setup(motor_driver_2_reverse_enable_pin, GPIO.OUT)
@@ -51,7 +51,7 @@ GPIO.setup(motor_2_Encoder_A_pin, GPIO.IN)
 GPIO.setup(motor_2_Encoder_B_pin, GPIO.IN)
 
 motor_driver_2_reverse_pwm = GPIO.PWM(motor_driver_2_reverse_pwm_pin, pwm_frequency)
-motor_driver_2_forward_pwm = GPIO.PWM(motor_driver_2_reverse_pwm_pin, pwm_frequency)
+motor_driver_2_forward_pwm = GPIO.PWM(motor_driver_2_forward__pwm_pin, pwm_frequency)
 
 # Third Motor related
 GPIO.setup(motor_driver_3_reverse_enable_pin, GPIO.OUT)
@@ -62,14 +62,10 @@ GPIO.setup(motor_3_Encoder_A_pin, GPIO.IN)
 GPIO.setup(motor_3_Encoder_B_pin, GPIO.IN)
 
 motor_driver_3_reverse_pwm = GPIO.PWM(motor_driver_3_reverse_pwm_pin, pwm_frequency)
-motor_driver_3_forward_pwm = GPIO.PWM(motor_driver_3_reverse_pwm_pin, pwm_frequency)
+motor_driver_3_forward_pwm = GPIO.PWM(motor_driver_3_forward_pwm_pin, pwm_frequency)
 # End of initialization--------------------------------------
 
-
-
-startMsg = "Please specify the motor and angle \n Example: \"1 30\", or \"2 60\""
-print(startMsg)
-
+print("Please specify the motor and angle \n Example: \"1 30\", or \"2 60\"")
 
 while(1):
     message = input()

@@ -1,11 +1,76 @@
+import RPi.GPIO as GPIO
+from time import sleep
+
 import pybullet as p
 import pybullet_data
 import numpy as np
-# import matplotlib.pyplot as plt
-# from Arm_Planet_IK import Arm_Planet_IK as customIK
 import argparse
-# import time
 
+# Motor--------------------------------------
+pwm_frequency = 1000    
+
+# GPIOs--------------------------------------
+# First Motor related
+motor_driver_0_reverse_enable_pin = 4       # GPIO 4
+motor_driver_0_forward_enable_pin = 17      # GPIO 17
+motor_driver_0_reverse_pwm_pin = 27         # GPIO 27
+motor_driver_0_forward_pwm_pin = 22         # GPIO 22
+motor_0_Encoder_A_pin = 18                  # GPIO 18
+motor_0_Encoder_B_pin = 23                  # GPIO 23
+
+# Second Motor related
+motor_driver_1_reverse_enable_pin = 10      # GPIO 10
+motor_driver_1_forward_enable_pin = 9       # GPIO 9
+motor_driver_1_reverse_pwm_pin = 11         # GPIO 11
+motor_driver_1_forward_pwm_pin = 5          # GPIO 5
+motor_1_Encoder_A_pin = 24                  # GPIO 24
+motor_1_Encoder_B_pin = 25                  # GPIO 25
+
+# Third Motor related
+motor_driver_2_reverse_enable_pin = 6       # GPIO 6
+motor_driver_2_forward_enable_pin = 13      # GPIO 13
+motor_driver_2_reverse_pwm_pin = 19         # GPIO 19
+motor_driver_2_forward_pwm_pin = 26         # GPIO 26
+motor_2_Encoder_A_pin = 12                  # GPIO 12
+motor_2_Encoder_B_pin = 16                  # GPIO 16
+
+# GPIO initialization--------------------------------------
+GPIO.setmode(GPIO.BCM)
+# First Motor related
+GPIO.setup(motor_driver_0_reverse_enable_pin, GPIO.OUT)
+GPIO.setup(motor_driver_0_forward_enable_pin, GPIO.OUT)
+GPIO.setup(motor_driver_0_reverse_pwm_pin, GPIO.OUT)
+GPIO.setup(motor_driver_0_forward_pwm_pin, GPIO.OUT)
+GPIO.setup(motor_0_Encoder_A_pin, GPIO.IN)
+GPIO.setup(motor_0_Encoder_B_pin, GPIO.IN)
+
+motor_driver_0_reverse_pwm = GPIO.PWM(motor_driver_0_reverse_pwm_pin, pwm_frequency)
+motor_driver_0_forward_pwm = GPIO.PWM(motor_driver_0_forward_pwm_pin, pwm_frequency)
+
+# Second Motor related
+GPIO.setup(motor_driver_1_reverse_enable_pin, GPIO.OUT)
+GPIO.setup(motor_driver_1_forward_enabl_pine, GPIO.OUT)
+GPIO.setup(motor_driver_1_reverse_pwm_pin, GPIO.OUT)
+GPIO.setup(motor_driver_1_forward_pwm_pin, GPIO.OUT)
+GPIO.setup(motor_1_Encoder_A_pin, GPIO.IN)
+GPIO.setup(motor_1_Encoder_B_pin, GPIO.IN)
+
+motor_driver_1_reverse_pwm = GPIO.PWM(motor_driver_1_reverse_pwm_pin, pwm_frequency)
+motor_driver_1_forward_pwm = GPIO.PWM(motor_driver_1_forward__pwm_pin, pwm_frequency)
+
+# Third Motor related
+GPIO.setup(motor_driver_2_reverse_enable_pin, GPIO.OUT)
+GPIO.setup(motor_driver_2_forward_enable_pin, GPIO.OUT)
+GPIO.setup(motor_driver_2_reverse_pwm_pin, GPIO.OUT)
+GPIO.setup(motor_driver_2_forward_pwm_pin, GPIO.OUT)
+GPIO.setup(motor_2_Encoder_A_pin, GPIO.IN)
+GPIO.setup(motor_2_Encoder_B_pin, GPIO.IN)
+
+motor_driver_2_reverse_pwm = GPIO.PWM(motor_driver_2_reverse_pwm_pin, pwm_frequency)
+motor_driver_2_forward_pwm = GPIO.PWM(motor_driver_2_forward_pwm_pin, pwm_frequency)
+# End of initialization--------------------------------------
+
+# Argument Parsing-------------------------------------------
 parser = argparse.ArgumentParser()
 parser.add_argument('x', 
                     type=float,
@@ -22,6 +87,7 @@ parser.add_argument('--weight',
                     help = 'set payload weight to pick up')
 args = parser.parse_args()
 
+# Argument Conversion-------------------------------------------
 target = [args.x,args.y,args.z]
 
 destination = [-args.x,args.y,args.z]
@@ -53,57 +119,55 @@ bodyId = p.loadURDF("./data/Arm_Final_Planet_hook/urdf/Arm_Final_Planet_hook.urd
 position, orientation = p.getBasePositionAndOrientation(bodyId)
 numJoints = p.getNumJoints(bodyId)
 print("number of joints = ",numJoints)
-# for i in range(numJoints):
-#     print("Joint ", i, "\n")
-#     print(p.getJointInfo(bodyId,i))
 
-
-
-
-
-
+# Variable Declaration-------------------------------------------
 torqueLog0 = []
 torqueLog1 = []
 torqueLog2 = []
+
 errorLog0  = []
 errorLog1 = []
 errorLog2 = []
+
 angLog0 = []
 angLog1 = []
 angLog2 = []
+
 minE = []
 
 prev_error0 = 0
 prev_error1 = 0
 prev_error2 = 0
+
 cumul_e0 = 0
 cumul_e1 = 0
 cumul_e2 = 0
 
-# PARAMS
+# Parameters-------------------------------------------
+# First Motor related
 kp0 = 2e-2
 ki0 = 1e-8
-# kd0 = 400/240
 kd0 = 2e-2
 
+# Second Motor related
 kp1 = 3e-2
 ki1 = 1e-7
 kd1 = 4e-2
 
+# Third Motor related
 kp2 = 2e-2
 ki2 = 1e-4
 kd2 = 2e-2
 
 prevPose = [0, 0, 0]
 prevPose1 = [0, 0, 0]
+
 trailDuration = 15
 hasPrevPose = 0
 
 p.enableJointForceTorqueSensor(bodyId,0)
 p.enableJointForceTorqueSensor(bodyId,1)
 p.enableJointForceTorqueSensor(bodyId,2)
-
-
 
 maxForce = 0
 p.setJointMotorControl2(bodyId, 0,controlMode=p.VELOCITY_CONTROL, force=maxForce)
@@ -150,7 +214,6 @@ if(destORN[2]>0):
 
 
 
-
 print("target pos 0 (deg.):",targetORN[0]*180/np.pi)
 print("target pos 1 (deg.):",targetORN[1]*180/np.pi)
 print("target pos 2 (deg.):",targetORN[2]*180/np.pi)
@@ -173,7 +236,7 @@ duration = 30000
 
 
 p.setRealTimeSimulation(0)
-t0 = time.time()
+# t0 = time.time()
 dt = 1/240
 termTime = 0
 for i in range(duration): 
