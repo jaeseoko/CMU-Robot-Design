@@ -230,14 +230,9 @@ for i in range(duration):
     de1 = error1 - prev_error1
     de2 = error2 - prev_error2
 
-    
-
-    pos0,vel0,RF0,torque0 = p.getJointState(bodyId,0)
-    pos1,vel1,RF1,torque1 = p.getJointState(bodyId,1)
-    pos2,vel2,RF2,torque2 = p.getJointState(bodyId,2)
     tau0,tau1,tau2 = p.calculateInverseDynamics(bodyId,
-                                                [pos0,pos1,pos2],
-                                                [vel0,vel1,vel2],
+                                                [q0,q1,q2],
+                                                [v0,v1,v2],
                                                 [0,0,0])
     # tau0,tau1,tau2 = p.calculateInverseDynamics(bodyId,
     #                                             [pos0,pos1,pos2],
@@ -258,12 +253,33 @@ for i in range(duration):
     cumul_e2 += error2
 
     ####
-    
+    if error0 < 0.2 and error0 > -0.2:
+        force0 = tau0
+    elif error0 <0:
+        force0 = tau0 - 0.1
+    else:
+        force0 = tau0 + 0.1
+
+    if error1 < 0.2 and error1 > -0.2:
+        force1 = tau1
+    elif error1 <0:
+        force1 = tau1 - 0.1
+    else:
+        force1 = tau1 + 0.1
+
+    if error2 < 0.2 and error2 > -0.2:
+        force2 = tau2
+    elif error2 <0:
+        force2 = tau2 - 0.1
+    else:
+        force2 = tau2 + 0.1
+
+        
     ####
     # tau0 = 0
-    force0 = T0 + tau0
-    force1 = T1 + tau1
-    force2 = T2 + tau2
+    # force0 = T0 + tau0
+    # force1 = T1 + tau1
+    # force2 = T2 + tau2
     
     p.setJointMotorControl2(bodyId,0,controlMode = p.TORQUE_CONTROL, force = force0)
     p.setJointMotorControl2(bodyId,1,controlMode = p.TORQUE_CONTROL, force = force1)
