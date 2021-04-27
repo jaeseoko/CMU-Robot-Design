@@ -2,6 +2,7 @@ import pybullet as p
 import pybullet_data
 import numpy as np
 import matplotlib.pyplot as plt
+from Arm_Planet_IK import Arm_Planet_IK as customIK
 import argparse
 import time
 
@@ -23,7 +24,7 @@ args = parser.parse_args()
 
 target = [args.x,args.y,args.z]
 
-destination = [args.x,-args.y,args.z]
+destination = [-args.x,args.y,args.z]
 
 offsetJoint3 = -10*np.pi/180
 
@@ -63,10 +64,14 @@ print("number of joints = ",numJoints)
 torqueLog0 = []
 torqueLog1 = []
 torqueLog2 = []
-errorLog0 = []
-minE = []
+errorLog0  = []
 errorLog1 = []
 errorLog2 = []
+angLog0 = []
+angLog1 = []
+angLog2 = []
+minE = []
+
 prev_error0 = 0
 prev_error1 = 0
 prev_error2 = 0
@@ -126,6 +131,13 @@ print("mass of end effector : ", ee_mass)
 # desOrn = p.getQuaternionFromEuler([0,0,0])
 
 
+# targetORN = customIK(target)
+# print("target angles from custom IK: ",targetORN*180/np.pi)
+# destORN = customIK(destination)
+# print("destination angles from custom IK: ",destORN*180/np.pi)
+
+
+
 targetORN = np.asarray( p.calculateInverseKinematics(bodyId,3,target) )
                         # lowerLimits = [-np.pi, -np.pi/2,-np.pi/2],
                         # upperLimits = [np.pi, 0,0]  ) )
@@ -133,8 +145,6 @@ targetORN = np.asarray( p.calculateInverseKinematics(bodyId,3,target) )
 destORN = np.asarray( p.calculateInverseKinematics(bodyId,3,destination) )
                         # lowerLimits = [-np.pi, -np.pi/2,-np.pi/2],
                         # upperLimits = [np.pi, 0,0]  ) )
-
-
 
 if(targetORN[1]>0):
     
@@ -157,6 +167,8 @@ if(destORN[2]>0):
     destORN[2]*=-1
 
 
+
+
 print("target pos 0 (deg.):",targetORN[0]*180/np.pi)
 print("target pos 1 (deg.):",targetORN[1]*180/np.pi)
 print("target pos 2 (deg.):",targetORN[2]*180/np.pi)
@@ -170,7 +182,9 @@ a1 = False
 state2 = False
 a2 = False
 state3 = False
-
+a3 = False
+state4 = False
+a4 = False
 payload = args.weight
 
 duration = 30000
@@ -192,8 +206,15 @@ for i in range(duration):
         targetORN[2]-=offsetJoint3
         a2 = True
         print("Attempting at state 2 . . .")
-    elif state2==True:
+    elif state2==True and state3==False and a3==False:
         targetORN = destORN
+        a3 = True
+        print("Attempting at state 3 . . .")
+    elif state3==True and state4==False and a4==False:
+        print("Reached state 3, attempting to place the load and disengage . . .")
+        a4 = True
+        targetORN[1]-=0.5*offsetJoint3
+        targetORN[2]+=2*offsetJoint3
 
 
     pos = [0,0,0]
@@ -254,6 +275,9 @@ for i in range(duration):
     torqueLog0.append(force0)
     torqueLog1.append(force1)
     torqueLog2.append(force2)
+    angLog0.append(q0*180/np.pi)
+    angLog1.append(q1*180/np.pi)
+    angLog2.append(q2*180/np.pi)
     minE.append(False)
     
 
@@ -278,35 +302,48 @@ for i in range(duration):
             p.changeDynamics(bodyId,3,mass = ee_mass+payload)
             minE[-1] = True
 
-            # kp0*=1e-03*payload
-            # ki0*=1e-01*payload
-            # kd0*=5e-03*payload
+            kp0*=10.5*payload
+            ki0*=10**5*payload
+            kd0*=25*payload
 
-            # kp1*=1e02*payload
-            # ki1*=1e03*payload
-            # kd1*=1e05*payload
+            kp1*=1676.6*payload
+            ki1*=10**6*payload
+            kd1*=1010*payload
 
-            # kp2*=1e03*payload
-            # ki2*=1e03*payload
-            # kd2*=1e03*payload
+            kp2*=10.025*payload
+            ki2*=10.5*payload
+            kd2*=10.025*payload
 
-            kp0+=1e-04*payload
-            ki0+=1e-04*payload
-            kd0+=1e-04*payload
-            kp1+=9*payload
-            ki1+=8e-02*payload
-            kd1+=9*payload
-            kp2+=1e-04*payload
-            ki2+=1e-04*payload
-            kd2+=1e-04*payload
-        else: 
+            # kp0+=1e-02*payload
+            # ki0+=1e-03*payload
+            # kd0+=3e-01*payload
+
+            # kp1+=500e-01*payload
+            # ki1+=10e-02*payload
+            # kd1+=400e-01*payload
+
+            # kp2+=5e-04*payload
+            # ki2+=5e-05*payload
+            # kd2+=5e-04*payload
+            print("gains:\n ")
+            print(kp0,",",ki0,",",kd0)
+            print(kp1,",",ki1,",",kd1)
+            print(kp2,",",ki2,",",kd2)
+            # 0.021 , 0.00010001 , 0.05
+            # 5.03 , 0.010000100000000001 , 4.04
+            # 0.020050000000000002 , 0.000105 , 0.020050000000000002
+        elif state3== False: 
             state3 = True
-            print("reached state 3")
+            minE[-1] = True
+            # t1 = time.time()
+        elif state4 == False:
+            state4 = True
+            print("placed the load at final destination.")
             minE[-1] = True
             termTime=i+1
             break
-            # t1 = time.time()
             
+        
         
 
 
@@ -341,6 +378,9 @@ torqueLog2 = np.asarray(torqueLog2)
 errorLog0 = np.asarray(errorLog0)
 errorLog1 = np.asarray(errorLog1)
 errorLog2 = np.asarray(errorLog2)
+angLog0 = np.asarray(angLog0)
+angLog1 = np.asarray(angLog1)
+angLog2 = np.asarray(angLog2)
 minE = np.asarray(minE)
 
 
@@ -365,6 +405,8 @@ ax_3.grid()
 ax_3.set_xlabel("seconds")
 ax_3.set_ylabel("NM")
 
+plt.savefig("./results/torquePlot.png",bbox_inches='tight')
+
 
 figure = plt.figure(figsize=[15, 4.5])
 figure.subplots_adjust(left=0.05, bottom=0.11, right=0.97, top=0.9, wspace=0.4, hspace=0.55)
@@ -375,7 +417,7 @@ mask = minE
 ax_4 = figure.add_subplot(131)
 ax_4.set_title("joint 0 error")
 ax_4.plot(t, errorLog0, '-r')
-ax_4.scatter(t[mask],errorLog0[mask],c='k')
+ax_4.scatter(t[mask],errorLog0[mask],c='k',s=15)
 ax_4.grid()
 ax_4.set_xlabel("seconds")
 ax_4.set_ylabel("degrees")
@@ -383,7 +425,7 @@ ax_4.set_ylabel("degrees")
 ax_5 = figure.add_subplot(132)
 ax_5.set_title("joint 1 error")
 ax_5.plot(t, errorLog1, '-g')
-ax_5.scatter(t[mask],errorLog1[mask],c='k')
+ax_5.scatter(t[mask],errorLog1[mask],c='k',s=15)
 ax_5.grid()
 ax_5.set_xlabel("seconds")
 ax_5.set_ylabel("degrees")
@@ -391,9 +433,40 @@ ax_5.set_ylabel("degrees")
 ax_6 = figure.add_subplot(133)
 ax_6.set_title("joint 2 error")
 ax_6.plot(t, errorLog2, '-b')
-ax_6.scatter(t[mask],errorLog2[mask],c='k')
+ax_6.scatter(t[mask],errorLog2[mask],c='k',s=15)
 ax_6.grid()
 ax_6.set_xlabel("seconds")
 ax_6.set_ylabel("degrees")
+
+plt.savefig("./results/errorPlot.png",bbox_inches='tight')
+
+figure = plt.figure(figsize=[15, 4.5])
+figure.subplots_adjust(left=0.05, bottom=0.11, right=0.97, top=0.9, wspace=0.4, hspace=0.55)
+
+ax_7 = figure.add_subplot(131)
+ax_7.set_title("joint 0 angle")
+ax_7.plot(t, angLog0, '-r')
+ax_7.scatter(t[mask],angLog0[mask],c='k',s=20)
+ax_7.grid()
+ax_7.set_xlabel("seconds")
+ax_7.set_ylabel("degrees")
+
+ax_8 = figure.add_subplot(132)
+ax_8.set_title("joint 1 angle")
+ax_8.plot(t, angLog1, '-g')
+ax_8.scatter(t[mask],angLog1[mask],c='k',s=20)
+ax_8.grid()
+ax_8.set_xlabel("seconds")
+ax_8.set_ylabel("degrees")
+
+ax_8 = figure.add_subplot(133)
+ax_8.set_title("joint 2 angle")
+ax_8.plot(t, angLog2, '-b')
+ax_8.scatter(t[mask],angLog2[mask],c='k',s=20)
+ax_8.grid()
+ax_8.set_xlabel("seconds")
+ax_8.set_ylabel("degrees")
+
+plt.savefig("./results/anglePlot.png",bbox_inches='tight')
 
 plt.show()
