@@ -4,10 +4,12 @@ from time import sleep
 import pybullet as p
 import pybullet_data
 import numpy as np
+import Encoder
 import argparse
 
 # Motor--------------------------------------
-pwm_frequency = 1000    
+pwm_frequency = 1000   
+encoder_count_per_rotation = 810  
 
 # GPIOs--------------------------------------
 # First Motor related
@@ -41,8 +43,10 @@ GPIO.setup(motor_driver_0_reverse_enable_pin, GPIO.OUT)
 GPIO.setup(motor_driver_0_forward_enable_pin, GPIO.OUT)
 GPIO.setup(motor_driver_0_reverse_pwm_pin, GPIO.OUT)
 GPIO.setup(motor_driver_0_forward_pwm_pin, GPIO.OUT)
+
 GPIO.setup(motor_0_Encoder_A_pin, GPIO.IN)
 GPIO.setup(motor_0_Encoder_B_pin, GPIO.IN)
+motor_0_encoder = Encoder.Encoder(motor_0_Encoder_A_pin, motor_0_Encoder_B_pin)
 
 motor_driver_0_reverse_pwm = GPIO.PWM(motor_driver_0_reverse_pwm_pin, pwm_frequency)
 motor_driver_0_forward_pwm = GPIO.PWM(motor_driver_0_forward_pwm_pin, pwm_frequency)
@@ -52,8 +56,10 @@ GPIO.setup(motor_driver_1_reverse_enable_pin, GPIO.OUT)
 GPIO.setup(motor_driver_1_forward_enabl_pine, GPIO.OUT)
 GPIO.setup(motor_driver_1_reverse_pwm_pin, GPIO.OUT)
 GPIO.setup(motor_driver_1_forward_pwm_pin, GPIO.OUT)
+
 GPIO.setup(motor_1_Encoder_A_pin, GPIO.IN)
 GPIO.setup(motor_1_Encoder_B_pin, GPIO.IN)
+motor_1_encoder = Encoder.Encoder(motor_1_Encoder_A_pin, motor_1_Encoder_B_pin)
 
 motor_driver_1_reverse_pwm = GPIO.PWM(motor_driver_1_reverse_pwm_pin, pwm_frequency)
 motor_driver_1_forward_pwm = GPIO.PWM(motor_driver_1_forward__pwm_pin, pwm_frequency)
@@ -63,8 +69,10 @@ GPIO.setup(motor_driver_2_reverse_enable_pin, GPIO.OUT)
 GPIO.setup(motor_driver_2_forward_enable_pin, GPIO.OUT)
 GPIO.setup(motor_driver_2_reverse_pwm_pin, GPIO.OUT)
 GPIO.setup(motor_driver_2_forward_pwm_pin, GPIO.OUT)
+
 GPIO.setup(motor_2_Encoder_A_pin, GPIO.IN)
 GPIO.setup(motor_2_Encoder_B_pin, GPIO.IN)
+motor_2_encoder = Encoder.Encoder(motor_2_Encoder_A_pin, motor_2_Encoder_B_pin)
 
 motor_driver_2_reverse_pwm = GPIO.PWM(motor_driver_2_reverse_pwm_pin, pwm_frequency)
 motor_driver_2_forward_pwm = GPIO.PWM(motor_driver_2_forward_pwm_pin, pwm_frequency)
@@ -95,6 +103,7 @@ destination = [-args.x,args.y,args.z]
 offsetJoint3 = -10*np.pi/180
 
 tol = 1e-2
+
 
 # Can alternatively pass in p.DIRECT 
 # client = p.connect(p.GUI)
@@ -237,10 +246,13 @@ duration = 30000
 
 p.setRealTimeSimulation(0)
 # t0 = time.time()
-dt = 1/240
+# dt = 1/240
+
 termTime = 0
-for i in range(duration): 
-    
+
+dt = 0.05 # 50ms per loop
+
+def main():
     # pos, ori = p.getBasePositionAndOrientation(bodyId)
 
     if state1==False and a1 == False: 
@@ -287,8 +299,15 @@ for i in range(duration):
     
 
     ''' We Need angle and velocity for this: pos, vel '''
-    pos0 = encoder.read() # rad
-    vel0 = encoder.read() # rad/s
+    # radians = (enccoder value / encoder_count_per_rotation) * 2*Pi
+    pos0 = (motor_0_encoder.read() / encoder_count_per_rotation) * 2*np.pi  # rad
+    vel0 = pos0 / dt # rad/s
+
+    pos1 = (motor_1_encoder.read() / encoder_count_per_rotation) * 2*np.pi  # rad
+    vel1 = pos1 / dt # rad/s
+
+    pos2 = (motor_2_encoder.read() / encoder_count_per_rotation) * 2*np.pi  # rad
+    vel2 = pos2 / dt # rad/s
 
     tau0,tau1,tau2 = p.calculateInverseDynamics(bodyId,
                                                 [pos0,pos1,pos2],
@@ -300,8 +319,6 @@ for i in range(duration):
     T0 = kp0*(error0) + kd0*(de0/dt) + ki0*cumul_e0
     T1 = kp1*(error1) + kd1*(de1/dt) + ki1*cumul_e1
     T2 = kp2*(error2) + kd2*(de2/dt) + ki2*cumul_e2
-
-    # print("torques 0 1 2: ",T0,",",T1,",",T2)
 
     prev_error0 = error0
     prev_error1 = error1
@@ -342,16 +359,10 @@ for i in range(duration):
             print("reached state 1")
             minE[-1] = True
             
-            # cumul_e0 = 0
-            # cumul_e1 = 0
-            # cumul_e2 = 0
-        elif state2==False: 
             state2 = True
             print("STATE CHANGED")
             print("reached state 2")
-            # cumul_e0 = 0
-            # cumul_e1 = 0
-            # cumul_e2 = 0
+
             p.changeDynamics(bodyId,3,mass = ee_mass+payload)
             minE[-1] = True
 
@@ -367,21 +378,6 @@ for i in range(duration):
             ki2*=10.5*payload
             kd2*=10.025*payload
 
-            # kp0+=1e-02*payload
-            # ki0+=1e-03*payload
-            # kd0+=3e-01*payload
-
-            # kp1+=500e-01*payload
-            # ki1+=10e-02*payload
-            # kd1+=400e-01*payload
-
-            # kp2+=5e-04*payload
-            # ki2+=5e-05*payload
-            # kd2+=5e-04*payload
-            # print("gains:\n ")
-            # print(kp0,",",ki0,",",kd0)
-            # print(kp1,",",ki1,",",kd1)
-            # print(kp2,",",ki2,",",kd2)
             
         elif state3== False: 
             state3 = True
@@ -393,135 +389,14 @@ for i in range(duration):
             minE[-1] = True
             termTime=i+1
             break
-            
-        
-        
 
-
-    # if i%5000==0: 
-    #     print(i)
-    #     if(state2==True):
-    #         print("Time elapsed: ",i/240," seconds")
-    #         print("current errors (deg.): ",error0*180/np.pi,", ",
-    #                                         error1*180/np.pi,", ",
-    #                                         error2*180/np.pi)
     print("Time elapsed: ",i/240," seconds")
     print("joint angles: ",pos0,", ",pos1,", ",pos2)
     print("joint errors: ",error0,", ",error1,", ",error2)
 
     termTime = i+1
     p.stepSimulation()
+
+    threading.Timer(dt, main).start()
     
-# print("total time took (real time sim) : ", t1-t0)
-    
-
-
-
-''' PLOT ''' ''' PLOT ''' ''' PLOT ''' ''' PLOT ''' ''' PLOT ''' ''' PLOT ''' ''' PLOT '''
-
-
-
-# PLOT
-
-# figure = plt.figure(figsize=[15, 4.5])
-# figure.subplots_adjust(left=0.05, bottom=0.11, right=0.97, top=0.9, wspace=0.4, hspace=0.55)
-
-# t = np.linspace(0,termTime/240,termTime)
-# torqueLog0 = np.asarray(torqueLog0)
-# torqueLog1 = np.asarray(torqueLog1)
-# torqueLog2 = np.asarray(torqueLog2)
-# errorLog0 = np.asarray(errorLog0)
-# errorLog1 = np.asarray(errorLog1)
-# errorLog2 = np.asarray(errorLog2)
-# angLog0 = np.asarray(angLog0)
-# angLog1 = np.asarray(angLog1)
-# angLog2 = np.asarray(angLog2)
-# minE = np.asarray(minE)
-
-
-# ax_1 = figure.add_subplot(131)
-# ax_1.set_title("TORQUE 0")
-# ax_1.plot(t, torqueLog0, '-r')
-# ax_1.grid()
-# ax_1.set_xlabel("seconds")
-# ax_1.set_ylabel("NM")
-
-# ax_2 = figure.add_subplot(132)
-# ax_2.set_title("TORQUE 1")
-# ax_2.plot(t, torqueLog1, '-g')
-# ax_2.grid()
-# ax_2.set_xlabel("seconds")
-# ax_2.set_ylabel("NM")
-
-# ax_3 = figure.add_subplot(133)
-# ax_3.set_title("TORQUE 2")
-# ax_3.plot(t, torqueLog2, '-b')
-# ax_3.grid()
-# ax_3.set_xlabel("seconds")
-# ax_3.set_ylabel("NM")
-
-# plt.savefig("./results/torquePlot.png",bbox_inches='tight')
-
-
-# figure = plt.figure(figsize=[15, 4.5])
-# figure.subplots_adjust(left=0.05, bottom=0.11, right=0.97, top=0.9, wspace=0.4, hspace=0.55)
-
-# mask = minE
-
-
-# ax_4 = figure.add_subplot(131)
-# ax_4.set_title("joint 0 error")
-# ax_4.plot(t, errorLog0, '-r')
-# ax_4.scatter(t[mask],errorLog0[mask],c='k',s=15)
-# ax_4.grid()
-# ax_4.set_xlabel("seconds")
-# ax_4.set_ylabel("degrees")
-
-# ax_5 = figure.add_subplot(132)
-# ax_5.set_title("joint 1 error")
-# ax_5.plot(t, errorLog1, '-g')
-# ax_5.scatter(t[mask],errorLog1[mask],c='k',s=15)
-# ax_5.grid()
-# ax_5.set_xlabel("seconds")
-# ax_5.set_ylabel("degrees")
-
-# ax_6 = figure.add_subplot(133)
-# ax_6.set_title("joint 2 error")
-# ax_6.plot(t, errorLog2, '-b')
-# ax_6.scatter(t[mask],errorLog2[mask],c='k',s=15)
-# ax_6.grid()
-# ax_6.set_xlabel("seconds")
-# ax_6.set_ylabel("degrees")
-
-# plt.savefig("./results/errorPlot.png",bbox_inches='tight')
-
-# figure = plt.figure(figsize=[15, 4.5])
-# figure.subplots_adjust(left=0.05, bottom=0.11, right=0.97, top=0.9, wspace=0.4, hspace=0.55)
-
-# ax_7 = figure.add_subplot(131)
-# ax_7.set_title("joint 0 angle")
-# ax_7.plot(t, angLog0, '-r')
-# ax_7.scatter(t[mask],angLog0[mask],c='k',s=20)
-# ax_7.grid()
-# ax_7.set_xlabel("seconds")
-# ax_7.set_ylabel("degrees")
-
-# ax_8 = figure.add_subplot(132)
-# ax_8.set_title("joint 1 angle")
-# ax_8.plot(t, angLog1, '-g')
-# ax_8.scatter(t[mask],angLog1[mask],c='k',s=20)
-# ax_8.grid()
-# ax_8.set_xlabel("seconds")
-# ax_8.set_ylabel("degrees")
-
-# ax_8 = figure.add_subplot(133)
-# ax_8.set_title("joint 2 angle")
-# ax_8.plot(t, angLog2, '-b')
-# ax_8.scatter(t[mask],angLog2[mask],c='k',s=20)
-# ax_8.grid()
-# ax_8.set_xlabel("seconds")
-# ax_8.set_ylabel("degrees")
-
-# plt.savefig("./results/anglePlot.png",bbox_inches='tight')
-
-# plt.show()
+main()
