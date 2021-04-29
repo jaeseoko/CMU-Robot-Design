@@ -88,7 +88,7 @@ prev_pos = 0
 GPIO.output(motor_driver_1_reverse_enable_pin, GPIO.HIGH)
 GPIO.output(motor_driver_1_forward_enable_pin, GPIO.HIGH)
 
-motor_driver_1_forward_pwm.start(100)
+motor_driver_1_forward_pwm.start(99)
 # motor_driver_1_reverse_pwm.start(100)
 
 
