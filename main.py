@@ -1,8 +1,11 @@
 import RPi.GPIO as GPIO
 from time import sleep
+import numpy as np
+import Encoder
 
 # Motor--------------------------------------
-pwm_frequency = 1000    
+pwm_frequency = 1000 
+encoder_count_per_rotation = 810    
 
 # GPIOs--------------------------------------
 # First Motor related
@@ -38,6 +41,7 @@ GPIO.setup(motor_driver_1_reverse_pwm_pin, GPIO.OUT)
 GPIO.setup(motor_driver_1_forward_pwm_pin, GPIO.OUT)
 GPIO.setup(motor_1_Encoder_A_pin, GPIO.IN)
 GPIO.setup(motor_1_Encoder_B_pin, GPIO.IN)
+motor_1_encoder = Encoder.Encoder(motor_1_Encoder_A_pin, motor_1_Encoder_B_pin)
 
 motor_driver_1_reverse_pwm = GPIO.PWM(motor_driver_1_reverse_pwm_pin, pwm_frequency)
 motor_driver_1_forward_pwm = GPIO.PWM(motor_driver_1_forward_pwm_pin, pwm_frequency)
@@ -65,8 +69,23 @@ motor_driver_3_reverse_pwm = GPIO.PWM(motor_driver_3_reverse_pwm_pin, pwm_freque
 motor_driver_3_forward_pwm = GPIO.PWM(motor_driver_3_forward_pwm_pin, pwm_frequency)
 # End of initialization--------------------------------------
 
-print("Please specify the motor and angle \n Example: \"1 30\", or \"2 60\"")
 
-while(1):
-    message = input()
-    print("You have inputed: " + message)
+dt = 0.05 #50ms
+
+GPIO.output(motor_driver_1_reverse_enable_pin, GPIO.HIGH)
+GPIO.output(motor_driver_1_forward_enable_pin, GPIO.HIGH)
+
+motor_driver_1_forward_pwm.start(50)
+
+
+def main():
+
+    pos0 = (motor_1_encoder.read() / encoder_count_per_rotation) * 2*np.pi  # rad
+    vel0 = pos0 / dt # rad/s
+
+    print("position: " + str(pos0) + ". velocity: " + str(vel0) + ".")
+
+
+    threading.Timer(dt, main).start()  
+main()
+
