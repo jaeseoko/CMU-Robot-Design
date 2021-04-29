@@ -85,11 +85,11 @@ motor_driver_3_forward_pwm = GPIO.PWM(motor_driver_3_forward_pwm_pin, pwm_freque
 dt = 0.05 #50ms
 prev_pos = 0
 
-GPIO.output(motor_driver_1_reverse_enable_pin, GPIO.LOW)
+GPIO.output(motor_driver_1_reverse_enable_pin, GPIO.HIGH)
 GPIO.output(motor_driver_1_forward_enable_pin, GPIO.HIGH)
 
-motor_driver_1_forward_pwm.start(100)
-# motor_driver_1_reverse_pwm.start(100)
+# motor_driver_1_forward_pwm.start(100)
+motor_driver_1_reverse_pwm.start(100)
 
 
 def main():
