@@ -83,11 +83,11 @@ motor_driver_1_forward_pwm.start(50)
 
 def main():
     global prev_pos
-    
+
     pos0 = (motor_1_encoder.read() / encoder_count_per_rotation) * 2*np.pi  # rad
     vel0 = (pos0 - prev_pos) / dt # rad/s
 
-    print("Raw encoder data: " + motor_1_encoder.read() + ". position: " + str(pos0) + ". velocity: " + str(vel0) + ".")
+    print("Raw encoder data: " + str(motor_1_encoder.read()) + ". position: " + str(pos0) + ". velocity: " + str(vel0) + ".")
 
     prev_pos = pos0
     threading.Timer(dt, main).start()  
