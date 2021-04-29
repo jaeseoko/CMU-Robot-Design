@@ -48,7 +48,7 @@ motor_driver_1_forward_pwm = GPIO.PWM(motor_driver_1_forward_pwm_pin, pwm_freque
 
 # Second Motor related
 GPIO.setup(motor_driver_2_reverse_enable_pin, GPIO.OUT)
-GPIO.setup(motor_driver_2_forward_enabl_pine, GPIO.OUT)
+GPIO.setup(motor_driver_2_forward_enable_pin, GPIO.OUT)
 GPIO.setup(motor_driver_2_reverse_pwm_pin, GPIO.OUT)
 GPIO.setup(motor_driver_2_forward_pwm_pin, GPIO.OUT)
 GPIO.setup(motor_2_Encoder_A_pin, GPIO.IN)
