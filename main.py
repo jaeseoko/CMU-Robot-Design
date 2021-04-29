@@ -2,6 +2,7 @@ import RPi.GPIO as GPIO
 from time import sleep
 import numpy as np
 import Encoder
+import threading
 
 # Motor--------------------------------------
 pwm_frequency = 1000 
