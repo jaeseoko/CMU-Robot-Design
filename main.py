@@ -3,6 +3,16 @@ from time import sleep
 import numpy as np
 import Encoder
 import threading
+import signal
+import sys
+
+# For GPIO clean exit
+def signal_handler(sig, frame):
+    print('Cleaning GPIO and Exiting the program...')
+    GPIO.cleanup() 
+    sys.exit(0)
+
+signal.signal(signal.SIGINT, signal_handler)
 
 # Motor--------------------------------------
 pwm_frequency = 1000 
