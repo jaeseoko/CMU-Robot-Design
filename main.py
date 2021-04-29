@@ -15,7 +15,7 @@ def signal_handler(sig, frame):
 signal.signal(signal.SIGINT, signal_handler)
 
 # Motor--------------------------------------
-pwm_frequency = 10000 
+pwm_frequency = 1000 
 encoder_count_per_rotation = 810    
 
 # GPIOs--------------------------------------
@@ -89,7 +89,7 @@ GPIO.output(motor_driver_1_reverse_enable_pin, GPIO.HIGH)
 GPIO.output(motor_driver_1_forward_enable_pin, GPIO.HIGH)
 
 # motor_driver_1_forward_pwm.start(100)
-motor_driver_1_reverse_pwm.start(100)
+motor_driver_1_reverse_pwm.start(0)
 
 
 def main():
