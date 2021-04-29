@@ -324,8 +324,6 @@ def main():
     prev_error1 = error1
     prev_error2 = error2
 
-    
-
     ####
     
     ####
@@ -388,9 +386,9 @@ def main():
             print("placed the load at final destination.")
             minE[-1] = True
             termTime=i+1
-            break
+            return()
 
-    print("Time elapsed: ",i/240," seconds")
+    print("Time elapsed: ",i*dt," seconds")
     print("joint angles: ",pos0,", ",pos1,", ",pos2)
     print("joint errors: ",error0,", ",error1,", ",error2)
 
