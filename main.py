@@ -90,11 +90,11 @@ def rotateCW(motor, voltage):
 
     pwm_percent = voltage / V
     if(motor == 0):
-        motor_driver_1_forward_pwm.changeDutyCycle(pwm_percent)
+        motor_driver_1_forward_pwm.ChangeDutyCycle(pwm_percent)
     elif (motor == 1):
-        motor_driver_2_forward_pwm.changeDutyCycle(pwm_percent)
+        motor_driver_2_forward_pwm.ChangeDutyCycle(pwm_percent)
     elif (motor == 2):
-        motor_driver_3_forward_pwm.changeDutyCycle(pwm_percent)
+        motor_driver_3_forward_pwm.ChangeDutyCycle(pwm_percent)
 
 def rotateCCW(motor, voltage):
     global motor_driver_1_reverse_pwm
@@ -104,11 +104,11 @@ def rotateCCW(motor, voltage):
 
     pwm_percent = voltage / V
     if(motor == 0):
-        motor_driver_1_reverse_pwm.changeDutyCycle(pwm_percent)
+        motor_driver_1_reverse_pwm.ChangeDutyCycle(pwm_percent)
     elif (motor == 1):
-        motor_driver_2_reverse_pwm.changeDutyCycle(pwm_percent)
+        motor_driver_2_reverse_pwm.ChangeDutyCycle(pwm_percent)
     elif (motor == 2):
-        motor_driver_3_reverse_pwm.changeDutyCycle(pwm_percent)
+        motor_driver_3_reverse_pwm.ChangeDutyCycle(pwm_percent)
 
 def stopRotate(motor):
     rotateCW(motor, 0)
