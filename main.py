@@ -95,8 +95,8 @@ motor_driver_1_reverse_pwm.start(100)
 def main():
     global prev_pos
 
-    pos0 = (motor_1_encoder.read() / encoder_count_per_rotation) * 2*np.pi / 3  # rad
-    vel0 = (pos0 - prev_pos) / dt / 3 # rad/s
+    pos0 = (motor_1_encoder.read()) / (encoder_count_per_rotation)  # rad
+    vel0 = (pos0 - prev_pos) / (dt) * 60# rad/s
 
     print("Raw encoder data: " + str(motor_1_encoder.read()) + ". position: " + str(pos0) + ". velocity: " + str(vel0) + ".")
 
