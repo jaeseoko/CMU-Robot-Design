@@ -92,7 +92,7 @@ def rotateCW(motor, voltage):
 
     pwm_percent = voltage / V
     if(motor == 0):
-        motor_driver_1_forward_pwm.ChangeDutyCycle(pwm_percent)
+        motor_driver_1_forward_pwm.ChangeDutyCycle(100)
     elif (motor == 1):
         motor_driver_2_forward_pwm.ChangeDutyCycle(pwm_percent)
     elif (motor == 2):
