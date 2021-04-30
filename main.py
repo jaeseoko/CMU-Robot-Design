@@ -140,7 +140,10 @@ prev_pos = 0
 GPIO.output(motor_driver_1_reverse_enable_pin, GPIO.HIGH)
 GPIO.output(motor_driver_1_forward_enable_pin, GPIO.HIGH)
 
+motor_driver_1_reverse_pwm.start(0)
+motor_driver_1_reverse_pwm.start(0)
 rotateCW(1, 12)
+
 
 
 def main():
