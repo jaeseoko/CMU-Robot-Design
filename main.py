@@ -6,6 +6,57 @@ import threading
 import signal
 import sys
 
+def rotateCW(motor, voltage):
+    global motor_driver_1_forward_pwm
+    global motor_driver_2_forward_pwm
+    global motor_driver_3_forward_pwm
+    global V
+
+    pwm_percent = voltage / V
+    if(motor == 0):
+        motor_driver_1_forward_pwm.changeDutyCycle(pwm_percent)
+    elif (motor == 1):
+        motor_driver_2_forward_pwm.changeDutyCycle(pwm_percent)
+    elif (motor == 2):
+        motor_driver_3_forward_pwm.changeDutyCycle(pwm_percent)
+
+def rotateCCW(motor, voltage):
+    global motor_driver_1_reverse_pwm
+    global motor_driver_2_reverse_pwm
+    global motor_driver_3_reverse_pwm
+    global V
+
+    pwm_percent = voltage / V
+    if(motor == 0):
+        motor_driver_1_reverse_pwm.changeDutyCycle(pwm_percent)
+    elif (motor == 1):
+        motor_driver_2_reverse_pwm.changeDutyCycle(pwm_percent)
+    elif (motor == 2):
+        motor_driver_3_reverse_pwm.changeDutyCycle(pwm_percent)
+
+def stopRotate(motor):
+    rotateCW(motor, 0)
+    rotateCCW(motor, 0)
+
+def getEncoderPosition(encoder):
+    global motor_1_encoder
+    global motor_2_encoder
+    global motor_3_encoder
+    global encoder_count_per_rotation
+
+    if(encoder == 0):
+        return 2* np.pi * (motor_1_encoder.read() / 10) / (encoder_count_per_rotation)  # rad
+    elif (encoder == 1):
+        return 2* np.pi * (motor_2_encoder.read() / 10) / (encoder_count_per_rotation)  # rad
+    elif (encoder == 2):
+        return 2* np.pi * (motor_3_encoder.read() / 10) / (encoder_count_per_rotation)  # rad
+
+def getEncoderVelocity(encoder_position, prev_pos, dt):
+    return (encoder_position - prev_pos) / (dt) # rad/s
+
+def exitRoutine():
+    GPIO.cleanup() 
+
 # For GPIO clean exit
 def signal_handler(sig, frame):
     print('Cleaning GPIO and Exiting the program...')
@@ -102,54 +153,3 @@ def main():
     prev_pos = pos0
     threading.Timer(dt, main).start()  
 main()
-
-def rotateCW(motor, voltage):
-    global motor_driver_1_forward_pwm
-    global motor_driver_2_forward_pwm
-    global motor_driver_3_forward_pwm
-    global V
-
-    pwm_percent = voltage / V
-    if(motor == 0):
-        motor_driver_1_forward_pwm.changeDutyCycle(pwm_percent)
-    elif (motor == 1):
-        motor_driver_2_forward_pwm.changeDutyCycle(pwm_percent)
-    elif (motor == 2):
-        motor_driver_3_forward_pwm.changeDutyCycle(pwm_percent)
-
-def rotateCCW(motor, voltage):
-    global motor_driver_1_reverse_pwm
-    global motor_driver_2_reverse_pwm
-    global motor_driver_3_reverse_pwm
-    global V
-
-    pwm_percent = voltage / V
-    if(motor == 0):
-        motor_driver_1_reverse_pwm.changeDutyCycle(pwm_percent)
-    elif (motor == 1):
-        motor_driver_2_reverse_pwm.changeDutyCycle(pwm_percent)
-    elif (motor == 2):
-        motor_driver_3_reverse_pwm.changeDutyCycle(pwm_percent)
-
-def stopRotate(motor):
-    rotateCW(motor, 0)
-    rotateCCW(motor, 0)
-
-def getEncoderPosition(encoder):
-    global motor_1_encoder
-    global motor_2_encoder
-    global motor_3_encoder
-    global encoder_count_per_rotation
-
-    if(encoder == 0):
-        return 2* np.pi * (motor_1_encoder.read() / 10) / (encoder_count_per_rotation)  # rad
-    elif (encoder == 1):
-        return 2* np.pi * (motor_2_encoder.read() / 10) / (encoder_count_per_rotation)  # rad
-    elif (encoder == 2):
-        return 2* np.pi * (motor_3_encoder.read() / 10) / (encoder_count_per_rotation)  # rad
-
-def getEncoderVelocity(encoder_position, prev_pos, dt):
-    return (encoder_position - prev_pos) / (dt) # rad/s
-
-def exitRoutine():
-    GPIO.cleanup() 
