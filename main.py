@@ -159,7 +159,7 @@ def main():
     pos0 = getEncoderPosition(1)
     vel0 = getEncoderVelocity(pos0, prev_pos, dt)
 
-    print("Raw encoder data: " + str(raw) + ". position: " + str(pos0) + ". velocity: " + str(vel0) + ".")
+    print("position: " + str(pos0) + ". velocity: " + str(vel0) + ".")
 
     prev_pos = pos0
     threading.Timer(dt, main).start()  
