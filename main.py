@@ -157,7 +157,7 @@ rotateCW(0, 12)
 
 def main():
     global prev_pos
-    pos0 = getEncoderPosition(1)
+    pos0 = getEncoderPosition(0)
     vel0 = getEncoderVelocity(pos0, prev_pos, dt)
 
     print("position: " + str(pos0) + ". velocity: " + str(vel0) + ".")
