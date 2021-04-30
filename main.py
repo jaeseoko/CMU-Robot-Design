@@ -84,7 +84,7 @@ motor_driver_3_reverse_pwm = GPIO.PWM(motor_driver_3_reverse_pwm_pin, pwm_freque
 motor_driver_3_forward_pwm = GPIO.PWM(motor_driver_3_forward_pwm_pin, pwm_frequency)
 # End of initialization--------------------------------------
 
-def rotateCW(motor, voltage):
+def rotateCCW(motor, voltage):
     global motor_driver_1_forward_pwm
     global motor_driver_2_forward_pwm
     global motor_driver_3_forward_pwm
@@ -98,7 +98,7 @@ def rotateCW(motor, voltage):
     elif (motor == 2):
         motor_driver_3_forward_pwm.ChangeDutyCycle(pwm_percent)
 
-def rotateCCW(motor, voltage):
+def rotateCW(motor, voltage):
     global motor_driver_1_reverse_pwm
     global motor_driver_2_reverse_pwm
     global motor_driver_3_reverse_pwm
@@ -151,9 +151,7 @@ motor_driver_2_reverse_pwm.start(0)
 motor_driver_3_forward_pwm.start(0)
 motor_driver_3_reverse_pwm.start(0)
 
-rotateCCW(0, 12)
-
-
+rotateCW(0, 12)
 
 def main():
     global prev_pos
