@@ -89,15 +89,13 @@ prev_pos = 0
 GPIO.output(motor_driver_1_reverse_enable_pin, GPIO.HIGH)
 GPIO.output(motor_driver_1_forward_enable_pin, GPIO.HIGH)
 
-motor_driver_1_forward_pwm.start(0)
-motor_driver_1_reverse_pwm.start(100)
+rotateCW(1, 12)
 
 
 def main():
     global prev_pos
-    raw = motor_1_encoder.read() / 10
-    pos0 = 2* np.pi * (raw) / (encoder_count_per_rotation)  # rad
-    vel0 = (pos0 - prev_pos) / (dt)# rad/s
+    pos0 = getEncoderPosition(1)
+    vel0 = getEncoderVelocity(pos0, prev_pos, dt)
 
     print("Raw encoder data: " + str(raw) + ". position: " + str(pos0) + ". velocity: " + str(vel0) + ".")
 
