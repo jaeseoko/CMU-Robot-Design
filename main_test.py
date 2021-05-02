@@ -267,12 +267,14 @@ def main():
     #     targetORN[2]-=10*np.pi/180
     #     offset = True
 
+    end_time = time.time()
+    print("total time taken this loop: ", end_time - start_time)
+
     error = [targetORN[0]-pos[0],targetORN[1]-pos[1],targetORN[2]-pos[2] ]
     de = [error[0] - prev_error[0],error[1] - prev_error[1],error[2] - prev_error[2] ]
     cum_e+=error
 
-    end_time = time.time()
-    print("total time taken this loop: ", end_time - start_time)
+
 
     if picked == False:
         pidTorques = PID_torque(error, de, cum_e, 0)
@@ -320,8 +322,7 @@ def main():
     prev_pos   = pos
     prev_error = error
 
-
-    threading.Timer(dt, main).start()  
     run+=1
+    threading.Timer(dt, main).start()  
 
 main()
