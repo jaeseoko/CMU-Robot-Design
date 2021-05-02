@@ -250,14 +250,11 @@ motor_driver_3_reverse_pwm.start(0)
 
 # pause = 0
 
+targetORN, destORN, prev_pos, prev_error, cum_e, load, picked, placed, offset, worm = SetUp()
+
 def main():
-
     start_time = time.time()
-
-    run = 0
-    
-    if run==0:
-        targetORN, destORN, prev_pos, prev_error, cum_e, load, picked, placed, offset, worm = SetUp()
+    global targetORN, destORN, prev_pos, prev_error, cum_e, load, picked, placed, offset, worm
 
     pos = [getEncoderPosition(0),getEncoderPosition(1),getEncoderPosition(2)]
     vel = [getEncoderVelocity(pos[0], prev_pos[0], dt),
@@ -322,7 +319,6 @@ def main():
     prev_pos   = pos
     prev_error = error
 
-    run+=1
     threading.Timer(dt, main).start()  
 
 main()
