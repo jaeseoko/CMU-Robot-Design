@@ -253,7 +253,6 @@ motor_driver_3_reverse_pwm.start(0)
 targetORN, destORN, prev_pos, prev_error, cum_e, load, picked, placed, offset, worm = SetUp()
 
 def main():
-    start_time = time.time()
     global targetORN, destORN, prev_pos, prev_error, cum_e, load, picked, placed, offset, worm
 
     pos = [getEncoderPosition(0),getEncoderPosition(1),getEncoderPosition(2)]
@@ -263,9 +262,6 @@ def main():
     # if offset ==False:
     #     targetORN[2]-=10*np.pi/180
     #     offset = True
-
-    end_time = time.time()
-    print("total time taken this loop: ", end_time - start_time)
 
     error = [targetORN[0]-pos[0],targetORN[1]-pos[1],targetORN[2]-pos[2] ]
     de = [error[0] - prev_error[0],error[1] - prev_error[1],error[2] - prev_error[2] ]
