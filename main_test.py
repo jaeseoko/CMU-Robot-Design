@@ -7,6 +7,7 @@ import signal
 import sys
 import pybullet as p
 import argparse
+import time
 
 # For pybullet loading urdf to calculate inverse dynamics / Motor Params
 def SetUp():
