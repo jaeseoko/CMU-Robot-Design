@@ -250,6 +250,9 @@ motor_driver_3_reverse_pwm.start(0)
 # pause = 0
 
 def main():
+
+    start_time = time.time()
+
     run = 0
     
     if run==0:
@@ -314,6 +317,9 @@ def main():
 
     prev_pos   = pos
     prev_error = error
+
+    end_time = time.time()
+    print("total time taken this loop: ", end_time - start_time)
 
     threading.Timer(dt, main).start()  
     run+=1
