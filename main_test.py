@@ -9,20 +9,6 @@ import pybullet as p
 import argparse
 
 # For pybullet loading urdf to calculate inverse dynamics / Motor Params
-
-
-
-
-def checkPoint(error,vel,status):
-    tol = 0.1
-    if( status == False and np.linalg.norm(np.asarray(error),axis=0) < tol and
-                            np.linalg.norm(np.asarray(vel),axis=0)   < tol):
-        status = True
-
-    return status
-
-
-
 def SetUp():
     global ee_mass, bodyId
     client = p.connect(p.DIRECT)
@@ -49,7 +35,10 @@ def SetUp():
                         help='target end effector joint angle 2')
     parser.add_argument('--load', 
                         type=float,
-                        help='weight to lift')                    
+                        help='weight to lift')
+    parser.add_argument('--worm',
+                        type=int,
+                        help='set if worm gear used or not,0: planetary 1: worm gear')
     args = parser.parse_args()
     targetORN = [args.a0*np.pi/180,args.a1*np.pi/180,args.a2*np.pi/180]
     destORN = [args.a0*np.pi/180 + np.pi/2,args.a1*np.pi/180,args.a2*np.pi/180]
@@ -57,9 +46,21 @@ def SetUp():
     prev_error = [0,0,0]
     cum_e = [0,0,0]
     load = args.load
+    if args.worm==0:
+        worm = False
+    else:
+        worm = True   
     picked, placed = False, False
     offset = False
-    return targetORN,destORN,prev_pos,prev_error,cum_e,load,picked,placed,offset
+    return targetORN,destORN,prev_pos,prev_error,cum_e,load,picked,placed,offset,worm
+
+def checkPoint(error,vel,status):
+    tol = 0.1
+    if( status == False and np.linalg.norm(np.asarray(error),axis=0) < tol and
+                            np.linalg.norm(np.asarray(vel),axis=0)   < tol):
+        status = True
+
+    return status
 
 def GetVoltage(torque,vel):
     Ts = 23.5/1000                      # Nm (stall torque)
@@ -252,7 +253,7 @@ def main():
     run = 0
     
     if run==0:
-        targetORN, destORN, prev_pos, prev_error, cum_e, load, picked, placed, offset = SetUp()
+        targetORN, destORN, prev_pos, prev_error, cum_e, load, picked, placed, offset, worm = SetUp()
 
     pos = [getEncoderPosition(0),getEncoderPosition(1),getEncoderPosition(2)]
     vel = [getEncoderVelocity(pos[0], prev_pos[0], dt),
@@ -292,14 +293,21 @@ def main():
     
     
 
+
     volt = GetVoltage(torque,vel)
+
+    
 
     if(volt[0]>0): rotateCW(0, volt[0])
     else: rotateCCW(0, volt[0])
     if(volt[1]<0): rotateCW(1, volt[1])
     else: rotateCCW(1, volt[1])
-    if(volt[2]<0): rotateCW(2, volt[2])
-    else: rotateCCW(2, volt[2])
+    if picked==True and worm == True:
+        stopRotate(2)
+    elif(volt[2]<0): 
+        rotateCW(2, volt[2])
+    else: 
+        rotateCCW(2, volt[2])
 
 
     print("position: " + str(pos[0]) + ". velocity: " + str(vel[0]) + ".")
