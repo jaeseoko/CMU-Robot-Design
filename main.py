@@ -159,8 +159,8 @@ motor_driver_2_reverse_pwm.start(0)
 motor_driver_3_forward_pwm.start(0)
 motor_driver_3_reverse_pwm.start(0)
 
-rotateCW(0, 2)
-rotateCW(1, 2)
+rotateCCW(0, 1)
+rotateCW(1, 6)
 rotateCW(2, 2)
 
 def main():
