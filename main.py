@@ -138,9 +138,17 @@ def exitRoutine():
 
 dt = 0.05 #50ms
 prev_pos = 0
+prev_pos = 1
+prev_pos = 2
 
 GPIO.output(motor_driver_1_reverse_enable_pin, GPIO.HIGH)
 GPIO.output(motor_driver_1_forward_enable_pin, GPIO.HIGH)
+
+GPIO.output(motor_driver_2_reverse_enable_pin, GPIO.HIGH)
+GPIO.output(motor_driver_2_forward_enable_pin, GPIO.HIGH)
+
+GPIO.output(motor_driver_3_reverse_enable_pin, GPIO.HIGH)
+GPIO.output(motor_driver_3_forward_enable_pin, GPIO.HIGH)
 
 motor_driver_1_forward_pwm.start(0)
 motor_driver_1_reverse_pwm.start(0)
@@ -152,14 +160,29 @@ motor_driver_3_forward_pwm.start(0)
 motor_driver_3_reverse_pwm.start(0)
 
 rotateCW(0, 12)
+rotateCW(1, 12)
+rotateCW(2, 12)
 
 def main():
     global prev_pos
+    global prev_pos1
+    global prev_pos2
+
     pos0 = getEncoderPosition(0)
     vel0 = getEncoderVelocity(pos0, prev_pos, dt)
 
+    pos1 = getEncoderPosition(1)
+    vel1 = getEncoderVelocity(pos1, prev_pos1, dt)
+
+    pos2 = getEncoderPosition(2)
+    vel2 = getEncoderVelocity(pos2, prev_pos2, dt)
+
     print("position: " + str(pos0) + ". velocity: " + str(vel0) + ".")
+    print("position: " + str(pos1) + ". velocity: " + str(vel1) + ".")
+    print("position: " + str(pos2) + ". velocity: " + str(vel2) + ".")
 
     prev_pos = pos0
+    prev_pos1 = pos1
+    prev_pos2 = pos2
     threading.Timer(dt, main).start()  
 main()
