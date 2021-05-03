@@ -185,7 +185,11 @@ def rotateCCW(motor, voltage):
     global motor_driver_3_forward_pwm
     global V
 
-    pwm_percent = voltage / V * 100
+    if(voltage > 12):
+        pwm_percent = 12
+    else:
+        pwm_percent = voltage / V * 100
+        
     if(motor == 0):
         motor_driver_1_forward_pwm.ChangeDutyCycle(pwm_percent)
     elif (motor == 1):
@@ -199,7 +203,11 @@ def rotateCW(motor, voltage):
     global motor_driver_3_reverse_pwm
     global V
 
-    pwm_percent = voltage / V * 100
+    if(voltage > 12):
+        pwm_percent = 12
+    else:
+        pwm_percent = voltage / V * 100
+
     if(motor == 0):
         motor_driver_1_reverse_pwm.ChangeDutyCycle(pwm_percent)
     elif (motor == 1):
@@ -301,6 +309,7 @@ def main():
 
 
     volt = GetVoltage(torque,vel)
+
 
     
 
