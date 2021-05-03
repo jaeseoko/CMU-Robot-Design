@@ -314,7 +314,6 @@ def main():
 
     volt = GetVoltage(torque,vel)
 
-
     
 
     if(volt[0]>0): rotateCW(0, volt[0])

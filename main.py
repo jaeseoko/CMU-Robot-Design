@@ -159,9 +159,9 @@ motor_driver_2_reverse_pwm.start(0)
 motor_driver_3_forward_pwm.start(0)
 motor_driver_3_reverse_pwm.start(0)
 
-rotateCW(0, 12)
-rotateCW(1, 12)
-rotateCW(2, 12)
+rotateCW(0, 6)
+rotateCW(1, 6)
+rotateCW(2, 6)
 
 def main():
     global prev_pos
