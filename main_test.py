@@ -318,13 +318,13 @@ def main():
     
 
     if(volt[0]>0): rotateCW(0, volt[0])
-    else: rotateCCW(0, volt[0])
-    if(volt[1]<0): rotateCW(1, volt[1])
+    else: rotateCCW(0, abs(volt[0]))
+    if(volt[1]<0): rotateCW(1, abs(volt[1]))
     else: rotateCCW(1, volt[1])
     if picked==True and worm == True:
         stopRotate(2)
     elif(volt[2]<0): 
-        rotateCW(2, volt[2])
+        rotateCW(2, abs(volt[2]))
     else: 
         rotateCCW(2, volt[2])
 
