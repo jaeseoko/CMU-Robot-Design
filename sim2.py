@@ -6,6 +6,17 @@ from Arm_Planet_IK import Arm_Planet_IK as customIK
 import argparse
 import time
 
+N = 270
+Ts = 23.5/1000                      # Nm (stall torque)
+Is = 1.8                            # A  (stall current)
+R = 8.4                             # Ohm
+V = 12                              # Voltage [V]
+noLoadCurr = 70/1000                # A
+noLoadSpeed = 7000*2*np.pi/60       # rad / s
+
+Kt = Ts/Is
+Ke = (V - R*noLoadCurr)/noLoadSpeed
+
 parser = argparse.ArgumentParser()
 parser.add_argument('x', 
                     type=float,
@@ -195,6 +206,11 @@ p.setRealTimeSimulation(0)
 t0 = time.time()
 dt = 1/240
 termTime = 0
+
+targetORN = [0,0,0]
+destORN = [0,0,0]
+offsetJoint3 = 0
+
 for i in range(duration): 
     
     # pos, ori = p.getBasePositionAndOrientation(bodyId)
@@ -265,10 +281,12 @@ for i in range(duration):
     force1 = T1 + tau1
     force2 = T2 + tau2
     
-    p.setJointMotorControl2(bodyId,0,controlMode = p.TORQUE_CONTROL, force = force0)
-    p.setJointMotorControl2(bodyId,1,controlMode = p.TORQUE_CONTROL, force = force1)
-    p.setJointMotorControl2(bodyId,2,controlMode = p.TORQUE_CONTROL, force = force2)
-    
+    # p.setJointMotorControl2(bodyId,0,controlMode = p.TORQUE_CONTROL, force = force0)
+    # p.setJointMotorControl2(bodyId,1,controlMode = p.TORQUE_CONTROL, force = force1)
+    # p.setJointMotorControl2(bodyId,2,controlMode = p.TORQUE_CONTROL, force = force2)
+    p.setJointMotorControl2(bodyId,0,controlMode = p.POSITION_CONTROL, targetPosition = targetORN[0])
+    p.setJointMotorControl2(bodyId,1,controlMode = p.POSITION_CONTROL, targetPosition = targetORN[2])
+    p.setJointMotorControl2(bodyId,2,controlMode = p.POSITION_CONTROL, targetPosition = targetORN[1])
 
     errorLog0.append(error0*180/np.pi)
     errorLog1.append(error1*180/np.pi)
@@ -280,6 +298,14 @@ for i in range(duration):
     angLog1.append(q1*180/np.pi)
     angLog2.append(q2*180/np.pi)
     minE.append(False)
+    print("veclocities: \n",v0,",",v1,",",v2)
+    V0 = R/Kt*force0/N +Ke*v0*N
+    V1 = R/Kt*force1/N +Ke*v1*N
+    V2 = R/Kt*force2/N +Ke*v2*N
+    # print("voltages: ")
+    # print(V0)
+    # print(V1)
+    # print(V2)
     
 
     if (np.abs(v0)+np.abs(v1)+np.abs(v2)) <tol and \
@@ -342,7 +368,7 @@ for i in range(duration):
             print("placed the load at final destination.")
             minE[-1] = True
             termTime=i+1
-            break
+            # break
             
         
         

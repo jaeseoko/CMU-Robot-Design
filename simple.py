@@ -28,6 +28,16 @@ destination = [-args.x,args.y,args.z]
 
 offsetJoint3 = -10*np.pi/180
 
+N=270
+
+L1 = 0.219
+L2 = 0.240
+L3 = 0.06
+m1 = 0.292295046771137
+m2 = 0.0581573780278174
+m3 = 0.0112613194545346
+g = 9.81
+
 tol = 1e-2
 
 # Can alternatively pass in p.DIRECT 
@@ -234,10 +244,9 @@ for i in range(duration):
                                                 [q0,q1,q2],
                                                 [v0,v1,v2],
                                                 [0,0,0])
-    # tau0,tau1,tau2 = p.calculateInverseDynamics(bodyId,
-    #                                             [pos0,pos1,pos2],
-    #                                             [0,0,0],
-    #                                             [0,0,0])
+    print('angles 1 and 2 :', q1, " ,", q2)
+    print("torque 1 2 from inv dynamics:\n",tau1,",",tau2)
+    
 
     T0 = kp0*(error0) + kd0*(de0/dt) + ki0*cumul_e0
     T1 = kp1*(error1) + kd1*(de1/dt) + ki1*cumul_e1
@@ -296,6 +305,8 @@ for i in range(duration):
     angLog1.append(q1*180/np.pi)
     angLog2.append(q2*180/np.pi)
     minE.append(False)
+
+    
     
 
     if (np.abs(v0)+np.abs(v1)+np.abs(v2)) <tol and \
