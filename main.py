@@ -138,8 +138,8 @@ def exitRoutine():
 
 dt = 0.05 #50ms
 prev_pos = 0
-prev_pos = 1
-prev_pos = 2
+prev_pos1 = 1
+prev_pos2 = 2
 
 GPIO.output(motor_driver_1_reverse_enable_pin, GPIO.HIGH)
 GPIO.output(motor_driver_1_forward_enable_pin, GPIO.HIGH)
@@ -178,8 +178,9 @@ def main():
     vel2 = getEncoderVelocity(pos2, prev_pos2, dt)
 
     print("position: " + str(pos0) + ". velocity: " + str(vel0) + ".")
-    print("position: " + str(pos1) + ". velocity: " + str(vel1) + ".")
-    print("position: " + str(pos2) + ". velocity: " + str(vel2) + ".")
+    print("position1: " + str(pos1) + ". velocity: " + str(vel1) + ".")
+    print("position2: " + str(pos2) + ". velocity: " + str(vel2) + ".")
+    print("---------------------------------------------------------")
 
     prev_pos = pos0
     prev_pos1 = pos1
