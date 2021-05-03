@@ -329,8 +329,8 @@ def main():
         rotateCCW(2, volt[2])
 
 
-    print("position 0: " + str(pos[0]) + ". velocity 1: " + str(vel[0]) + ".")
-    print("position 1: " + str(pos[1]) + ". velocity 2: " + str(vel[1]) + ".")
+    print("position 0: " + str(pos[0]) + ". velocity 0: " + str(vel[0]) + ".")
+    print("position 1: " + str(pos[1]) + ". velocity 1: " + str(vel[1]) + ".")
     print("position 2: " + str(pos[2]) + ". velocity 2: " + str(vel[2]) + ".")
     print("-----------------------------------------------------------------")
 
