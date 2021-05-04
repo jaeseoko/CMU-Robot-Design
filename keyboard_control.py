@@ -1,3 +1,4 @@
+import keyboard
 import RPi.GPIO as GPIO
 from time import sleep
 import numpy as np
@@ -5,7 +6,6 @@ import Encoder
 import threading
 import signal
 import sys
-# from pynput import keyboard
 
 # For GPIO clean exit
 def signal_handler(sig, frame):
@@ -160,52 +160,113 @@ motor_driver_2_reverse_pwm.start(0)
 motor_driver_3_forward_pwm.start(0)
 motor_driver_3_reverse_pwm.start(0)
 
-def on_press(key):
-    try:
-        print('special key {0} pressed'.format(key))
-        if key =='a':
-            rotateCW(0, 12)
-        elif key == 'd':
-            rotateCCW(0, 12)
-        elif key == 'w':
-            rotateCW(1, 12)
-        elif key == 's':
-            rotateCCW(1, 12)
-        elif key == 'r':
-            rotateCCW(2, 12)
-        elif key == 'f':
-            rotateCW(2, 12)
-    except AttributeError:
-        print('special key {0} pressed'.format(
-            key))
+# Keyboard Listeners---------------------
+a_state = 0
+d_state = 0
+w_state = 0
+s_state = 0
+r_state = 0
+f_state = 0
+# a ------------------------------------
+def on_press_a(key):
+    global a_state
+    if(a_state == 0):
+        rotateCW(0, 4)
+    a_state = 1
 
-def on_release(key):
-    print('special key {0} released'.format(key))
-    if key =='a':
-        stopRotate(0)
-    elif key == 'd':
-        stopRotate(0)
-    elif key == 'w':
-        stopRotate(1)
-    elif key == 's':
-        stopRotate(1)
-    elif key == 'r':
-        stopRotate(2)
-    elif key == 'f':
-        stopRotate(2)
-    elif key == keyboard.Key.esc:
-        # Stop listener
-        return False
+def on_release_a(key):
+    global a_state
+    stopRotate(0)
+    a_state = 0
 
-# ...or, in a non-blocking fashion:
-# listener = keyboard.Listener(
-#     on_press=on_press,
-#     on_release=on_release)
-# listener.start()
+# d ------------------------------------
+def on_press_d(key):
+    global d_state
 
-# rotateCCW(0, 1)
-rotateCCW(1, 6)
-# rotateCW(2, 2)
+    if(d_state == 0):
+        rotateCCW(0, 4)
+
+    d_state = 1
+
+def on_release_d(key):
+    global d_state
+    stopRotate(0)
+    d_state = 0
+
+# w ------------------------------------
+def on_press_w(key):
+    global w_state
+
+    if(w_state == 0):
+        rotateCCW(1, 8)
+
+    w_state = 1
+
+def on_release_w(key):
+    global w_state
+    stopRotate(1)
+    w_state = 0
+
+# s ------------------------------------
+def on_press_s(key):
+    global s_state
+
+    if(s_state == 0):
+        rotateCW(1, 8)
+
+    s_state = 1
+
+def on_release_s(key):
+    global s_state
+    stopRotate(1)
+    s_state = 0
+
+# r ------------------------------------
+def on_press_r(key):
+    global r_state
+
+    if(r_state == 0):
+        rotateCW(2, 6)
+
+    r_state = 1
+
+def on_release_r(key):
+    global r_state
+    stopRotate(2)
+    r_state = 0
+
+# f ------------------------------------
+def on_press_f(key):
+    global f_state
+
+    if(f_state == 0):
+        rotateCCW(2, 6)
+
+    f_state = 1
+
+def on_release_f(key):
+    global f_state
+    stopRotate(2)
+    f_state = 0
+
+
+keyboard.on_press_key("a", on_press_a)
+keyboard.on_release_key("a", on_release_a)
+
+keyboard.on_press_key("d", on_press_d)
+keyboard.on_release_key("d", on_release_d)
+
+keyboard.on_press_key("w", on_press_w)
+keyboard.on_release_key("w", on_release_w)
+
+keyboard.on_press_key("s", on_press_s)
+keyboard.on_release_key("s", on_release_s)
+
+keyboard.on_press_key("r", on_press_r)
+keyboard.on_release_key("r", on_release_r)
+
+keyboard.on_press_key("f", on_press_f)
+keyboard.on_release_key("f", on_release_f)
 
 def main():
     global prev_pos
