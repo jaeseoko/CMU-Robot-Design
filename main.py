@@ -5,6 +5,7 @@ import Encoder
 import threading
 import signal
 import sys
+from pynput import keyboard
 
 # For GPIO clean exit
 def signal_handler(sig, frame):
@@ -21,12 +22,12 @@ V = 12
 
 # GPIOs--------------------------------------
 # First Motor related
-motor_driver_1_reverse_enable_pin = 4       # GPIO 4
-motor_driver_1_forward_enable_pin = 17      # GPIO 17
-motor_driver_1_reverse_pwm_pin = 27         # GPIO 27
-motor_driver_1_forward_pwm_pin = 22         # GPIO 22
-motor_1_Encoder_A_pin = 18                  # GPIO 18
-motor_1_Encoder_B_pin = 23                  # GPIO 23
+motor_driver_1_reverse_enable_pin = 6       # GPIO 4
+motor_driver_1_forward_enable_pin = 13      # GPIO 17
+motor_driver_1_reverse_pwm_pin = 19         # GPIO 27
+motor_driver_1_forward_pwm_pin = 26         # GPIO 22
+motor_1_Encoder_A_pin = 12                  # GPIO 18
+motor_1_Encoder_B_pin = 16                  # GPIO 23
 
 # Second Motor related
 motor_driver_2_reverse_enable_pin = 10      # GPIO 10
@@ -37,12 +38,12 @@ motor_2_Encoder_A_pin = 24                  # GPIO 24
 motor_2_Encoder_B_pin = 25                  # GPIO 25
 
 # Third Motor related
-motor_driver_3_reverse_enable_pin = 6       # GPIO 6
-motor_driver_3_forward_enable_pin = 13      # GPIO 13
-motor_driver_3_reverse_pwm_pin = 19         # GPIO 19
-motor_driver_3_forward_pwm_pin = 26         # GPIO 26
-motor_3_Encoder_A_pin = 12                  # GPIO 12
-motor_3_Encoder_B_pin = 16                  # GPIO 16
+motor_driver_3_reverse_enable_pin = 4     # GPIO 6
+motor_driver_3_forward_enable_pin = 17      # GPIO 13
+motor_driver_3_reverse_pwm_pin = 27         # GPIO 19
+motor_driver_3_forward_pwm_pin = 22         # GPIO 26
+motor_3_Encoder_A_pin = 18                  # GPIO 12
+motor_3_Encoder_B_pin = 23                  # GPIO 16
 
 # GPIO initialization--------------------------------------
 GPIO.setmode(GPIO.BCM)
@@ -159,9 +160,52 @@ motor_driver_2_reverse_pwm.start(0)
 motor_driver_3_forward_pwm.start(0)
 motor_driver_3_reverse_pwm.start(0)
 
-rotateCCW(0, 1)
-rotateCW(1, 6)
-rotateCW(2, 2)
+def on_press(key):
+    try:
+        print('special key {0} pressed'.format(key))
+        if key =='a':
+            rotateCW(0, 12)
+        elif key == 'd':
+            rotateCCW(0, 12)
+        elif key == 'w':
+            rotateCW(1, 12)
+        elif key == 's':
+            rotateCCW(1, 12)
+        elif key == 'r':
+            rotateCCW(2, 12)
+        elif key == 'f':
+            rotateCW(2, 12)
+    except AttributeError:
+        print('special key {0} pressed'.format(
+            key))
+
+def on_release(key):
+    print('special key {0} released'.format(key))
+    if key =='a':
+        stopRotate(0)
+    elif key == 'd':
+        stopRotate(0)
+    elif key == 'w':
+        stopRotate(1)
+    elif key == 's':
+        stopRotate(1)
+    elif key == 'r':
+        stopRotate(2)
+    elif key == 'f':
+        stopRotate(2)
+    elif key == keyboard.Key.esc:
+        # Stop listener
+        return False
+
+# ...or, in a non-blocking fashion:
+listener = keyboard.Listener(
+    on_press=on_press,
+    on_release=on_release)
+listener.start()
+
+# rotateCCW(0, 1)
+# rotateCW(1, 6)
+# rotateCW(2, 2)
 
 def main():
     global prev_pos
