@@ -84,9 +84,9 @@ def PID_torque(e,de,cum_e,load):
     # kp0,ki0,kd0 = 2e-2, 1e-8 , 2e-2
     kp0,ki0,kd0 = 9e-2, 1e-8 , 9e-2
     # kp1,ki1,kd1 = 3e-2, 1e-7 , 4e-2
-    kp1,ki1,kd1 = 9, 1e-4 , 9
+    kp1,ki1,kd1 = 15, 1e-4 , 20
     # kp2,ki2,kd2 = 2e-2, 1e-4 , 2e-2
-    kp2,ki2,kd2 = 9, 1e-3 , 9
+    kp2,ki2,kd2 = 9e-1, 1e-3 , 9e-1
 
 
     if(load!=0):
@@ -322,16 +322,27 @@ def main():
 
     
 
+    # if(volt[0]>0): rotateCW(0, volt[0])
+    # else: rotateCCW(0, abs(volt[0]))
+    # if(volt[1]<0): rotateCW(1, abs(volt[1]))
+    # else: rotateCCW(1, volt[1])
+    # if picked==True and worm == True:
+    #     stopRotate(2)
+    # elif(volt[2]<0): 
+    #     rotateCW(2, abs(volt[2]))
+    # else: 
+    #     rotateCCW(2, volt[2])
+
     if(volt[0]>0): rotateCW(0, volt[0])
     else: rotateCCW(0, abs(volt[0]))
-    if(volt[1]<0): rotateCW(1, abs(volt[1]))
-    else: rotateCCW(1, volt[1])
+    if(volt[1]>0): rotateCW(1, abs(volt[1]))
+    else: rotateCCW(1, abs(volt[1]))
     if picked==True and worm == True:
         stopRotate(2)
-    elif(volt[2]<0): 
+    elif(volt[2]>0): 
         rotateCW(2, abs(volt[2]))
     else: 
-        rotateCCW(2, volt[2])
+        rotateCCW(2, abs(volt[2]))
 
 
     print("position 0: " + str(pos[0]) + ". velocity 0: " + str(vel[0]) + ".")
