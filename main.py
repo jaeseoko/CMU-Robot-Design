@@ -204,8 +204,8 @@ def on_release(key):
 # listener.start()
 
 # rotateCCW(0, 1)
-# rotateCW(1, 2)
-rotateCW(2, 2)
+rotateCCW(1, 8)
+# rotateCW(2, 2)
 
 def main():
     global prev_pos
