@@ -43,7 +43,7 @@ def SetUp():
     args = parser.parse_args()
     targetORN = [args.a0*np.pi/180,args.a1*np.pi/180,args.a2*np.pi/180]
     destORN = [args.a0*np.pi/180 + np.pi/2,args.a1*np.pi/180,args.a2*np.pi/180]
-    prev_pos = [0,0,0]
+    prev_pos = [0,-(85)*np.pi/180,0]
     prev_error = [0,0,0]
     cum_e = [0,0,0]
     load = args.load
@@ -81,9 +81,14 @@ def GetVoltage(torque,vel):
     return [V0,V1,V2]
 
 def PID_torque(e,de,cum_e,load):
-    kp0,ki0,kd0 = 2e-2, 1e-8 , 2e-2
-    kp1,ki1,kd1 = 3e-2, 1e-7 , 4e-2
-    kp2,ki2,kd2 = 2e-2, 1e-4 , 2e-2
+    # kp0,ki0,kd0 = 2e-2, 1e-8 , 2e-2
+    kp0,ki0,kd0 = 9e-2, 1e-8 , 9e-2
+    # kp1,ki1,kd1 = 3e-2, 1e-7 , 4e-2
+    kp1,ki1,kd1 = 9, 1e-4 , 9
+    # kp2,ki2,kd2 = 2e-2, 1e-4 , 2e-2
+    kp2,ki2,kd2 = 9, 1e-3 , 9
+
+
     if(load!=0):
         kp0*=(1+ 10.5*load)
         ki0*=(1+ 5**5*load)
