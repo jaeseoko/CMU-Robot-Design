@@ -5,7 +5,7 @@ import Encoder
 import threading
 import signal
 import sys
-from pynput import keyboard
+# from pynput import keyboard
 
 # For GPIO clean exit
 def signal_handler(sig, frame):
@@ -198,14 +198,14 @@ def on_release(key):
         return False
 
 # ...or, in a non-blocking fashion:
-listener = keyboard.Listener(
-    on_press=on_press,
-    on_release=on_release)
-listener.start()
+# listener = keyboard.Listener(
+#     on_press=on_press,
+#     on_release=on_release)
+# listener.start()
 
 # rotateCCW(0, 1)
 # rotateCW(1, 6)
-# rotateCW(2, 2)
+rotateCW(2, 2)
 
 def main():
     global prev_pos
