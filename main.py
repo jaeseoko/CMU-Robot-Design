@@ -205,7 +205,7 @@ def on_release(key):
 
 # rotateCCW(0, 1)
 # rotateCW(1, 2)
-rotateCCW(2, 2)
+rotateCW(2, 2)
 
 def main():
     global prev_pos
