@@ -81,10 +81,12 @@ def GetVoltage(torque,vel):
     return [V0,V1,V2]
 
 def PID_torque(e,de,cum_e,load):
-    kp0,ki0,kd0 = 2e-2, 1e-8 , 2e-2
+    # kp0,ki0,kd0 = 2e-2, 1e-8 , 2e-2
+    kp0,ki0,kd0 = 9e-2, 1e-8 , 9e-2
     # kp1,ki1,kd1 = 3e-2, 1e-7 , 4e-2
-    kp1,ki1,kd1 = 5e-1, 1e-6 , 5e-1
-    kp2,ki2,kd2 = 2e-2, 1e-4 , 2e-2
+    kp1,ki1,kd1 = 9e-1, 1e-5 , 9e-1
+    # kp2,ki2,kd2 = 2e-2, 1e-4 , 2e-2
+    kp2,ki2,kd2 = 9e-1, 1e-4 , 9e-1
 
 
     if(load!=0):
