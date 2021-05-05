@@ -313,7 +313,7 @@ def main():
                                                 [pos[0],pos[1],pos[2]],
                                                 [vel[0],vel[1],vel[2]],
                                                 [0,0,0])
-    torque = pidTorques + [tau0,tau1,tau2]
+    torque = [pidTorques[0]+tau0,pidTorques[1]+tau1,pidTorques[2]+tau2]
     
     
     print("torques = ", torque)
