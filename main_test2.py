@@ -318,8 +318,10 @@ def main():
     
     print("torques = ", torque)
 
+    
 
     volt = GetVoltage(torque,vel)
+    volt = [0,0,0]
     print("volt = ", volt)
 
     
