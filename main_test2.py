@@ -8,7 +8,7 @@ import sys
 import pybullet as p
 import argparse
 import time
-import keyboard
+# import keyboard
 
 # For pybullet loading urdf to calculate inverse dynamics / Motor Params
 def SetUp():
@@ -85,7 +85,7 @@ def PID_torque(e,de,cum_e,load):
     # kp0,ki0,kd0 = 2e-2, 1e-8 , 2e-2
     kp0,ki0,kd0 = 9e-2, 1e-8 , 9e-2
     # kp1,ki1,kd1 = 3e-2, 1e-7 , 4e-2
-    kp1,ki1,kd1 = 1.5, 1e-3 , 2.0
+    kp1,ki1,kd1 = 3.5, 1e-3 , 4.0
     # kp2,ki2,kd2 = 2e-2, 1e-4 , 2e-2
     kp2,ki2,kd2 = 9e-1, 1e-3 , 9e-1
 
@@ -296,17 +296,16 @@ def main():
     if picked == False:
         pidTorques = PID_torque(error, de, cum_e, 0)
         picked = checkPoint(error, vel, picked)
-        if keyboard.is_pressed("a"):
+        if True==checkPoint(error, vel, picked):
             picked = True
-            p.changeDynamics(bodyId,3,mass = ee_mass+load)
             targetORN = destORN
 
 
     if picked == True:
         pidTorques = PID_torque(error, de, cum_e, load)
-        placed = checkPoint(error, vel, placed)
+        # placed = checkPoint(error, vel, placed)
 
-    if keyboard.is_pressed('b'):
+    if True==checkPoint(error, vel, placed):
         placed = True
         print("Reached goal destination.")
 
@@ -317,7 +316,7 @@ def main():
     torque = pidTorques + [tau0,tau1,tau2]
     
     
-    
+    print("torques = ", torque)
 
 
     volt = GetVoltage(torque,vel)
