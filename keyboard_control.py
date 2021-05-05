@@ -227,6 +227,7 @@ def on_press_r(key):
 
     if(r_state == 0):
         rotateCW(2, 6)
+        print("pressed rrrrrr")
 
     r_state = 1
 
@@ -282,10 +283,10 @@ def main():
     pos2 = getEncoderPosition(2)
     vel2 = getEncoderVelocity(pos2, prev_pos2, dt)
 
-    print("position: " + str(pos0) + ". velocity: " + str(vel0) + ".")
-    print("position1: " + str(pos1) + ". velocity: " + str(vel1) + ".")
-    print("position2: " + str(pos2) + ". velocity: " + str(vel2) + ".")
-    print("---------------------------------------------------------")
+    # print("position: " + str(pos0) + ". velocity: " + str(vel0) + ".")
+    # print("position1: " + str(pos1) + ". velocity: " + str(vel1) + ".")
+    # print("position2: " + str(pos2) + ". velocity: " + str(vel2) + ".")
+    # print("---------------------------------------------------------")
 
     prev_pos = pos0
     prev_pos1 = pos1
