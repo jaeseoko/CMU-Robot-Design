@@ -96,6 +96,9 @@ def PID_torque(e,de,cum_e,load):
 
     T1 +=T2
 
+    T1 = -4
+    
+
     return [T0,T1,T2]
 
 # For GPIO clean exit
