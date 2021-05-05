@@ -302,7 +302,7 @@ def main():
 
     
     torque = pidTorques
-
+    print("torques = ", torque)
 
     volt = GetVoltage(torque,vel)
     print("volt = ", volt)
