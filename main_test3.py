@@ -74,9 +74,9 @@ def PID_torque(e,de,cum_e,load):
     # kp0,ki0,kd0 = 2e-2, 1e-8 , 2e-2
     kp0,ki0,kd0 = 9e-2, 1e-8 , 9e-2
     # kp1,ki1,kd1 = 3e-2, 1e-7 , 4e-2
-    kp1,ki1,kd1 = 1.1, 1e-2 , 1.2
+    kp1,ki1,kd1 = 3.3, 3e-2 , 3.4
     # kp2,ki2,kd2 = 2e-2, 1e-4 , 2e-2
-    kp2,ki2,kd2 = 7e-1, 1e-2 , 7e-1
+    kp2,ki2,kd2 = 4e-1, 1e-2 , 4e-1
 
 
     if(load!=0):
@@ -98,7 +98,7 @@ def PID_torque(e,de,cum_e,load):
     T1*=-1
     print("torque 1 from pid: ", T1)
     print("torque 2 from pid: ", T2)
-    T1 = -2
+    # T1 = -2
     
 
     return [T0,T1,T2]
