@@ -95,7 +95,7 @@ def PID_torque(e,de,cum_e,load):
     T2 = kp2*(e[2]) + kd2*(de[2]) + ki2*cum_e[2]
 
     T1 +=T2
-    print("torque 1 from pid: ")
+    print("torque 1 from pid: ", T1)
     T1 = -2
     
 
