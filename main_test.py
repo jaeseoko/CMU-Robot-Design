@@ -44,8 +44,8 @@ def SetUp():
     args = parser.parse_args()
     targetORN = [args.a0*np.pi/180,args.a1*np.pi/180,args.a2*np.pi/180]
     destORN = [args.a0*np.pi/180 + np.pi/2,args.a1*np.pi/180,args.a2*np.pi/180]
-    # prev_pos = [0,-(85)*np.pi/180,0]
-    prev_pos = [0,0,0]
+    prev_pos = [0,0,-np.pi/2]
+    # prev_pos = [0,0,0]
     prev_error = [0,0,0]
     cum_e = [0,0,0]
     load = args.load
@@ -86,7 +86,7 @@ def PID_torque(e,de,cum_e,load):
     # kp0,ki0,kd0 = 2e-2, 1e-8 , 2e-2
     kp0,ki0,kd0 = 9e-2, 1e-8 , 9e-2
     # kp1,ki1,kd1 = 3e-2, 1e-7 , 4e-2
-    kp1,ki1,kd1 = 4.5, 1e-3 , 4.0
+    kp1,ki1,kd1 = 6.5, 1e-3 , 7.0
     # kp2,ki2,kd2 = 2e-2, 1e-4 , 2e-2
     kp2,ki2,kd2 = 10e-1, 1e-3 , 10e-1
 
