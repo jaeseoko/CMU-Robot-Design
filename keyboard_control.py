@@ -227,8 +227,8 @@ def on_press_r(key):
 
     if(r_state == 0):
         rotateCW(2, 6)
-        print("pressed rrrrrr")
-
+        
+    print("pressed rrrrrr")
     r_state = 1
 
 def on_release_r(key):
