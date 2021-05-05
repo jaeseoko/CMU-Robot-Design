@@ -44,7 +44,8 @@ def SetUp():
     args = parser.parse_args()
     targetORN = [args.a0*np.pi/180,args.a1*np.pi/180,args.a2*np.pi/180]
     destORN = [args.a0*np.pi/180 + np.pi/2,args.a1*np.pi/180,args.a2*np.pi/180]
-    prev_pos = [0,-(85)*np.pi/180,0]
+    # prev_pos = [0,-(85)*np.pi/180,0]
+    prev_pos = [0,0,0]
     prev_error = [0,0,0]
     cum_e = [0,0,0]
     load = args.load
