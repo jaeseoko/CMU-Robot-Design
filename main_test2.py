@@ -285,6 +285,7 @@ def main():
     print("checking getEncoderPosition fun: ",getEncoderPosition(0),
                                               getEncoderPosition(1),
                                               getEncoderPosition(2))
+    print("--------------------------------------------")
     
     vel = [getEncoderVelocity(pos[0], prev_pos[0], dt),
            getEncoderVelocity(pos[1], prev_pos[1], dt),
@@ -323,12 +324,14 @@ def main():
     
     
     print("torques = ", torque)
+    print("--------------------------------------------")
 
     
 
     volt = GetVoltage(torque,vel)
     volt = [0,0,0]
     print("volt = ", volt)
+    print("--------------------------------------------")
 
     
 
