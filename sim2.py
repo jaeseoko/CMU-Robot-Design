@@ -35,14 +35,14 @@ args = parser.parse_args()
 
 target = [args.x,args.y,args.z]
 
-destination = [-args.x,args.y,args.z]
+destination = [args.x,-args.y,args.z]
 
 offsetJoint3 = -10*np.pi/180
 
 tol = 1e-2
 
 # Can alternatively pass in p.DIRECT 
-client = p.connect(p.GUI)
+client = p.connect(p.GUI,options = '--mp4=bullet.mp4')
 # client = p.connect(p.DIRECT)
 p.setGravity(0, 0, -9.81, physicsClientId=client)
 
@@ -189,6 +189,8 @@ print("destination pos 0 (deg.):",destORN[0]*180/np.pi)
 print("destination pos 1 (deg.):",destORN[1]*180/np.pi)
 print("destination pos 2 (deg.):",destORN[2]*180/np.pi)
 
+
+
 state1 = False
 a1 = False
 state2 = False
@@ -202,14 +204,19 @@ payload = args.weight
 duration = 30000
 
 
+
 p.setRealTimeSimulation(0)
+p.resetJointState(bodyId, 0, 0)
+p.resetJointState(bodyId, 1, -np.pi/2)
+p.resetJointState(bodyId, 2, 0)
+
 t0 = time.time()
 dt = 1/240
 termTime = 0
 
-targetORN = [0,0,0]
-destORN = [0,0,0]
-offsetJoint3 = 0
+# targetORN = [0,0,0]
+# destORN = [0,0,0]
+# offsetJoint3 = 0
 
 for i in range(duration): 
     
@@ -234,23 +241,21 @@ for i in range(duration):
         targetORN[2]+=2*offsetJoint3
 
 
-    pos = [0,0,0]
+    # pos = [0,0,0]
     
-    q0,v0,_,_ = p.getJointState(bodyId,0)
-    q1,v1,_,_ = p.getJointState(bodyId,1)
-    q2,v2,_,_ = p.getJointState(bodyId,2)
-    error0 = targetORN[0]-q0
-    error1 = targetORN[1]-q1
-    error2 = targetORN[2]-q2
+    pos0,vel0,_,_ = p.getJointState(bodyId,0)
+    pos1,vel1,_,_ = p.getJointState(bodyId,1)
+    pos2,vel2,_,_ = p.getJointState(bodyId,2)
+    error0 = targetORN[0]-pos0
+    error1 = targetORN[1]-pos1
+    error2 = targetORN[2]-pos2
     de0 = error0 - prev_error0
     de1 = error1 - prev_error1
     de2 = error2 - prev_error2
 
     
 
-    pos0,vel0,RF0,torque0 = p.getJointState(bodyId,0)
-    pos1,vel1,RF1,torque1 = p.getJointState(bodyId,1)
-    pos2,vel2,RF2,torque2 = p.getJointState(bodyId,2)
+    
     tau0,tau1,tau2 = p.calculateInverseDynamics(bodyId,
                                                 [pos0,pos1,pos2],
                                                 [vel0,vel1,vel2],
@@ -262,6 +267,7 @@ for i in range(duration):
 
     T0 = kp0*(error0) + kd0*(de0/dt) + ki0*cumul_e0
     T1 = kp1*(error1) + kd1*(de1/dt) + ki1*cumul_e1
+        #  kp2*(error2) + kd2*(de2/dt) + ki2*cumul_e2
     T2 = kp2*(error2) + kd2*(de2/dt) + ki2*cumul_e2
     # print("torques 0 1 2: ",T0,",",T1,",",T2)
 
@@ -280,13 +286,17 @@ for i in range(duration):
     force0 = T0 + tau0
     force1 = T1 + tau1
     force2 = T2 + tau2
+    # print("torques 0 1 2: ",force0,",",force1,",",force2)
     
-    # p.setJointMotorControl2(bodyId,0,controlMode = p.TORQUE_CONTROL, force = force0)
-    # p.setJointMotorControl2(bodyId,1,controlMode = p.TORQUE_CONTROL, force = force1)
-    # p.setJointMotorControl2(bodyId,2,controlMode = p.TORQUE_CONTROL, force = force2)
-    p.setJointMotorControl2(bodyId,0,controlMode = p.POSITION_CONTROL, targetPosition = targetORN[0])
-    p.setJointMotorControl2(bodyId,1,controlMode = p.POSITION_CONTROL, targetPosition = targetORN[2])
-    p.setJointMotorControl2(bodyId,2,controlMode = p.POSITION_CONTROL, targetPosition = targetORN[1])
+    
+
+    
+        
+    p.setJointMotorControl2(bodyId,0,controlMode = p.TORQUE_CONTROL, force = force0)
+    p.setJointMotorControl2(bodyId,1,controlMode = p.TORQUE_CONTROL, force = force1)
+    p.setJointMotorControl2(bodyId,2,controlMode = p.TORQUE_CONTROL, force = force2)
+
+    
 
     errorLog0.append(error0*180/np.pi)
     errorLog1.append(error1*180/np.pi)
@@ -294,64 +304,57 @@ for i in range(duration):
     torqueLog0.append(force0)
     torqueLog1.append(force1)
     torqueLog2.append(force2)
-    angLog0.append(q0*180/np.pi)
-    angLog1.append(q1*180/np.pi)
-    angLog2.append(q2*180/np.pi)
+    angLog0.append(pos0*180/np.pi)
+    angLog1.append(pos1*180/np.pi)
+    angLog2.append(pos2*180/np.pi)
     minE.append(False)
-    print("veclocities: \n",v0,",",v1,",",v2)
-    V0 = R/Kt*force0/N +Ke*v0*N
-    V1 = R/Kt*force1/N +Ke*v1*N
-    V2 = R/Kt*force2/N +Ke*v2*N
+    # print("veclocities: \n",v0,",",v1,",",v2)
+    V0 = R/Kt*force0/N +Ke*vel0*N
+    V1 = R/Kt*force1/N +Ke*vel1*N
+    V2 = R/Kt*force2/N +Ke*vel2*N
     # print("voltages: ")
     # print(V0)
     # print(V1)
     # print(V2)
     
-
-    if (np.abs(v0)+np.abs(v1)+np.abs(v2)) <tol and \
-       (np.abs(error0)+np.abs(error1)+np.abs(error2)) <tol:
+    if (np.abs(vel0)+np.abs(vel1)+np.abs(vel2)) <tol and \
+    (np.abs(error0)+np.abs(error1)+np.abs(error2)) <tol:
         if state1==False: 
             state1 = True
             print("STATE CHANGED")
             print("reached state 1")
             minE[-1] = True
             
-            # cumul_e0 = 0
-            # cumul_e1 = 0
-            # cumul_e2 = 0
+            
         elif state2==False: 
             state2 = True
             print("STATE CHANGED")
             print("reached state 2")
-            # cumul_e0 = 0
-            # cumul_e1 = 0
-            # cumul_e2 = 0
+            
             p.changeDynamics(bodyId,3,mass = ee_mass+payload)
             minE[-1] = True
 
-            kp0*=10.5*payload
-            ki0*=10**5*payload
-            kd0*=25*payload
+            # kp0*=10.5*payload
+            # ki0*=10**5*payload
+            # kd0*=25*payload
 
-            kp1*=1676.6*payload
-            ki1*=10**6*payload
-            kd1*=1010*payload
+            # kp1*=1676.6*payload
+            # ki1*=10**6*payload
+            # kd1*=1010*payload
 
-            kp2*=10.025*payload
-            ki2*=10.5*payload
-            kd2*=10.025*payload
+            # kp2*=10.025*payload
+            # ki2*=10.5*payload
+            # kd2*=10.025*payload
 
-            # kp0+=1e-02*payload
-            # ki0+=1e-03*payload
-            # kd0+=3e-01*payload
-
-            # kp1+=500e-01*payload
-            # ki1+=10e-02*payload
-            # kd1+=400e-01*payload
-
-            # kp2+=5e-04*payload
-            # ki2+=5e-05*payload
-            # kd2+=5e-04*payload
+            kp0*=(1+ 10.5*payload)
+            ki0*=(1+ 5**5*payload)
+            kd0*=(1+ 15*payload)
+            kp1*=(1+ 1100.6*payload)
+            ki1*=(1+ 5**6*payload)
+            kd1*=(1+ 1005*payload)
+            kp2*=(1+ 7.025*payload)
+            ki2*=(1+ 7.5*payload)
+            kd2*=(1+ 7.025*payload)
             print("gains:\n ")
             print(kp0,",",ki0,",",kd0)
             print(kp1,",",ki1,",",kd1)
@@ -368,10 +371,10 @@ for i in range(duration):
             print("placed the load at final destination.")
             minE[-1] = True
             termTime=i+1
-            # break
-            
+            break
         
-        
+    
+    
 
 
     if i%5000==0: 
