@@ -45,6 +45,7 @@ def SetUp():
     targetORN = [args.a0*np.pi/180,args.a1*np.pi/180,args.a2*np.pi/180]
     destORN = [args.a0*np.pi/180 + np.pi/2,args.a1*np.pi/180,args.a2*np.pi/180]
     prev_pos = [0,-(85)*np.pi/180,0]
+    off = [0,-(85)*np.pi/180,0]
     prev_error = [0,0,0]
     cum_e = [0,0,0]
     load = args.load
@@ -54,7 +55,7 @@ def SetUp():
         worm = True   
     picked, placed = False, False
     offset = False
-    return targetORN,destORN,prev_pos,prev_error,cum_e,load,picked,placed,offset,worm
+    return targetORN,destORN,prev_pos,prev_error,cum_e,load,picked,placed,offset,worm, off
 
 def checkPoint(error,vel,status):
     tol = 0.1
@@ -274,12 +275,13 @@ motor_driver_3_reverse_pwm.start(0)
 
 # pause = 0
 
-targetORN, destORN, prev_pos, prev_error, cum_e, load, picked, placed, offset, worm = SetUp()
+targetORN, destORN, prev_pos, prev_error, cum_e, load, picked, placed, offset, worm, off = SetUp()
 
 def main():
-    global targetORN, destORN, prev_pos, prev_error, cum_e, load, picked, placed, offset, worm
+    global targetORN, destORN, prev_pos, prev_error, cum_e, load, picked, placed, offset, worm, off
 
-    pos = [getEncoderPosition(0),getEncoderPosition(1),getEncoderPosition(2)]
+    pos = [getEncoderPosition(0) +off[0],getEncoderPosition(1) +off[1],getEncoderPosition(2)+off[2]]
+    
     vel = [getEncoderVelocity(pos[0], prev_pos[0], dt),
            getEncoderVelocity(pos[1], prev_pos[1], dt),
            getEncoderVelocity(pos[2], prev_pos[2], dt)]
