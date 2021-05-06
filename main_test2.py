@@ -294,7 +294,7 @@ def main():
     #     targetORN[2]-=10*np.pi/180
     #     offset = True
 
-    error = [targetORN[0]-pos[0],targetORN[1]-pos[1],targetORN[2]-pos[2] ]
+    error = [targetORN[0]-pos[0],targetORN[1]+pos[1],targetORN[2]-pos[2] ]
     print("errors: ",error[0]*180/np.pi,error[1]*180/np.pi,error[2]*180/np.pi)
     de = [error[0] - prev_error[0],error[1] - prev_error[1],error[2] - prev_error[2] ]
     cum_e+=error
