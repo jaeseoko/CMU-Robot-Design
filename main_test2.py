@@ -86,7 +86,7 @@ def PID_torque(e,de,cum_e,load):
     # kp0,ki0,kd0 = 2e-2, 1e-8 , 2e-2
     kp0,ki0,kd0 = 9e-2, 1e-8 , 9e-2
     # kp1,ki1,kd1 = 3e-2, 1e-7 , 4e-2
-    kp1,ki1,kd1 = 1.4, 1e-3 , 1.7
+    kp1,ki1,kd1 = 5.7, 1e-3 , 5.9
     # kp2,ki2,kd2 = 2e-2, 1e-4 , 2e-2
     kp2,ki2,kd2 = 9e-1, 1e-3 , 9e-1
 
@@ -290,12 +290,18 @@ def main():
     vel = [getEncoderVelocity(pos[0], prev_pos[0], dt),
            getEncoderVelocity(pos[1], prev_pos[1], dt),
            getEncoderVelocity(pos[2], prev_pos[2], dt)]
+
+    vel[1]*=-1
+
+    # print("--------------------------------------------")
     # if offset ==False:
     #     targetORN[2]-=10*np.pi/180
     #     offset = True
 
     # error = [targetORN[0]-pos[0],targetORN[1]-pos[1],targetORN[2]-pos[2] ]
+
     error = [targetORN[0]-pos[0],-targetORN[1]+pos[1],targetORN[2]-pos[2] ]
+
     print("errors: ",error[0]*180/np.pi,error[1]*180/np.pi,error[2]*180/np.pi)
     de = [error[0] - prev_error[0],error[1] - prev_error[1],error[2] - prev_error[2] ]
     cum_e+=error
@@ -323,6 +329,10 @@ def main():
                                                 [pos[0],pos[1],pos[2]],
                                                 [vel[0],vel[1],vel[2]],
                                                 [0,0,0])
+    print("--------------------------------------------")
+    print("from bullet, torq 1: ",tau1)
+    print("--------------------------------------------")
+    tau1=tau1 + 0.2*tau1
     torque = [pidTorques[0]+tau0,pidTorques[1]+tau1,pidTorques[2]+tau2]
     
     
