@@ -270,29 +270,30 @@ def on_release_f(key):
 # keyboard.on_release_key("f", on_release_f)
 
 async def main():
-    await asyncio.sleep(dt)
+    
     global prev_pos
     global prev_pos1
     global prev_pos2
 
+    while True:
+        await asyncio.sleep(dt)
+        pos0 = getEncoderPosition(0)
+        vel0 = getEncoderVelocity(pos0, prev_pos, dt)
 
-    pos0 = getEncoderPosition(0)
-    vel0 = getEncoderVelocity(pos0, prev_pos, dt)
+        pos1 = getEncoderPosition(1)
+        vel1 = getEncoderVelocity(pos1, prev_pos1, dt)
 
-    pos1 = getEncoderPosition(1)
-    vel1 = getEncoderVelocity(pos1, prev_pos1, dt)
+        pos2 = getEncoderPosition(2)
+        vel2 = getEncoderVelocity(pos2, prev_pos2, dt)
 
-    pos2 = getEncoderPosition(2)
-    vel2 = getEncoderVelocity(pos2, prev_pos2, dt)
+        print("position: " + str(pos0) + ". velocity: " + str(vel0) + ".")
+        print("position1: " + str(pos1) + ". velocity: " + str(vel1) + ".")
+        print("position2: " + str(pos2) + ". velocity: " + str(vel2) + ".")
+        print("---------------------------------------------------------")
 
-    print("position: " + str(pos0) + ". velocity: " + str(vel0) + ".")
-    print("position1: " + str(pos1) + ". velocity: " + str(vel1) + ".")
-    print("position2: " + str(pos2) + ". velocity: " + str(vel2) + ".")
-    print("---------------------------------------------------------")
-
-    prev_pos = pos0
-    prev_pos1 = pos1
-    prev_pos2 = pos2
+        prev_pos = pos0
+        prev_pos1 = pos1
+        prev_pos2 = pos2
     
     #threading.Timer(dt, main).start()  
 asyncio.run(main())
