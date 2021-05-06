@@ -332,6 +332,7 @@ def main():
     print("--------------------------------------------")
     print("from bullet, torq 1: ",tau1)
     print("--------------------------------------------")
+    tau1=tau1 + 0.2*tau1
     torque = [pidTorques[0]+tau0,pidTorques[1]+tau1,pidTorques[2]+tau2]
     
     
