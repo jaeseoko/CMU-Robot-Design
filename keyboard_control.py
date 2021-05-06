@@ -296,7 +296,7 @@ async def main():
         prev_pos2 = pos2
     
     #threading.Timer(dt, main).start()  
-asyncio.run(main())
+# asyncio.run(main())
 
 while True:
     keyboard = input("W S A D R F space: ")
