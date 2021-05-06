@@ -298,7 +298,8 @@ def main():
     print("errors: ",error[0]*180/np.pi,error[1]*180/np.pi,error[2]*180/np.pi)
     de = [error[0] - prev_error[0],error[1] - prev_error[1],error[2] - prev_error[2] ]
     cum_e+=error
-
+    cum_e = [cum_e[0]+error[0],cum_e[1]+error[1],cum_e[2]+error[2]]
+    
 
 
     if picked == False:
