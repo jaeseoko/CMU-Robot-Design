@@ -250,7 +250,7 @@ def on_release_f(key):
     stopRotate(2)
     f_state = 0
 
-
+"""
 keyboard.on_press_key("a", on_press_a)
 keyboard.on_release_key("a", on_release_a)
 
@@ -268,11 +268,34 @@ keyboard.on_release_key("r", on_release_r)
 
 keyboard.on_press_key("f", on_press_f)
 keyboard.on_release_key("f", on_release_f)
-
+"""
 def main():
     global prev_pos
     global prev_pos1
     global prev_pos2
+
+
+    keyboard.on_press_key("a", on_press_a)
+    keyboard.on_release_key("a", on_release_a)
+
+    keyboard.on_press_key("d", on_press_d)
+    keyboard.on_release_key("d", on_release_d)
+
+    keyboard.on_press_key("w", on_press_w)
+    keyboard.on_release_key("w", on_release_w)
+
+    keyboard.on_press_key("s", on_press_s)
+    keyboard.on_release_key("s", on_release_s)
+
+    keyboard.on_press_key("r", on_press_r)
+    keyboard.on_release_key("r", on_release_r)
+
+    keyboard.on_press_key("f", on_press_f)
+    keyboard.on_release_key("f", on_release_f)
+
+
+
+
 
     pos0 = getEncoderPosition(0)
     vel0 = getEncoderVelocity(pos0, prev_pos, dt)
@@ -291,5 +314,7 @@ def main():
     prev_pos = pos0
     prev_pos1 = pos1
     prev_pos2 = pos2
-    threading.Timer(dt, main).start()  
+    while True:
+        sleep(0.01)
+    #threading.Timer(dt, main).start()  
 main()
