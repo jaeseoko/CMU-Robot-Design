@@ -329,7 +329,7 @@ def main():
     
 
     volt = GetVoltage(torque,vel)
-    volt = [0,0,0]
+    # volt = [0,0,0]
     print("volt = ", volt)
     print("--------------------------------------------")
 
