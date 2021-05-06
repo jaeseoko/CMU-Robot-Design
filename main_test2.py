@@ -294,7 +294,7 @@ def main():
     #     targetORN[2]-=10*np.pi/180
     #     offset = True
 
-    error = [targetORN[0]-pos[0],targetORN[1]+pos[1],targetORN[2]-pos[2] ]
+    error = [targetORN[0]-pos[0],targetORN[1]-pos[1],targetORN[2]-pos[2] ]
     print("errors: ",error[0]*180/np.pi,error[1]*180/np.pi,error[2]*180/np.pi)
     de = [error[0] - prev_error[0],error[1] - prev_error[1],error[2] - prev_error[2] ]
     cum_e+=error
@@ -359,9 +359,9 @@ def main():
         rotateCCW(2, abs(volt[2]))
 
 
-    print("position 0: " + str(pos[0]) + ". velocity 0: " + str(vel[0]) + ".")
-    print("position 1: " + str(pos[1]) + ". velocity 1: " + str(vel[1]) + ".")
-    print("position 2: " + str(pos[2]) + ". velocity 2: " + str(vel[2]) + ".")
+    print("position 0: " + str(pos[0]*180/np.pi) + ". velocity 0: " + str(vel[0]) + ".")
+    print("position 1: " + str(pos[1]*180/np.pi) + ". velocity 1: " + str(vel[1]) + ".")
+    print("position 2: " + str(pos[2]*180/np.pi) + ". velocity 2: " + str(vel[2]) + ".")
     print("-----------------------------------------------------------------")
 
     prev_pos   = pos
