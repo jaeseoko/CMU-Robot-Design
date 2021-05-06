@@ -45,6 +45,7 @@ def SetUp():
     targetORN = [args.a0*np.pi/180,args.a1*np.pi/180,args.a2*np.pi/180]
     destORN = [args.a0*np.pi/180 + np.pi/2,args.a1*np.pi/180,args.a2*np.pi/180]
     prev_pos = [0,-(85)*np.pi/180,0]
+    off = [0,-(85)*np.pi/180,0]
     prev_error = [0,0,0]
     cum_e = [0,0,0]
     load = args.load
@@ -54,7 +55,7 @@ def SetUp():
         worm = True   
     picked, placed = False, False
     offset = False
-    return targetORN,destORN,prev_pos,prev_error,cum_e,load,picked,placed,offset,worm
+    return targetORN,destORN,prev_pos,prev_error,cum_e,load,picked,placed,offset,worm, off
 
 def checkPoint(error,vel,status):
     tol = 0.1
@@ -85,7 +86,7 @@ def PID_torque(e,de,cum_e,load):
     # kp0,ki0,kd0 = 2e-2, 1e-8 , 2e-2
     kp0,ki0,kd0 = 9e-2, 1e-8 , 9e-2
     # kp1,ki1,kd1 = 3e-2, 1e-7 , 4e-2
-    kp1,ki1,kd1 = 1.5, 1e-3 , 2.0
+    kp1,ki1,kd1 = 1.4, 1e-3 , 1.7
     # kp2,ki2,kd2 = 2e-2, 1e-4 , 2e-2
     kp2,ki2,kd2 = 9e-1, 1e-3 , 9e-1
 
@@ -274,12 +275,18 @@ motor_driver_3_reverse_pwm.start(0)
 
 # pause = 0
 
-targetORN, destORN, prev_pos, prev_error, cum_e, load, picked, placed, offset, worm = SetUp()
+targetORN, destORN, prev_pos, prev_error, cum_e, load, picked, placed, offset, worm, off = SetUp()
 
 def main():
-    global targetORN, destORN, prev_pos, prev_error, cum_e, load, picked, placed, offset, worm
+    global targetORN, destORN, prev_pos, prev_error, cum_e, load, picked, placed, offset, worm, off
 
-    pos = [getEncoderPosition(0),getEncoderPosition(1),getEncoderPosition(2)]
+    pos = [getEncoderPosition(0) +off[0],-getEncoderPosition(1) +off[1],getEncoderPosition(2)+off[2]]
+
+    print("checking getEncoderPosition fun: ",getEncoderPosition(0),
+                                              getEncoderPosition(1),
+                                              getEncoderPosition(2))
+    print("--------------------------------------------")
+    
     vel = [getEncoderVelocity(pos[0], prev_pos[0], dt),
            getEncoderVelocity(pos[1], prev_pos[1], dt),
            getEncoderVelocity(pos[2], prev_pos[2], dt)]
@@ -287,10 +294,13 @@ def main():
     #     targetORN[2]-=10*np.pi/180
     #     offset = True
 
-    error = [targetORN[0]-pos[0],targetORN[1]-pos[1],targetORN[2]-pos[2] ]
+    # error = [targetORN[0]-pos[0],targetORN[1]-pos[1],targetORN[2]-pos[2] ]
+    error = [targetORN[0]-pos[0],-targetORN[1]+pos[1],targetORN[2]-pos[2] ]
+    print("errors: ",error[0]*180/np.pi,error[1]*180/np.pi,error[2]*180/np.pi)
     de = [error[0] - prev_error[0],error[1] - prev_error[1],error[2] - prev_error[2] ]
     cum_e+=error
-
+    cum_e = [cum_e[0]+error[0],cum_e[1]+error[1],cum_e[2]+error[2]]
+    
 
 
     if picked == False:
@@ -317,12 +327,14 @@ def main():
     
     
     print("torques = ", torque)
+    print("--------------------------------------------")
 
     
 
     volt = GetVoltage(torque,vel)
-    volt = [0,0,0]
+    # volt = [0,0,0]
     print("volt = ", volt)
+    print("--------------------------------------------")
 
     
 
@@ -339,7 +351,7 @@ def main():
 
     if(volt[0]>0): rotateCW(0, abs(volt[0]))
     else: rotateCCW(0, abs(volt[0]))
-    if(volt[1]<0): rotateCW(1, abs(volt[1]))
+    if(volt[1]>0): rotateCW(1, abs(volt[1]))
     else: rotateCCW(1, abs(volt[1]))
     if picked==True and worm == True:
         stopRotate(2)
@@ -349,9 +361,9 @@ def main():
         rotateCCW(2, abs(volt[2]))
 
 
-    print("position 0: " + str(pos[0]) + ". velocity 0: " + str(vel[0]) + ".")
-    print("position 1: " + str(pos[1]) + ". velocity 1: " + str(vel[1]) + ".")
-    print("position 2: " + str(pos[2]) + ". velocity 2: " + str(vel[2]) + ".")
+    print("position 0: " + str(pos[0]*180/np.pi) + ". velocity 0: " + str(vel[0]) + ".")
+    print("position 1: " + str(pos[1]*180/np.pi) + ". velocity 1: " + str(vel[1]) + ".")
+    print("position 2: " + str(pos[2]*180/np.pi) + ". velocity 2: " + str(vel[2]) + ".")
     print("-----------------------------------------------------------------")
 
     prev_pos   = pos
