@@ -6,7 +6,7 @@ import Encoder
 import threading
 import signal
 import sys
-import asyncio
+import threading
 
 # For GPIO clean exit
 def signal_handler(sig, frame):
@@ -269,14 +269,14 @@ def on_release_f(key):
 # keyboard.on_press_key("f", on_press_f)
 # keyboard.on_release_key("f", on_release_f)
 
-async def main():
+def main():
     
     global prev_pos
     global prev_pos1
     global prev_pos2
 
     while True:
-        await asyncio.sleep(dt)
+        sleep(dt)
         pos0 = getEncoderPosition(0)
         vel0 = getEncoderVelocity(pos0, prev_pos, dt)
 
@@ -294,9 +294,17 @@ async def main():
         prev_pos = pos0
         prev_pos1 = pos1
         prev_pos2 = pos2
-    
-    #threading.Timer(dt, main).start()  
-# asyncio.run(main())
+t = threading.Thread(target=main)
+t.start()
+
+# For GPIO clean exit
+def signal_handler(sig, frame):
+    print('Cleaning GPIO and Exiting the program...')
+    exitRoutine()
+    t.join()
+    sys.exit(0)
+
+signal.signal(signal.SIGINT, signal_handler)
 
 while True:
     keyboard = input("W S A D R F space: ")
