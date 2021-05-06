@@ -300,17 +300,17 @@ asyncio.run(main())
 while True:
     keyboard = input("W S A D R F space: ")
     if keyboard == "w":
-        on_press_r(keyboard)
+        on_press_w(keyboard)
     elif keyboard == "s":
-        on_press_r(keyboard)
+        on_press_s(keyboard)
     elif keyboard == "a":
-        on_press_r(keyboard)
+        on_press_a(keyboard)
     elif keyboard == "d":
-        on_press_r(keyboard)
+        on_press_d(keyboard)
     elif keyboard == "r":
         on_press_r(keyboard)
     elif keyboard == "f":
-        on_press_r(keyboard)
+        on_press_f(keyboard)
     elif keyboard == " ":
         stopRotate(0)
         stopRotate(1)
