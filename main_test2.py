@@ -281,6 +281,10 @@ def main():
     global targetORN, destORN, prev_pos, prev_error, cum_e, load, picked, placed, offset, worm, off
 
     pos = [getEncoderPosition(0) +off[0],getEncoderPosition(1) +off[1],getEncoderPosition(2)+off[2]]
+
+    print("checking getEncoderPosition fun: ",getEncoderPosition(0),
+                                              getEncoderPosition(1),
+                                              getEncoderPosition(2))
     
     vel = [getEncoderVelocity(pos[0], prev_pos[0], dt),
            getEncoderVelocity(pos[1], prev_pos[1], dt),
