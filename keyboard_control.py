@@ -295,7 +295,7 @@ def main():
         prev_pos1 = pos1
         prev_pos2 = pos2
 t = threading.Thread(target=main)
-t.start()
+# t.start()
 
 # For GPIO clean exit
 def signal_handler(sig, frame):
