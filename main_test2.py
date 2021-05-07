@@ -64,7 +64,12 @@ def SetUp():
         worm = True   
     picked, placed = False, False
     offset = False
-    return targetORN,destORN,prev_pos,prev_error,cum_e,load,picked,placed,offset,worm, off, logTorque
+    # import time
+
+    start_time = time.time()
+    # end = time.time()
+
+    return targetORN,destORN,prev_pos,prev_error,cum_e,load,picked,placed,offset,worm, off, logTorque, start_time
 
 def checkPoint(error,vel,status):
     tol = 0.1
@@ -284,7 +289,7 @@ motor_driver_3_reverse_pwm.start(0)
 
 # pause = 0
 
-targetORN, destORN, prev_pos, prev_error, cum_e, load, picked, placed, offset, worm, off , logTorque= SetUp()
+targetORN, destORN, prev_pos, prev_error, cum_e, load, picked, placed, offset, worm, off , logTorque, start_time= SetUp()
 
 def main():
     global targetORN, destORN, prev_pos, prev_error, cum_e, load, picked, placed, offset, worm, off
@@ -344,8 +349,7 @@ def main():
     tau1=tau1 + 0.2*tau1
     torque = [pidTorques[0]+tau0,pidTorques[1]+tau1,pidTorques[2]+tau2]
     
-    logTorque.append(torque)
-    saveTorque(np.asarray(logTorque))
+    
     
     print("torques = ", torque)
     print("--------------------------------------------")
@@ -389,6 +393,13 @@ def main():
 
     prev_pos   = pos
     prev_error = error
+    now = time.time()
+    
+    torque.append(now-start_time)
+    logTorque.append(torque)
+    saveTorque(np.asarray(logTorque))
+
+
 
     threading.Timer(dt, main).start()  
 
