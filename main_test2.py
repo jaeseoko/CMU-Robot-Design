@@ -11,6 +11,14 @@ import time
 # import keyboard
 
 # For pybullet loading urdf to calculate inverse dynamics / Motor Params
+
+def saveTorque(myArray):
+    
+    # x = [['ABC', 123.45], ['DEF', 678.90]]
+    np.savetxt('torqueLog.txt', myArray, fmt='%s')
+    # default dtype for  np.loadtxt is also floating point, change it, to be able to load mixed data.
+    # y = np.loadtxt('text.txt', dtype=np.object)
+
 def SetUp():
     global ee_mass, bodyId
     client = p.connect(p.DIRECT)
@@ -49,13 +57,14 @@ def SetUp():
     prev_error = [0,0,0]
     cum_e = [0,0,0]
     load = args.load
+    logTorque = []
     if args.worm==0:
         worm = False
     else:
         worm = True   
     picked, placed = False, False
     offset = False
-    return targetORN,destORN,prev_pos,prev_error,cum_e,load,picked,placed,offset,worm, off
+    return targetORN,destORN,prev_pos,prev_error,cum_e,load,picked,placed,offset,worm, off, logTorque
 
 def checkPoint(error,vel,status):
     tol = 0.1
@@ -275,7 +284,7 @@ motor_driver_3_reverse_pwm.start(0)
 
 # pause = 0
 
-targetORN, destORN, prev_pos, prev_error, cum_e, load, picked, placed, offset, worm, off = SetUp()
+targetORN, destORN, prev_pos, prev_error, cum_e, load, picked, placed, offset, worm, off , logTorque= SetUp()
 
 def main():
     global targetORN, destORN, prev_pos, prev_error, cum_e, load, picked, placed, offset, worm, off
@@ -335,6 +344,8 @@ def main():
     tau1=tau1 + 0.2*tau1
     torque = [pidTorques[0]+tau0,pidTorques[1]+tau1,pidTorques[2]+tau2]
     
+    logTorque.append(torque)
+    saveTorque(np.asarray(logTorque))
     
     print("torques = ", torque)
     print("--------------------------------------------")
