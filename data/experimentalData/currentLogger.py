@@ -8,7 +8,7 @@ rm = visa.ResourceManager()
 print('Connected VISA resources:')
 print(rm.list_resources())
 
-dmm = rm.open_resource('USB0::0x1AB1::0x0C94::DM3O171700266::INSTR')
+dmm = rm.open_resource('USB0::0x1AB1::0x0C94::DM3O184850063::INSTR')
 dmm2 = rm.open_resource('USB0::0x1AB1::0x0C94::DM3O191900311::INSTR')
 # print('Instrument ID (IDN:) = ', dmm.query('*IDN?'))
 #print("Volts DC   = ", dmm.query(":MEASure:VOLTage:DC?"))
@@ -19,7 +19,7 @@ print("-------------------------------------------------------------------------
 start_time = time.time()
 
 
-data_points = 20
+data_points = 100
 
 
 current_data = np.zeros((data_points, 2))
@@ -57,7 +57,7 @@ for x in range(0, data_points):
     print(now, iFlt ,rawStr, sep="\t|\t")
     print(now, iFlt2 ,rawStr, sep="\t|\t")
 
-    # sleep(.01)
+    sleep(.01)
 
 np.savetxt("currentData.csv", current_data, delimiter=',', header="Time (Seconds),Current (Amps)", comments="")
 np.savetxt("currentData2.csv", current_data2, delimiter=',', header="Time (Seconds),Current (Amps)", comments="")

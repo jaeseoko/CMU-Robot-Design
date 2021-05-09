@@ -227,7 +227,7 @@ def on_press_r(key):
     global r_state
 
     if(r_state == 0):
-        rotateCW(2, 6)
+        rotateCW(2, 12)
         
     # print("pressed rrrrrr")
     # r_state = 1
