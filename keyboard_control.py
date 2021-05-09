@@ -17,7 +17,7 @@ def signal_handler(sig, frame):
 signal.signal(signal.SIGINT, signal_handler)
 
 # Motor--------------------------------------
-pwm_frequency = 1000 
+pwm_frequency = 10000 
 encoder_count_per_rotation = 810    
 V = 12
 
