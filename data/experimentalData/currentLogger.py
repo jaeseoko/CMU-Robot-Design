@@ -36,4 +36,4 @@ for x in range(0, 100):
 
     sleep(.03)
 
-numpy.savetxt("currentData.csv", a, delimiter=',', header="A,B", comments="")
+numpy.savetxt("currentData.csv", a, delimiter=',', header="Time (Seconds),Current (Amps)", comments="")
