@@ -242,7 +242,7 @@ def on_press_f(key):
     global f_state
 
     if(f_state == 0):
-        rotateCCW(2, 6)
+        rotateCCW(2, 12)
 
     # f_state = 1
 
