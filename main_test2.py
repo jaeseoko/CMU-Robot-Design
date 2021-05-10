@@ -96,6 +96,37 @@ def GetVoltage(torque,vel):
 
     return [V0,V1,V2]
 
+def GetVoltageWorm(torque,vel):
+
+    # PLANETARY for first and second
+    Ts = 23.5/1000                      # Nm (stall torque)
+    Is = 1.8                            # A  (stall current)
+    R = 8.4                             # Ohm
+    V = 12                              # Voltage [V]
+    noLoadCurr = 70/1000                # A
+    noLoadSpeed = 7000*2*np.pi/60       # rad / s
+    N = 270
+    Kt = Ts/Is
+    Ke = (V - R*noLoadCurr)/noLoadSpeed
+
+    # WORM for third
+    Ts2 = 70/1000                        # Nm (stall torque)
+    Is2 = 5.2                            # A  (stall current)
+    R2 = 8.4                             # Ohm
+    V2 = 24                              # Voltage [V]
+    noLoadCurr2 = 0.25                   # A
+    noLoadSpeed2 = 16*2*np.pi/60         # rad / s
+    N2 = 5002
+    Kt2 = Ts2/Is2
+    Ke2 = (V2 - R2*noLoadCurr2)/noLoadSpeed2
+
+    V0 = R/Kt*torque[0]/N +Ke*vel[0]*N
+    V1 = R/Kt*torque[1]/N +Ke*vel[1]*N
+    V2 = R2/Kt2*torque[2]/N2 +Ke2*vel[2]*N2
+
+    return [V0,V1,V2]
+
+
 def PID_torque(e,de,cum_e,load):
     # kp0,ki0,kd0 = 2e-2, 1e-8 , 2e-2
     kp0,ki0,kd0 = 9e-2, 1e-8 , 9e-2
@@ -355,8 +386,20 @@ def main():
     print("--------------------------------------------")
 
     
+    if worm==True:
+        volt = GetVoltageWorm(torque, vel)
 
-    volt = GetVoltage(torque,vel)
+        # Turning off 
+        if ( abs(vel[1])+abs(vel[2]) < 0.02 ) and \
+            ( (abs(error[1]+abs(error[2])) ) < 0.5 ) :
+            stopRotate(2)
+            GPIO.output(motor_driver_3_reverse_enable_pin, GPIO.LOW)
+            GPIO.output(motor_driver_3_forward_enable_pin, GPIO.LOW)
+    else:
+        volt = GetVoltage(torque,vel)
+
+    
+
     # volt = [0,0,0]
     print("volt = ", volt)
     print("--------------------------------------------")
@@ -378,9 +421,9 @@ def main():
     else: rotateCCW(0, abs(volt[0]))
     if(volt[1]>0): rotateCW(1, abs(volt[1]))
     else: rotateCCW(1, abs(volt[1]))
-    if picked==True and worm == True:
-        stopRotate(2)
-    elif(volt[2]>0): 
+    # if picked==True and worm == True:
+    #     stopRotate(2)
+    if(volt[2]>0): 
         rotateCW(2, abs(volt[2]))
     else: 
         rotateCCW(2, abs(volt[2]))
