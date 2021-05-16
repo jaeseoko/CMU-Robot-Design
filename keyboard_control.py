@@ -269,6 +269,8 @@ def on_release_f(key):
 # keyboard.on_press_key("f", on_press_f)
 # keyboard.on_release_key("f", on_release_f)
 
+rotateCW(2, 12)
+
 def main():
     
     global prev_pos
@@ -294,8 +296,9 @@ def main():
         prev_pos = pos0
         prev_pos1 = pos1
         prev_pos2 = pos2
-t = threading.Thread(target=main)
+# t = threading.Thread(target=main)
 # t.start()
+
 
 # For GPIO clean exit
 def signal_handler(sig, frame):
@@ -306,6 +309,7 @@ def signal_handler(sig, frame):
 
 signal.signal(signal.SIGINT, signal_handler)
 
+main()
 while True:
     keyboard = input("W S A D R F space: ")
     if keyboard == "w":
