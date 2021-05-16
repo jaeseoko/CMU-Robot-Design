@@ -204,7 +204,7 @@ def on_release(key):
 # listener.start()
 
 # rotateCCW(0, 1)
-rotateCCW(1, 6)
+# rotateCCW(1, 6)
 rotateCW(2, 6)
 
 def main():
