@@ -199,7 +199,7 @@ def on_press_w(key):
     global w_state
 
     if(w_state == 0):
-        rotateCCW(1, 10)
+        rotateCCW(1, 12)
 
     # w_state = 1
 
@@ -213,7 +213,7 @@ def on_press_s(key):
     global s_state
 
     if(s_state == 0):
-        rotateCW(1, 10)
+        rotateCW(1, 12)
 
     # s_state = 1
 
